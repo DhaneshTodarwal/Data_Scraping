@@ -1,0 +1,11 @@
+strategy,total_days,total_trades,winners,total_pnl,win_rate,profit_factor
+10:15 Straddle,57,57,36,61413.0,64.63,3.43
+9:30 Straddle,57,57,42,143145.5,73.06,7.95
+Bear Call Spread,13,13,5,-2811.25,30.0,1.73
+Bull Put Spread,22,22,12,10546.25,60.24,inf
+Iron Butterfly,14,14,3,-4654.75,13.39,0.45
+Iron Condor,13,13,8,6728.5,50.0,inf
+Narrow Iron Condor,14,14,5,758.25,44.64,inf
+Short Straddle,57,57,39,127668.25,68.51,3.64
+Short Strangle,44,44,30,51493.5,67.09,2.72
+Wide Strangle (3 OTM),14,14,11,16907.75,86.61,inf

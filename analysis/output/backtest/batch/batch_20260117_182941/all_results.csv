@@ -1,0 +1,4 @@
+symbol,strategy,strategy_key,total_days,total_trades,winners,losers,win_rate,total_pnl,avg_pnl_per_trade,max_win,max_loss,profit_factor
+NIFTY,Short Straddle,short_straddle,1,1,0,1,0.0,-3108.749999999999,-3108.749999999999,-3108.749999999999,-3108.749999999999,0.0
+BANKNIFTY,Short Straddle,short_straddle,3,3,3,0,100.0,11023.5,3674.5,4705.500000000001,2401.4999999999986,inf
+BANKNIFTY,Short Strangle,short_strangle,2,2,2,0,100.0,3172.4999999999995,1586.2499999999998,1708.4999999999995,1464.0,inf

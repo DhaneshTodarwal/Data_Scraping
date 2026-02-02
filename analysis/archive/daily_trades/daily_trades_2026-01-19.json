@@ -1,0 +1,76 @@
+{
+  "trades": [
+    {
+      "trade_id": "T1_1447",
+      "timestamp": "14:47:31",
+      "symbol": "NIFTY",
+      "strategy": "Iron Condor",
+      "legs": [
+        {
+          "strike": 25500,
+          "type": "CE",
+          "entry": 85
+        },
+        {
+          "strike": 25600,
+          "type": "CE",
+          "entry": 45
+        },
+        {
+          "strike": 25200,
+          "type": "PE",
+          "entry": 80
+        },
+        {
+          "strike": 25100,
+          "type": "PE",
+          "entry": 40
+        }
+      ],
+      "entry_premium": 80,
+      "exit_premium": 62.56086492703638,
+      "pnl_points": 17.439135072963623,
+      "pnl_amount": 1307.9351304722718,
+      "lot_size": 75,
+      "status": "OPEN",
+      "confidence": 75,
+      "win_probability": 68
+    },
+    {
+      "trade_id": "T2_1447",
+      "timestamp": "14:47:31",
+      "symbol": "BANKNIFTY",
+      "strategy": "Iron Condor",
+      "legs": [
+        {
+          "strike": 60000,
+          "type": "CE",
+          "entry": 90
+        },
+        {
+          "strike": 60200,
+          "type": "CE",
+          "entry": 50
+        },
+        {
+          "strike": 59600,
+          "type": "PE",
+          "entry": 85
+        },
+        {
+          "strike": 59400,
+          "type": "PE",
+          "entry": 45
+        }
+      ],
+      "entry_premium": 80,
+      "exit_premium": 55.52944434570673,
+      "pnl_points": 24.47055565429327,
+      "pnl_amount": 734.1166696287981,
+      "lot_size": 30,
+      "status": "OPEN",
+      "confidence": 72,
+      "win_probability": 65
+    }
+  ]
+}

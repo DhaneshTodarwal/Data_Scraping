@@ -1,0 +1,23 @@
+{
+  "index": "NIFTY",
+  "date": "2026-01-16",
+  "spot_price": 24000.0,
+  "atm_strike": 24000,
+  "strikes": [
+    23750,
+    23800,
+    23850,
+    23900,
+    23950,
+    24000,
+    24050,
+    24100,
+    24150,
+    24200,
+    24250
+  ],
+  "expiry": "14-Jan-2026",
+  "ohlcv_collected": 0,
+  "option_chain_saved": true,
+  "saved_at": "2026-01-16 15:35:08"
+}

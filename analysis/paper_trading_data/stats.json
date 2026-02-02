@@ -1,0 +1,18 @@
+{
+  "total_capital": 500000.0,
+  "used_margin": 0.0,
+  "available_capital": 500000.0,
+  "realized_pnl": 153.75000000000298,
+  "unrealized_pnl": 0,
+  "total_pnl": 153.75000000000298,
+  "total_trades": 1,
+  "winning_trades": 1,
+  "losing_trades": 0,
+  "win_rate": 100.0,
+  "profit_factor": 0.0,
+  "avg_win": 0.0,
+  "avg_loss": 0.0,
+  "max_drawdown": 0.0,
+  "best_trade_pnl": 153.75000000000298,
+  "worst_trade_pnl": 0.0
+}

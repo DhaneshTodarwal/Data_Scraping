@@ -1,0 +1,2952 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gamma-EMA Confluence Strategy Report - NIFTY</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 20px; background: #1a1a2e; color: #eee; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #00d4ff; text-align: center; margin-bottom: 30px; }
+        h2 { color: #00d4ff; border-bottom: 2px solid #00d4ff; padding-bottom: 10px; }
+        .summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 20px 0; }
+        .stat-card { background: #16213e; padding: 20px; border-radius: 10px; text-align: center; }
+        .stat-value { font-size: 28px; font-weight: bold; color: #00d4ff; }
+        .stat-label { color: #888; font-size: 12px; margin-top: 5px; }
+        .positive { color: #27ae60; }
+        .negative { color: #e74c3c; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: #16213e; border-radius: 10px; overflow: hidden; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #2a2a4a; }
+        th { background: #0f3460; color: #00d4ff; }
+        tr:hover { background: #1f4068; }
+        .exit-breakdown { display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0; }
+        .exit-chip { background: #0f3460; padding: 10px 20px; border-radius: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Gamma-EMA Confluence Strategy</h1>
+        <p style="text-align: center; color: #888;">Expiry Day Scalping | NIFTY | 8 Days Tested</p>
+        
+        <div class="summary-grid">
+            <div class="stat-card">
+                <div class="stat-value">258</div>
+                <div class="stat-label">Total Trades</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">39.9%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color: #27ae60">₹20,020</div>
+                <div class="stat-label">Total P&L</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">1.34</div>
+                <div class="stat-label">Profit Factor</div>
+            </div>
+        </div>
+        
+        <h2>📊 Performance Summary</h2>
+        <div class="summary-grid">
+            <div class="stat-card">
+                <div class="stat-value">₹100,000</div>
+                <div class="stat-label">Initial Capital</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" style="color: #27ae60">₹120,020</div>
+                <div class="stat-label">Final Capital</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value class="positive">₹2,515</div>
+                <div class="stat-label">Max Win</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" class="negative">₹-1,222</div>
+                <div class="stat-label">Max Loss</div>
+            </div>
+        </div>
+        
+        <h2>🎯 Strategy Metrics</h2>
+        <div class="summary-grid">
+            <div class="stat-card">
+                <div class="stat-value">44m</div>
+                <div class="stat-label">Avg Duration</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">6</div>
+                <div class="stat-label">Hit Breakeven</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">15</div>
+                <div class="stat-label">Trailing Active</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">3/8</div>
+                <div class="stat-label">Profitable Days</div>
+            </div>
+        </div>
+        
+        <h2>📋 Exit Breakdown</h2>
+        <div class="exit-breakdown">
+            <div class="exit-chip">time_exit: 101</div><div class="exit-chip">stoploss: 94</div><div class="exit-chip">trailing_sl: 10</div><div class="exit-chip">sideways_exit: 48</div><div class="exit-chip">target_4x: 5</div>
+        </div>
+        
+        <h2>📈 Trade Details</h2>
+        <table>
+            <tr>
+                <th>Entry Time</th>
+                <th>Type</th>
+                <th>Strike</th>
+                <th>Entry</th>
+                <th>Exit</th>
+                <th>P&L</th>
+                <th>Exit Reason</th>
+                <th>Duration</th>
+            </tr>
+            
+        <tr>
+            <td>2026-01-16 13:32:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25750</td>
+            <td>₹100.0</td>
+            <td>₹89.91</td>
+            <td class="negative">₹-272</td>
+            <td>time_exit</td>
+            <td>113m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-16 13:33:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25750</td>
+            <td>₹101.7</td>
+            <td>₹76.2</td>
+            <td class="negative">₹-658</td>
+            <td>stoploss</td>
+            <td>36m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-16 14:26:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25750</td>
+            <td>₹92.89</td>
+            <td>₹89.91</td>
+            <td class="negative">₹-95</td>
+            <td>time_exit</td>
+            <td>59m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:51:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹49.05</td>
+            <td>₹36.75</td>
+            <td class="negative">₹-327</td>
+            <td>stoploss</td>
+            <td>79m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:52:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹52.2</td>
+            <td>₹39.11</td>
+            <td class="negative">₹-347</td>
+            <td>stoploss</td>
+            <td>74m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:55:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹51.9</td>
+            <td>₹38.89</td>
+            <td class="negative">₹-345</td>
+            <td>stoploss</td>
+            <td>71m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:56:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹51.6</td>
+            <td>₹38.66</td>
+            <td class="negative">₹-343</td>
+            <td>stoploss</td>
+            <td>70m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:57:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹52.05</td>
+            <td>₹39.0</td>
+            <td class="negative">₹-346</td>
+            <td>stoploss</td>
+            <td>69m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:01:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹58.66</td>
+            <td>₹43.95</td>
+            <td class="negative">₹-388</td>
+            <td>stoploss</td>
+            <td>27m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:07:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25700</td>
+            <td>₹45.6</td>
+            <td>₹34.16</td>
+            <td class="negative">₹-306</td>
+            <td>stoploss</td>
+            <td>4m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:13:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25550</td>
+            <td>₹47.0</td>
+            <td>₹35.21</td>
+            <td class="negative">₹-315</td>
+            <td>stoploss</td>
+            <td>39m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:14:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25550</td>
+            <td>₹46.45</td>
+            <td>₹34.8</td>
+            <td class="negative">₹-311</td>
+            <td>stoploss</td>
+            <td>38m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:16:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25550</td>
+            <td>₹45.75</td>
+            <td>₹66.08</td>
+            <td class="positive">₹488</td>
+            <td>time_exit</td>
+            <td>69m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 15:06:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25550</td>
+            <td>₹46.9</td>
+            <td>₹66.08</td>
+            <td class="positive">₹460</td>
+            <td>time_exit</td>
+            <td>19m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:51:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹49.05</td>
+            <td>₹36.75</td>
+            <td class="negative">₹-327</td>
+            <td>stoploss</td>
+            <td>79m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:52:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹52.2</td>
+            <td>₹39.11</td>
+            <td class="negative">₹-347</td>
+            <td>stoploss</td>
+            <td>74m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:55:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹51.9</td>
+            <td>₹38.89</td>
+            <td class="negative">₹-345</td>
+            <td>stoploss</td>
+            <td>71m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:56:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹51.6</td>
+            <td>₹38.66</td>
+            <td class="negative">₹-343</td>
+            <td>stoploss</td>
+            <td>70m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 13:57:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹52.05</td>
+            <td>₹39.0</td>
+            <td class="negative">₹-346</td>
+            <td>stoploss</td>
+            <td>69m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:01:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25650</td>
+            <td>₹58.66</td>
+            <td>₹43.95</td>
+            <td class="negative">₹-388</td>
+            <td>stoploss</td>
+            <td>27m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:07:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25700</td>
+            <td>₹45.6</td>
+            <td>₹34.16</td>
+            <td class="negative">₹-306</td>
+            <td>stoploss</td>
+            <td>4m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:13:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25550</td>
+            <td>₹47.0</td>
+            <td>₹35.21</td>
+            <td class="negative">₹-315</td>
+            <td>stoploss</td>
+            <td>39m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:14:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25550</td>
+            <td>₹46.45</td>
+            <td>₹34.8</td>
+            <td class="negative">₹-311</td>
+            <td>stoploss</td>
+            <td>38m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 14:16:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25550</td>
+            <td>₹45.75</td>
+            <td>₹66.08</td>
+            <td class="positive">₹488</td>
+            <td>time_exit</td>
+            <td>69m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-19 15:06:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25550</td>
+            <td>₹46.9</td>
+            <td>₹66.08</td>
+            <td class="positive">₹460</td>
+            <td>time_exit</td>
+            <td>19m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:35:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹11.81</td>
+            <td>₹16.57</td>
+            <td class="positive">₹99</td>
+            <td>trailing_sl</td>
+            <td>7m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:36:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹17.62</td>
+            <td>₹13.2</td>
+            <td class="negative">₹-130</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:37:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹14.46</td>
+            <td>₹10.84</td>
+            <td class="negative">₹-111</td>
+            <td>stoploss</td>
+            <td>27m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:39:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹15.22</td>
+            <td>₹11.4</td>
+            <td class="negative">₹-115</td>
+            <td>stoploss</td>
+            <td>25m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:40:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹7.66</td>
+            <td>₹5.74</td>
+            <td class="negative">₹-68</td>
+            <td>stoploss</td>
+            <td>2m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:41:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹5.96</td>
+            <td>₹4.46</td>
+            <td class="negative">₹-57</td>
+            <td>stoploss</td>
+            <td>16m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 14:29:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹9.96</td>
+            <td>₹7.46</td>
+            <td class="negative">₹-82</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:35:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹116.52</td>
+            <td>₹217.93</td>
+            <td class="positive">₹2,515</td>
+            <td>trailing_sl</td>
+            <td>100m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:36:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹124.92</td>
+            <td>₹217.93</td>
+            <td class="positive">₹2,305</td>
+            <td>trailing_sl</td>
+            <td>99m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:37:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹121.87</td>
+            <td>₹217.93</td>
+            <td class="positive">₹2,381</td>
+            <td>trailing_sl</td>
+            <td>98m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:39:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹125.33</td>
+            <td>₹217.93</td>
+            <td class="positive">₹2,295</td>
+            <td>trailing_sl</td>
+            <td>96m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:40:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹110.81</td>
+            <td>₹189.74</td>
+            <td class="positive">₹1,953</td>
+            <td>trailing_sl</td>
+            <td>95m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 13:41:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹107.76</td>
+            <td>₹189.74</td>
+            <td class="positive">₹2,030</td>
+            <td>trailing_sl</td>
+            <td>94m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 14:29:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹137.64</td>
+            <td>₹103.12</td>
+            <td class="negative">₹-883</td>
+            <td>stoploss</td>
+            <td>30m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 14:40:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹115.77</td>
+            <td>₹195.8</td>
+            <td class="positive">₹1,981</td>
+            <td>time_exit</td>
+            <td>45m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 14:41:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹120.12</td>
+            <td>₹195.8</td>
+            <td class="positive">₹1,872</td>
+            <td>time_exit</td>
+            <td>44m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 14:42:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹124.42</td>
+            <td>₹195.8</td>
+            <td class="positive">₹1,764</td>
+            <td>time_exit</td>
+            <td>43m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 14:43:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹124.87</td>
+            <td>₹195.8</td>
+            <td class="positive">₹1,753</td>
+            <td>time_exit</td>
+            <td>42m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 14:44:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25300</td>
+            <td>₹120.67</td>
+            <td>₹195.8</td>
+            <td class="positive">₹1,858</td>
+            <td>time_exit</td>
+            <td>41m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 14:59:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25250</td>
+            <td>₹116.67</td>
+            <td>₹169.83</td>
+            <td class="positive">₹1,309</td>
+            <td>time_exit</td>
+            <td>26m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:00:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25250</td>
+            <td>₹122.87</td>
+            <td>₹169.83</td>
+            <td class="positive">₹1,154</td>
+            <td>time_exit</td>
+            <td>25m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:01:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹109.11</td>
+            <td>₹146.7</td>
+            <td class="positive">₹920</td>
+            <td>time_exit</td>
+            <td>24m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:02:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹111.31</td>
+            <td>₹146.7</td>
+            <td class="positive">₹865</td>
+            <td>time_exit</td>
+            <td>23m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:10:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹134.53</td>
+            <td>₹146.7</td>
+            <td class="positive">₹284</td>
+            <td>time_exit</td>
+            <td>15m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:11:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹122.87</td>
+            <td>₹125.97</td>
+            <td class="positive">₹58</td>
+            <td>time_exit</td>
+            <td>14m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:12:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹122.57</td>
+            <td>₹125.97</td>
+            <td class="positive">₹65</td>
+            <td>time_exit</td>
+            <td>13m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:13:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹143.74</td>
+            <td>₹146.7</td>
+            <td class="positive">₹54</td>
+            <td>time_exit</td>
+            <td>12m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:14:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹125.12</td>
+            <td>₹125.97</td>
+            <td class="positive">₹1</td>
+            <td>time_exit</td>
+            <td>11m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-20 15:15:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹128.08</td>
+            <td>₹146.7</td>
+            <td class="positive">₹446</td>
+            <td>time_exit</td>
+            <td>10m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:33:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹133.78</td>
+            <td>₹145.85</td>
+            <td class="positive">₹282</td>
+            <td>time_exit</td>
+            <td>112m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:35:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹140.79</td>
+            <td>₹145.85</td>
+            <td class="positive">₹107</td>
+            <td>time_exit</td>
+            <td>110m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:36:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹139.79</td>
+            <td>₹145.85</td>
+            <td class="positive">₹132</td>
+            <td>time_exit</td>
+            <td>109m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:53:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹128.18</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-89</td>
+            <td>time_exit</td>
+            <td>92m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:54:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹128.03</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-85</td>
+            <td>time_exit</td>
+            <td>91m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:55:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹131.13</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-163</td>
+            <td>time_exit</td>
+            <td>90m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:56:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹133.08</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-211</td>
+            <td>time_exit</td>
+            <td>89m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:57:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹132.93</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-208</td>
+            <td>time_exit</td>
+            <td>88m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:58:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹130.18</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-139</td>
+            <td>time_exit</td>
+            <td>87m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:59:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹133.73</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-228</td>
+            <td>time_exit</td>
+            <td>86m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:00:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹137.84</td>
+            <td>₹103.27</td>
+            <td class="negative">₹-884</td>
+            <td>stoploss</td>
+            <td>18m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:01:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹136.54</td>
+            <td>₹102.3</td>
+            <td class="negative">₹-876</td>
+            <td>stoploss</td>
+            <td>17m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:20:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹135.54</td>
+            <td>₹112.84</td>
+            <td class="negative">₹-587</td>
+            <td>time_exit</td>
+            <td>65m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:26:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹134.33</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-243</td>
+            <td>time_exit</td>
+            <td>59m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:28:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹140.29</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-392</td>
+            <td>time_exit</td>
+            <td>57m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:29:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25050</td>
+            <td>₹122.82</td>
+            <td>₹107.29</td>
+            <td class="negative">₹-408</td>
+            <td>time_exit</td>
+            <td>56m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:30:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹136.09</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-287</td>
+            <td>time_exit</td>
+            <td>55m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25200</td>
+            <td>₹156.66</td>
+            <td>₹135.31</td>
+            <td class="negative">₹-554</td>
+            <td>time_exit</td>
+            <td>51m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 15:05:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25200</td>
+            <td>₹155.71</td>
+            <td>₹135.31</td>
+            <td class="negative">₹-530</td>
+            <td>time_exit</td>
+            <td>20m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:33:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹133.78</td>
+            <td>₹145.85</td>
+            <td class="positive">₹282</td>
+            <td>time_exit</td>
+            <td>112m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:35:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹140.79</td>
+            <td>₹145.85</td>
+            <td class="positive">₹107</td>
+            <td>time_exit</td>
+            <td>110m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:36:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹139.79</td>
+            <td>₹145.85</td>
+            <td class="positive">₹132</td>
+            <td>time_exit</td>
+            <td>109m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:53:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹128.18</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-89</td>
+            <td>time_exit</td>
+            <td>92m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:54:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹128.03</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-85</td>
+            <td>time_exit</td>
+            <td>91m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:55:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹131.13</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-163</td>
+            <td>time_exit</td>
+            <td>90m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:56:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹133.08</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-211</td>
+            <td>time_exit</td>
+            <td>89m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:57:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹132.93</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-208</td>
+            <td>time_exit</td>
+            <td>88m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:58:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹130.18</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-139</td>
+            <td>time_exit</td>
+            <td>87m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 13:59:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹133.73</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-228</td>
+            <td>time_exit</td>
+            <td>86m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:00:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹137.84</td>
+            <td>₹103.27</td>
+            <td class="negative">₹-884</td>
+            <td>stoploss</td>
+            <td>18m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:01:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹136.54</td>
+            <td>₹102.3</td>
+            <td class="negative">₹-876</td>
+            <td>stoploss</td>
+            <td>17m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:20:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹135.54</td>
+            <td>₹112.84</td>
+            <td class="negative">₹-587</td>
+            <td>time_exit</td>
+            <td>65m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:26:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹134.33</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-243</td>
+            <td>time_exit</td>
+            <td>59m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:28:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹140.29</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-392</td>
+            <td>time_exit</td>
+            <td>57m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:29:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25050</td>
+            <td>₹122.82</td>
+            <td>₹107.29</td>
+            <td class="negative">₹-408</td>
+            <td>time_exit</td>
+            <td>56m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:30:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹136.09</td>
+            <td>₹125.42</td>
+            <td class="negative">₹-287</td>
+            <td>time_exit</td>
+            <td>55m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 14:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25200</td>
+            <td>₹156.66</td>
+            <td>₹135.31</td>
+            <td class="negative">₹-554</td>
+            <td>time_exit</td>
+            <td>51m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-21 15:05:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25200</td>
+            <td>₹155.71</td>
+            <td>₹135.31</td>
+            <td class="negative">₹-530</td>
+            <td>time_exit</td>
+            <td>20m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹138.39</td>
+            <td>₹196.95</td>
+            <td class="positive">₹1,444</td>
+            <td>time_exit</td>
+            <td>111m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:35:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹116.72</td>
+            <td>₹115.18</td>
+            <td class="negative">₹-58</td>
+            <td>sideways_exit</td>
+            <td>23m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:52:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹116.52</td>
+            <td>₹115.18</td>
+            <td class="negative">₹-53</td>
+            <td>sideways_exit</td>
+            <td>6m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:53:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹117.92</td>
+            <td>₹115.18</td>
+            <td class="negative">₹-88</td>
+            <td>sideways_exit</td>
+            <td>5m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:55:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹117.47</td>
+            <td>₹162.64</td>
+            <td class="positive">₹1,109</td>
+            <td>time_exit</td>
+            <td>90m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:08:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹93.39</td>
+            <td>₹69.97</td>
+            <td class="negative">₹-605</td>
+            <td>stoploss</td>
+            <td>23m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:12:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹99.8</td>
+            <td>₹74.77</td>
+            <td class="negative">₹-646</td>
+            <td>stoploss</td>
+            <td>17m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:13:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹101.75</td>
+            <td>₹76.24</td>
+            <td class="negative">₹-658</td>
+            <td>stoploss</td>
+            <td>16m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:14:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹105.0</td>
+            <td>₹78.67</td>
+            <td class="negative">₹-678</td>
+            <td>stoploss</td>
+            <td>14m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:15:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹101.85</td>
+            <td>₹76.31</td>
+            <td class="negative">₹-658</td>
+            <td>stoploss</td>
+            <td>14m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:17:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹105.26</td>
+            <td>₹78.86</td>
+            <td class="negative">₹-680</td>
+            <td>stoploss</td>
+            <td>11m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:18:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹86.24</td>
+            <td>₹64.61</td>
+            <td class="negative">₹-561</td>
+            <td>stoploss</td>
+            <td>10m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:22:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹125.48</td>
+            <td>₹196.95</td>
+            <td class="positive">₹1,767</td>
+            <td>time_exit</td>
+            <td>63m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:23:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹122.12</td>
+            <td>₹196.95</td>
+            <td class="positive">₹1,851</td>
+            <td>time_exit</td>
+            <td>62m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:27:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹130.48</td>
+            <td>₹196.95</td>
+            <td class="positive">₹1,642</td>
+            <td>time_exit</td>
+            <td>58m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:28:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹111.41</td>
+            <td>₹162.64</td>
+            <td class="positive">₹1,261</td>
+            <td>time_exit</td>
+            <td>57m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:29:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹116.02</td>
+            <td>₹162.64</td>
+            <td class="positive">₹1,146</td>
+            <td>time_exit</td>
+            <td>56m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:30:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹116.67</td>
+            <td>₹162.64</td>
+            <td class="positive">₹1,129</td>
+            <td>time_exit</td>
+            <td>55m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:31:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹127.13</td>
+            <td>₹162.64</td>
+            <td class="positive">₹868</td>
+            <td>time_exit</td>
+            <td>54m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:32:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹131.58</td>
+            <td>₹162.64</td>
+            <td class="positive">₹756</td>
+            <td>time_exit</td>
+            <td>53m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:33:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹134.08</td>
+            <td>₹162.64</td>
+            <td class="positive">₹694</td>
+            <td>time_exit</td>
+            <td>52m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹111.11</td>
+            <td>₹132.72</td>
+            <td class="positive">₹520</td>
+            <td>time_exit</td>
+            <td>51m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:35:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹132.43</td>
+            <td>₹162.64</td>
+            <td class="positive">₹735</td>
+            <td>time_exit</td>
+            <td>50m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:36:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹115.27</td>
+            <td>₹132.72</td>
+            <td class="positive">₹416</td>
+            <td>time_exit</td>
+            <td>49m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:37:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹119.92</td>
+            <td>₹132.72</td>
+            <td class="positive">₹300</td>
+            <td>time_exit</td>
+            <td>48m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:40:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹119.57</td>
+            <td>₹132.72</td>
+            <td class="positive">₹309</td>
+            <td>time_exit</td>
+            <td>45m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:47:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹122.72</td>
+            <td>₹91.95</td>
+            <td class="negative">₹-789</td>
+            <td>stoploss</td>
+            <td>15m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:48:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹128.13</td>
+            <td>₹96.0</td>
+            <td class="negative">₹-823</td>
+            <td>stoploss</td>
+            <td>13m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:49:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹119.12</td>
+            <td>₹132.72</td>
+            <td class="positive">₹320</td>
+            <td>time_exit</td>
+            <td>36m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 15:02:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹80.63</td>
+            <td>₹60.41</td>
+            <td class="negative">₹-525</td>
+            <td>stoploss</td>
+            <td>13m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 15:05:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹78.83</td>
+            <td>₹59.06</td>
+            <td class="negative">₹-514</td>
+            <td>stoploss</td>
+            <td>12m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 15:10:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹121.02</td>
+            <td>₹132.72</td>
+            <td class="positive">₹272</td>
+            <td>time_exit</td>
+            <td>15m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 15:11:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹120.87</td>
+            <td>₹132.72</td>
+            <td class="positive">₹276</td>
+            <td>time_exit</td>
+            <td>14m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹138.39</td>
+            <td>₹196.95</td>
+            <td class="positive">₹1,444</td>
+            <td>time_exit</td>
+            <td>111m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:35:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹116.72</td>
+            <td>₹115.18</td>
+            <td class="negative">₹-58</td>
+            <td>sideways_exit</td>
+            <td>23m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:52:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹116.52</td>
+            <td>₹115.18</td>
+            <td class="negative">₹-53</td>
+            <td>sideways_exit</td>
+            <td>6m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:53:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹117.92</td>
+            <td>₹115.18</td>
+            <td class="negative">₹-88</td>
+            <td>sideways_exit</td>
+            <td>5m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 13:55:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹117.47</td>
+            <td>₹162.64</td>
+            <td class="positive">₹1,109</td>
+            <td>time_exit</td>
+            <td>90m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:08:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹93.39</td>
+            <td>₹69.97</td>
+            <td class="negative">₹-605</td>
+            <td>stoploss</td>
+            <td>23m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:12:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹99.8</td>
+            <td>₹74.77</td>
+            <td class="negative">₹-646</td>
+            <td>stoploss</td>
+            <td>17m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:13:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹101.75</td>
+            <td>₹76.24</td>
+            <td class="negative">₹-658</td>
+            <td>stoploss</td>
+            <td>16m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:14:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹105.0</td>
+            <td>₹78.67</td>
+            <td class="negative">₹-678</td>
+            <td>stoploss</td>
+            <td>14m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:15:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹101.85</td>
+            <td>₹76.31</td>
+            <td class="negative">₹-658</td>
+            <td>stoploss</td>
+            <td>14m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:17:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹105.26</td>
+            <td>₹78.86</td>
+            <td class="negative">₹-680</td>
+            <td>stoploss</td>
+            <td>11m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:18:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25100</td>
+            <td>₹86.24</td>
+            <td>₹64.61</td>
+            <td class="negative">₹-561</td>
+            <td>stoploss</td>
+            <td>10m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:22:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹125.48</td>
+            <td>₹196.95</td>
+            <td class="positive">₹1,767</td>
+            <td>time_exit</td>
+            <td>63m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:23:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹122.12</td>
+            <td>₹196.95</td>
+            <td class="positive">₹1,851</td>
+            <td>time_exit</td>
+            <td>62m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:27:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹130.48</td>
+            <td>₹196.95</td>
+            <td class="positive">₹1,642</td>
+            <td>time_exit</td>
+            <td>58m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:28:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹111.41</td>
+            <td>₹162.64</td>
+            <td class="positive">₹1,261</td>
+            <td>time_exit</td>
+            <td>57m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:29:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹116.02</td>
+            <td>₹162.64</td>
+            <td class="positive">₹1,146</td>
+            <td>time_exit</td>
+            <td>56m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:30:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹116.67</td>
+            <td>₹162.64</td>
+            <td class="positive">₹1,129</td>
+            <td>time_exit</td>
+            <td>55m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:31:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹127.13</td>
+            <td>₹162.64</td>
+            <td class="positive">₹868</td>
+            <td>time_exit</td>
+            <td>54m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:32:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹131.58</td>
+            <td>₹162.64</td>
+            <td class="positive">₹756</td>
+            <td>time_exit</td>
+            <td>53m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:33:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹134.08</td>
+            <td>₹162.64</td>
+            <td class="positive">₹694</td>
+            <td>time_exit</td>
+            <td>52m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹111.11</td>
+            <td>₹132.72</td>
+            <td class="positive">₹520</td>
+            <td>time_exit</td>
+            <td>51m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:35:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹132.43</td>
+            <td>₹162.64</td>
+            <td class="positive">₹735</td>
+            <td>time_exit</td>
+            <td>50m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:36:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹115.27</td>
+            <td>₹132.72</td>
+            <td class="positive">₹416</td>
+            <td>time_exit</td>
+            <td>49m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:37:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹119.92</td>
+            <td>₹132.72</td>
+            <td class="positive">₹300</td>
+            <td>time_exit</td>
+            <td>48m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:40:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹119.57</td>
+            <td>₹132.72</td>
+            <td class="positive">₹309</td>
+            <td>time_exit</td>
+            <td>45m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:47:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹122.72</td>
+            <td>₹91.95</td>
+            <td class="negative">₹-789</td>
+            <td>stoploss</td>
+            <td>15m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:48:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹128.13</td>
+            <td>₹96.0</td>
+            <td class="negative">₹-823</td>
+            <td>stoploss</td>
+            <td>13m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 14:49:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹119.12</td>
+            <td>₹132.72</td>
+            <td class="positive">₹320</td>
+            <td>time_exit</td>
+            <td>36m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 15:02:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹80.63</td>
+            <td>₹60.41</td>
+            <td class="negative">₹-525</td>
+            <td>stoploss</td>
+            <td>13m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 15:05:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25200</td>
+            <td>₹78.83</td>
+            <td>₹59.06</td>
+            <td class="negative">₹-514</td>
+            <td>stoploss</td>
+            <td>12m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 15:10:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹121.02</td>
+            <td>₹132.72</td>
+            <td class="positive">₹272</td>
+            <td>time_exit</td>
+            <td>15m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-22 15:11:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹120.87</td>
+            <td>₹132.72</td>
+            <td class="positive">₹276</td>
+            <td>time_exit</td>
+            <td>14m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:30:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25050</td>
+            <td>₹81.08</td>
+            <td>₹92.91</td>
+            <td class="positive">₹276</td>
+            <td>time_exit</td>
+            <td>115m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:31:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25050</td>
+            <td>₹88.59</td>
+            <td>₹66.37</td>
+            <td class="negative">₹-575</td>
+            <td>stoploss</td>
+            <td>70m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:32:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹73.07</td>
+            <td>₹54.75</td>
+            <td class="negative">₹-478</td>
+            <td>stoploss</td>
+            <td>63m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:34:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹74.27</td>
+            <td>₹55.65</td>
+            <td class="negative">₹-486</td>
+            <td>stoploss</td>
+            <td>59m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:35:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹71.12</td>
+            <td>₹53.29</td>
+            <td class="negative">₹-466</td>
+            <td>stoploss</td>
+            <td>66m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:36:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹75.63</td>
+            <td>₹56.66</td>
+            <td class="negative">₹-494</td>
+            <td>stoploss</td>
+            <td>57m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:37:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹75.53</td>
+            <td>₹56.59</td>
+            <td class="negative">₹-493</td>
+            <td>stoploss</td>
+            <td>56m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:39:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹73.97</td>
+            <td>₹55.42</td>
+            <td class="negative">₹-484</td>
+            <td>stoploss</td>
+            <td>54m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:44:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹85.03</td>
+            <td>₹63.71</td>
+            <td class="negative">₹-553</td>
+            <td>stoploss</td>
+            <td>31m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 13:45:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹79.38</td>
+            <td>₹59.47</td>
+            <td class="negative">₹-518</td>
+            <td>stoploss</td>
+            <td>30m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:22:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹81.93</td>
+            <td>₹61.39</td>
+            <td class="negative">₹-534</td>
+            <td>stoploss</td>
+            <td>6m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:28:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25100</td>
+            <td>₹110.96</td>
+            <td>₹102.25</td>
+            <td class="negative">₹-238</td>
+            <td>time_exit</td>
+            <td>57m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:33:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹94.34</td>
+            <td>₹70.69</td>
+            <td class="negative">₹-611</td>
+            <td>stoploss</td>
+            <td>36m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹92.49</td>
+            <td>₹69.3</td>
+            <td class="negative">₹-600</td>
+            <td>stoploss</td>
+            <td>35m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:41:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹101.65</td>
+            <td>₹76.16</td>
+            <td class="negative">₹-657</td>
+            <td>stoploss</td>
+            <td>28m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:43:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹96.45</td>
+            <td>₹72.26</td>
+            <td class="negative">₹-625</td>
+            <td>stoploss</td>
+            <td>26m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:49:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹70.27</td>
+            <td>₹73.23</td>
+            <td class="positive">₹54</td>
+            <td>time_exit</td>
+            <td>36m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:57:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹96.2</td>
+            <td>₹72.07</td>
+            <td class="negative">₹-623</td>
+            <td>stoploss</td>
+            <td>12m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 14:58:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹91.94</td>
+            <td>₹68.89</td>
+            <td class="negative">₹-596</td>
+            <td>stoploss</td>
+            <td>11m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 15:02:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹72.12</td>
+            <td>₹73.23</td>
+            <td class="positive">₹8</td>
+            <td>time_exit</td>
+            <td>23m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 15:06:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹71.42</td>
+            <td>₹73.23</td>
+            <td class="positive">₹25</td>
+            <td>time_exit</td>
+            <td>19m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 15:08:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹75.83</td>
+            <td>₹73.23</td>
+            <td class="negative">₹-85</td>
+            <td>time_exit</td>
+            <td>17m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 15:09:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹85.89</td>
+            <td>₹64.35</td>
+            <td class="negative">₹-558</td>
+            <td>stoploss</td>
+            <td>6m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 15:12:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹83.28</td>
+            <td>₹73.23</td>
+            <td class="negative">₹-271</td>
+            <td>time_exit</td>
+            <td>13m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-23 15:13:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹79.88</td>
+            <td>₹73.23</td>
+            <td class="negative">₹-186</td>
+            <td>time_exit</td>
+            <td>12m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:30:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹44.84</td>
+            <td>₹33.6</td>
+            <td class="negative">₹-301</td>
+            <td>stoploss</td>
+            <td>5m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:32:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹50.8</td>
+            <td>₹38.06</td>
+            <td class="negative">₹-338</td>
+            <td>stoploss</td>
+            <td>2m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:36:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25050</td>
+            <td>₹33.18</td>
+            <td>₹66.3</td>
+            <td class="positive">₹808</td>
+            <td>target_4x</td>
+            <td>3m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:37:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25050</td>
+            <td>₹31.53</td>
+            <td>₹63.0</td>
+            <td class="positive">₹767</td>
+            <td>target_4x</td>
+            <td>2m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:38:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹30.58</td>
+            <td>₹22.91</td>
+            <td class="negative">₹-212</td>
+            <td>stoploss</td>
+            <td>12m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:39:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹39.89</td>
+            <td>₹29.89</td>
+            <td class="negative">₹-270</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:40:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹33.68</td>
+            <td>₹25.24</td>
+            <td class="negative">₹-231</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:42:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹32.63</td>
+            <td>₹24.45</td>
+            <td class="negative">₹-225</td>
+            <td>stoploss</td>
+            <td>7m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 13:43:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25000</td>
+            <td>₹32.98</td>
+            <td>₹24.71</td>
+            <td class="negative">₹-227</td>
+            <td>stoploss</td>
+            <td>6m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:04:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>24950</td>
+            <td>₹20.12</td>
+            <td>₹15.07</td>
+            <td class="negative">₹-146</td>
+            <td>stoploss</td>
+            <td>3m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:05:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>24950</td>
+            <td>₹22.52</td>
+            <td>₹16.87</td>
+            <td class="negative">₹-161</td>
+            <td>stoploss</td>
+            <td>2m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:06:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>24950</td>
+            <td>₹22.02</td>
+            <td>₹16.5</td>
+            <td class="negative">₹-158</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:12:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25100</td>
+            <td>₹22.47</td>
+            <td>₹16.84</td>
+            <td class="negative">₹-161</td>
+            <td>stoploss</td>
+            <td>4m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:38:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25100</td>
+            <td>₹30.13</td>
+            <td>₹40.1</td>
+            <td class="positive">₹229</td>
+            <td>trailing_sl</td>
+            <td>5m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:39:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹20.52</td>
+            <td>₹15.37</td>
+            <td class="negative">₹-149</td>
+            <td>stoploss</td>
+            <td>5m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:40:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹22.62</td>
+            <td>₹16.95</td>
+            <td class="negative">₹-162</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:42:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹26.13</td>
+            <td>₹19.57</td>
+            <td class="negative">₹-184</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:43:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹20.12</td>
+            <td>₹15.07</td>
+            <td class="negative">₹-146</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:45:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹22.67</td>
+            <td>₹16.99</td>
+            <td class="negative">₹-162</td>
+            <td>stoploss</td>
+            <td>2m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:46:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹21.22</td>
+            <td>₹15.9</td>
+            <td class="negative">₹-153</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:48:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹18.22</td>
+            <td>₹36.4</td>
+            <td class="positive">₹435</td>
+            <td>target_4x</td>
+            <td>4m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:49:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹19.27</td>
+            <td>₹38.5</td>
+            <td class="positive">₹461</td>
+            <td>target_4x</td>
+            <td>3m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:50:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25150</td>
+            <td>₹22.52</td>
+            <td>₹45.0</td>
+            <td class="positive">₹542</td>
+            <td>target_4x</td>
+            <td>5m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:51:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25200</td>
+            <td>₹10.91</td>
+            <td>₹10.9</td>
+            <td class="negative">₹-20</td>
+            <td>trailing_sl</td>
+            <td>4m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:52:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25200</td>
+            <td>₹11.31</td>
+            <td>₹9.64</td>
+            <td class="negative">₹-62</td>
+            <td>trailing_sl</td>
+            <td>4m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:54:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25200</td>
+            <td>₹12.91</td>
+            <td>₹9.67</td>
+            <td class="negative">₹-101</td>
+            <td>stoploss</td>
+            <td>2m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-27 14:55:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25200</td>
+            <td>₹11.76</td>
+            <td>₹8.81</td>
+            <td class="negative">₹-94</td>
+            <td>stoploss</td>
+            <td>1m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 13:44:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹179.88</td>
+            <td>₹134.77</td>
+            <td class="negative">₹-1,148</td>
+            <td>stoploss</td>
+            <td>67m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 13:45:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹178.18</td>
+            <td>₹133.5</td>
+            <td class="negative">₹-1,137</td>
+            <td>stoploss</td>
+            <td>66m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 13:47:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹180.88</td>
+            <td>₹135.52</td>
+            <td class="negative">₹-1,154</td>
+            <td>stoploss</td>
+            <td>64m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 13:48:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹187.84</td>
+            <td>₹140.74</td>
+            <td class="negative">₹-1,198</td>
+            <td>stoploss</td>
+            <td>61m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 13:50:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹191.69</td>
+            <td>₹143.62</td>
+            <td class="negative">₹-1,222</td>
+            <td>stoploss</td>
+            <td>59m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 13:51:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25150</td>
+            <td>₹188.59</td>
+            <td>₹141.3</td>
+            <td class="negative">₹-1,202</td>
+            <td>stoploss</td>
+            <td>58m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 13:55:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25250</td>
+            <td>₹212.26</td>
+            <td>₹274.18</td>
+            <td class="positive">₹1,528</td>
+            <td>sideways_exit</td>
+            <td>65m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 13:59:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹191.84</td>
+            <td>₹184.81</td>
+            <td class="negative">₹-196</td>
+            <td>sideways_exit</td>
+            <td>28m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:00:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹192.94</td>
+            <td>₹184.81</td>
+            <td class="negative">₹-223</td>
+            <td>sideways_exit</td>
+            <td>27m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:30:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹198.8</td>
+            <td>₹245.1</td>
+            <td class="positive">₹1,138</td>
+            <td>sideways_exit</td>
+            <td>30m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:45:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹207.91</td>
+            <td>₹245.1</td>
+            <td class="positive">₹910</td>
+            <td>sideways_exit</td>
+            <td>15m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:46:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹209.51</td>
+            <td>₹245.1</td>
+            <td class="positive">₹870</td>
+            <td>sideways_exit</td>
+            <td>14m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:47:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹210.61</td>
+            <td>₹245.1</td>
+            <td class="positive">₹842</td>
+            <td>sideways_exit</td>
+            <td>13m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:48:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25300</td>
+            <td>₹209.61</td>
+            <td>₹245.1</td>
+            <td class="positive">₹867</td>
+            <td>sideways_exit</td>
+            <td>12m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:49:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹190.34</td>
+            <td>₹217.28</td>
+            <td class="positive">₹654</td>
+            <td>sideways_exit</td>
+            <td>11m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:50:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹193.49</td>
+            <td>₹217.28</td>
+            <td class="positive">₹575</td>
+            <td>sideways_exit</td>
+            <td>10m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:51:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹204.7</td>
+            <td>₹217.28</td>
+            <td class="positive">₹294</td>
+            <td>sideways_exit</td>
+            <td>9m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:53:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹205.91</td>
+            <td>₹217.28</td>
+            <td class="positive">₹264</td>
+            <td>sideways_exit</td>
+            <td>7m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:54:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹208.91</td>
+            <td>₹217.28</td>
+            <td class="positive">₹189</td>
+            <td>sideways_exit</td>
+            <td>6m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:55:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹212.96</td>
+            <td>₹217.28</td>
+            <td class="positive">₹88</td>
+            <td>sideways_exit</td>
+            <td>5m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:56:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25350</td>
+            <td>₹213.51</td>
+            <td>₹224.73</td>
+            <td class="positive">₹260</td>
+            <td>sideways_exit</td>
+            <td>26m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 14:57:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25400</td>
+            <td>₹188.69</td>
+            <td>₹198.2</td>
+            <td class="positive">₹218</td>
+            <td>sideways_exit</td>
+            <td>25m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 15:00:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25400</td>
+            <td>₹191.49</td>
+            <td>₹198.2</td>
+            <td class="positive">₹148</td>
+            <td>sideways_exit</td>
+            <td>22m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-28 15:01:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25400</td>
+            <td>₹197.65</td>
+            <td>₹198.2</td>
+            <td class="negative">₹-6</td>
+            <td>sideways_exit</td>
+            <td>21m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:33:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹170.82</td>
+            <td>₹185.81</td>
+            <td class="positive">₹355</td>
+            <td>sideways_exit</td>
+            <td>111m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25400</td>
+            <td>₹195.65</td>
+            <td>₹213.39</td>
+            <td class="positive">₹424</td>
+            <td>sideways_exit</td>
+            <td>110m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:35:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹170.82</td>
+            <td>₹185.81</td>
+            <td class="positive">₹355</td>
+            <td>sideways_exit</td>
+            <td>109m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:36:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹171.22</td>
+            <td>₹185.81</td>
+            <td class="positive">₹345</td>
+            <td>sideways_exit</td>
+            <td>108m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:37:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹168.67</td>
+            <td>₹185.81</td>
+            <td class="positive">₹409</td>
+            <td>sideways_exit</td>
+            <td>107m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:39:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹173.52</td>
+            <td>₹185.81</td>
+            <td class="positive">₹287</td>
+            <td>sideways_exit</td>
+            <td>105m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:40:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹171.02</td>
+            <td>₹185.81</td>
+            <td class="positive">₹350</td>
+            <td>sideways_exit</td>
+            <td>104m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:44:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹186.84</td>
+            <td>₹185.81</td>
+            <td class="negative">₹-46</td>
+            <td>sideways_exit</td>
+            <td>100m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:45:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹186.99</td>
+            <td>₹185.81</td>
+            <td class="negative">₹-49</td>
+            <td>sideways_exit</td>
+            <td>99m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:46:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹183.13</td>
+            <td>₹185.81</td>
+            <td class="positive">₹47</td>
+            <td>sideways_exit</td>
+            <td>98m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:47:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹189.29</td>
+            <td>₹185.81</td>
+            <td class="negative">₹-107</td>
+            <td>sideways_exit</td>
+            <td>97m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:48:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹191.09</td>
+            <td>₹185.81</td>
+            <td class="negative">₹-152</td>
+            <td>sideways_exit</td>
+            <td>96m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:49:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹192.59</td>
+            <td>₹185.81</td>
+            <td class="negative">₹-189</td>
+            <td>sideways_exit</td>
+            <td>95m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 13:51:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25450</td>
+            <td>₹190.54</td>
+            <td>₹185.81</td>
+            <td class="negative">₹-138</td>
+            <td>sideways_exit</td>
+            <td>93m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:06:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹150.2</td>
+            <td>₹142.66</td>
+            <td class="negative">₹-209</td>
+            <td>sideways_exit</td>
+            <td>76m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:07:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹153.25</td>
+            <td>₹142.66</td>
+            <td class="negative">₹-285</td>
+            <td>sideways_exit</td>
+            <td>75m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:08:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹154.65</td>
+            <td>₹142.66</td>
+            <td class="negative">₹-320</td>
+            <td>sideways_exit</td>
+            <td>74m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:09:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹157.56</td>
+            <td>₹142.66</td>
+            <td class="negative">₹-392</td>
+            <td>sideways_exit</td>
+            <td>73m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:30:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25500</td>
+            <td>₹168.02</td>
+            <td>₹161.89</td>
+            <td class="negative">₹-173</td>
+            <td>sideways_exit</td>
+            <td>55m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:31:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25500</td>
+            <td>₹172.22</td>
+            <td>₹161.89</td>
+            <td class="negative">₹-278</td>
+            <td>sideways_exit</td>
+            <td>54m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:32:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25500</td>
+            <td>₹172.17</td>
+            <td>₹161.89</td>
+            <td class="negative">₹-277</td>
+            <td>sideways_exit</td>
+            <td>53m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:33:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25500</td>
+            <td>₹174.72</td>
+            <td>₹161.89</td>
+            <td class="negative">₹-341</td>
+            <td>sideways_exit</td>
+            <td>52m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 14:34:00+05:30</td>
+            <td>BUY_CE</td>
+            <td>25500</td>
+            <td>₹173.57</td>
+            <td>₹161.89</td>
+            <td class="negative">₹-312</td>
+            <td>sideways_exit</td>
+            <td>51m</td>
+        </tr>
+        
+        <tr>
+            <td>2026-01-29 15:02:00+05:30</td>
+            <td>BUY_PE</td>
+            <td>25350</td>
+            <td>₹142.29</td>
+            <td>₹142.66</td>
+            <td class="negative">₹-11</td>
+            <td>sideways_exit</td>
+            <td>20m</td>
+        </tr>
+        
+        </table>
+        
+        <p style="text-align: center; color: #666; margin-top: 40px;">
+            Generated: 2026-01-31 12:19:31 | Strategy Lab
+        </p>
+    </div>
+</body>
+</html>

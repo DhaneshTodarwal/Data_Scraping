@@ -1,0 +1,17 @@
+{
+  "date": "2026-01-19",
+  "timestamp": "2026-01-19 21:13:02",
+  "top_stock_gainers": [],
+  "top_stock_losers": [],
+  "top_option_gainers": [],
+  "top_option_losers": [],
+  "trending_stocks": [],
+  "summary": {
+    "avg_gainer_change": 0,
+    "avg_loser_change": 0,
+    "max_gainer": null,
+    "max_loser": null,
+    "sector_breakdown": {},
+    "volatility_signal": "LOW - Quiet day, may breakout tomorrow"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "NIFTY": {
+    "training_days": 4,
+    "test_days": 4,
+    "selected_config": "25% SL / 1:4 RR (100% target)",
+    "sl_pct": 25,
+    "target_pct": 100,
+    "total_trades": 191,
+    "winners": 65,
+    "win_rate": 34.031413612565444,
+    "total_pnl": 1450.8499999999995,
+    "profit_factor": 1.0215342745768803,
+    "daily_results": [
+      {
+        "date": "2026-01-22",
+        "trades": 63,
+        "winners": 19,
+        "pnl": 2580.9000000000015
+      },
+      {
+        "date": "2026-01-23",
+        "trades": 61,
+        "winners": 21,
+        "pnl": -4021.809999999999
+      },
+      {
+        "date": "2026-01-27",
+        "trades": 26,
+        "winners": 6,
+        "pnl": 118.99000000000017
+      },
+      {
+        "date": "2026-01-29",
+        "trades": 41,
+        "winners": 19,
+        "pnl": 2772.770000000002
+      }
+    ]
+  },
+  "BANKNIFTY": {
+    "training_days": 4,
+    "test_days": 4,
+    "selected_config": "25% SL / 1:4 RR (100% target)",
+    "sl_pct": 25,
+    "target_pct": 100,
+    "total_trades": 163,
+    "winners": 69,
+    "win_rate": 42.331288343558285,
+    "total_pnl": 7416.920000000004,
+    "profit_factor": 1.085908890420911,
+    "daily_results": [
+      {
+        "date": "2026-01-22",
+        "trades": 71,
+        "winners": 32,
+        "pnl": -5270.089999999998
+      },
+      {
+        "date": "2026-01-23",
+        "trades": 62,
+        "winners": 30,
+        "pnl": 13357.710000000001
+      },
+      {
+        "date": "2026-01-27",
+        "trades": 30,
+        "winners": 7,
+        "pnl": -670.7000000000004
+      }
+    ]
+  }
+}

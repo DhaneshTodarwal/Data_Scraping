@@ -1,0 +1,23 @@
+{
+  "index": "BANKNIFTY",
+  "date": "2026-01-09",
+  "spot_price": 51000.0,
+  "atm_strike": 51000,
+  "strikes": [
+    50500,
+    50600,
+    50700,
+    50800,
+    50900,
+    51000,
+    51100,
+    51200,
+    51300,
+    51400,
+    51500
+  ],
+  "expiry": "14-Jan-2026",
+  "ohlcv_collected": 0,
+  "option_chain_saved": true,
+  "saved_at": "2026-01-09 15:35:18"
+}

@@ -1,0 +1,26 @@
+{
+  "NIFTY": {
+    "test_days": 11,
+    "total_trades": 252,
+    "winners": 73,
+    "win_rate": 28.968253968253972,
+    "total_pnl": -587.8000000000001,
+    "profit_factor": 0.7680255732270411
+  },
+  "BANKNIFTY": {
+    "test_days": 9,
+    "total_trades": 442,
+    "winners": 100,
+    "win_rate": 22.624434389140273,
+    "total_pnl": -2200.7999999999993,
+    "profit_factor": 0.6723829939264021
+  },
+  "SENSEX": {
+    "test_days": 7,
+    "total_trades": 383,
+    "winners": 93,
+    "win_rate": 24.281984334203656,
+    "total_pnl": -1189.1999999999996,
+    "profit_factor": 0.8847199670406906
+  }
+}

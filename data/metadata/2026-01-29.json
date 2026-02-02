@@ -1,0 +1,19 @@
+{
+  "date": "2026-01-29",
+  "collection_time": "15:35:13",
+  "nifty": {
+    "ltp": 25418.9,
+    "atm": 25400,
+    "strikes_collected": 80,
+    "candles": 0
+  },
+  "banknifty": {
+    "ltp": 59957.85,
+    "atm": 60000,
+    "strikes_collected": 78,
+    "candles": 0
+  },
+  "total_files": 239,
+  "errors": 0,
+  "status": "success"
+}

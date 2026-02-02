@@ -1,0 +1,22 @@
+{
+  "strategy_name": "Supertrend_RSI",
+  "symbol": "NIFTY",
+  "start_date": "2026-01-28",
+  "end_date": "2026-01-29",
+  "initial_capital": 100000,
+  "final_capital": 107818.57875,
+  "total_trades": 32,
+  "winning_trades": 16,
+  "losing_trades": 16,
+  "win_rate": 50.0,
+  "total_pnl": 7818.57875000002,
+  "avg_pnl_per_trade": 244.33058593750062,
+  "max_win": 2472.750000000001,
+  "max_loss": -1799.5599999999986,
+  "profit_factor": 1.4841953024208454,
+  "expectancy": 244.3305859375007,
+  "max_drawdown": 3741.7212500000023,
+  "max_drawdown_pct": 3.426823185486389,
+  "sharpe_ratio": 2.659600441451164,
+  "sortino_ratio": 8.092369841565334
+}

@@ -1,0 +1,34 @@
+{
+  "strategy_name": "Gamma_EMA_Confluence",
+  "symbol": "SENSEX",
+  "days_tested": 2,
+  "dates": [
+    "2026-01-27",
+    "2026-01-29"
+  ],
+  "initial_capital": 100000,
+  "total_trades": 77,
+  "winning_trades": 31,
+  "losing_trades": 46,
+  "win_rate": 40.25974025974026,
+  "total_pnl": 22617.92985450001,
+  "final_capital": 122617.9298545,
+  "return_pct": 22.61792985450001,
+  "avg_pnl_per_trade": 293.7393487597404,
+  "max_win": 2994.9,
+  "max_loss": -1143.35,
+  "profit_factor": 2.0673495419472316,
+  "avg_duration": 29.48051948051948,
+  "trades_hit_breakeven": 0,
+  "trades_with_trailing": 5,
+  "exit_breakdown": {
+    "stoploss": 40,
+    "trailing_sl": 5,
+    "time_exit": 32
+  },
+  "daily_pnl": [
+    22111.095261375,
+    506.8345931250079
+  ],
+  "profitable_days": 2
+}

@@ -1,0 +1,15 @@
+{
+  "strategy_name": "ATM Straddle Sell",
+  "symbol": "NIFTY",
+  "start_date": "2024-August-29",
+  "end_date": "2024-September-19",
+  "total_days": 13,
+  "total_trades": 13,
+  "winning_trades": 8,
+  "losing_trades": 5,
+  "win_rate": 61.53846153846154,
+  "total_pnl": 7793.75,
+  "profit_factor": 2.119389587073609,
+  "max_drawdown": 2067.5,
+  "sharpe_ratio": 5.934988444051533
+}

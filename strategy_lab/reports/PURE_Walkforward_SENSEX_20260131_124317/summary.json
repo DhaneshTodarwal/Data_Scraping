@@ -1,0 +1,27 @@
+{
+  "test_type": "WALK_FORWARD_OUT_OF_SAMPLE",
+  "symbol": "SENSEX",
+  "training_days": 1,
+  "test_days": 1,
+  "selected_config": {
+    "stop_loss_pct": 40,
+    "target_pct": 80
+  },
+  "results": {
+    "total_trades": 43,
+    "winners": 10,
+    "losers": 33,
+    "win_rate": 23.25581395348837,
+    "total_pnl": -4773.5599999999995,
+    "avg_pnl": -111.01302325581395,
+    "profit_factor": 0.7120222198895522
+  },
+  "daily_results": [
+    {
+      "date": "2026-01-29",
+      "trades": 43,
+      "winners": 10,
+      "pnl": -4773.56
+    }
+  ]
+}

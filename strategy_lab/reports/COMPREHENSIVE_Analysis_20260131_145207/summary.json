@@ -1,0 +1,97 @@
+{
+  "NIFTY": {
+    "symbol": "NIFTY",
+    "test_days": 4,
+    "total_trades": 191,
+    "winners": 65,
+    "losers": 126,
+    "win_rate": 34.031413612565444,
+    "total_pnl": 1450.8499999999995,
+    "avg_pnl": 7.5960732984293164,
+    "avg_win": 1058.8436923076922,
+    "avg_loss": 534.7142063492064,
+    "profit_factor": 1.0215342745768803,
+    "expectancy": 7.596073298429246,
+    "max_win": 4050.92,
+    "max_loss": -1221.67,
+    "max_win_streak": 8,
+    "max_lose_streak": 16,
+    "max_drawdown": 28160.32,
+    "sharpe_ratio": 0.12687418423461577,
+    "daily_results": [
+      {
+        "date": "2026-01-22",
+        "day_of_week": "Thursday",
+        "trades": 63,
+        "winners": 19,
+        "pnl": 2580.9000000000015
+      },
+      {
+        "date": "2026-01-23",
+        "day_of_week": "Friday",
+        "trades": 61,
+        "winners": 21,
+        "pnl": -4021.809999999999
+      },
+      {
+        "date": "2026-01-27",
+        "day_of_week": "Tuesday",
+        "trades": 26,
+        "winners": 6,
+        "pnl": 118.99000000000017
+      },
+      {
+        "date": "2026-01-29",
+        "day_of_week": "Thursday",
+        "trades": 41,
+        "winners": 19,
+        "pnl": 2772.770000000002
+      }
+    ],
+    "profitable_days": 3
+  },
+  "BANKNIFTY": {
+    "symbol": "BANKNIFTY",
+    "test_days": 4,
+    "total_trades": 163,
+    "winners": 69,
+    "losers": 94,
+    "win_rate": 42.331288343558285,
+    "total_pnl": 7416.920000000004,
+    "avg_pnl": 45.50257668711659,
+    "avg_win": 1358.7194202898554,
+    "avg_loss": 918.4544680851062,
+    "profit_factor": 1.085908890420911,
+    "expectancy": 45.50257668711674,
+    "max_win": 4545.54,
+    "max_loss": -1664.37,
+    "max_win_streak": 9,
+    "max_lose_streak": 17,
+    "max_drawdown": 23156.69,
+    "sharpe_ratio": 0.5292998814894231,
+    "daily_results": [
+      {
+        "date": "2026-01-22",
+        "day_of_week": "Thursday",
+        "trades": 71,
+        "winners": 32,
+        "pnl": -5270.089999999998
+      },
+      {
+        "date": "2026-01-23",
+        "day_of_week": "Friday",
+        "trades": 62,
+        "winners": 30,
+        "pnl": 13357.710000000001
+      },
+      {
+        "date": "2026-01-27",
+        "day_of_week": "Tuesday",
+        "trades": 30,
+        "winners": 7,
+        "pnl": -670.7000000000004
+      }
+    ],
+    "profitable_days": 1
+  }
+}

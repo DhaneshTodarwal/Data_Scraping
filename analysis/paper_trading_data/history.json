@@ -1,0 +1,55 @@
+[
+  {
+    "trade_id": "PT_20260120_102613_1",
+    "symbol": "NIFTY",
+    "strategy": "Iron Condor",
+    "entry_time": "2026-01-20 10:26:13",
+    "exit_time": "2026-01-20 15:25:08",
+    "legs": [
+      {
+        "strike": 25600,
+        "type": "CE",
+        "action": "SELL",
+        "entry_price": 310.0,
+        "current_price": 203.65,
+        "exit_price": 203.65
+      },
+      {
+        "strike": 25700,
+        "type": "CE",
+        "action": "BUY",
+        "entry_price": 264.5,
+        "current_price": 168.05,
+        "exit_price": 168.05
+      },
+      {
+        "strike": 25400,
+        "type": "PE",
+        "action": "SELL",
+        "entry_price": 262.0,
+        "current_price": 382.4,
+        "exit_price": 382.4
+      },
+      {
+        "strike": 25300,
+        "type": "PE",
+        "action": "BUY",
+        "entry_price": 276.8,
+        "current_price": 389.35,
+        "exit_price": 389.35
+      }
+    ],
+    "lot_size": 75,
+    "entry_premium": 30.69999999999999,
+    "exit_premium": 0.0,
+    "margin_used": 6907.499999999997,
+    "pnl_points": 2.05000000000004,
+    "pnl_amount": 153.75000000000298,
+    "pnl_percent": 6.6775244299675585,
+    "status": "CLOSED",
+    "result": "PROFIT",
+    "confidence": 70,
+    "win_probability": 65,
+    "exit_reason": "EOD Auto-Close"
+  }
+]

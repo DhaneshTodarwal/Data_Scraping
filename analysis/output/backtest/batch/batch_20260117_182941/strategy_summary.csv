@@ -1,0 +1,3 @@
+strategy,total_days,total_trades,winners,total_pnl,win_rate,profit_factor
+Short Straddle,4,4,3,7914.75,50.0,inf
+Short Strangle,2,2,2,3172.5,100.0,inf

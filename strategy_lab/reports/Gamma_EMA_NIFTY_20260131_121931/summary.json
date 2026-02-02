@@ -1,0 +1,48 @@
+{
+  "strategy_name": "Gamma_EMA_Confluence",
+  "symbol": "NIFTY",
+  "days_tested": 8,
+  "dates": [
+    "2026-01-16",
+    "2026-01-19",
+    "2026-01-20",
+    "2026-01-21",
+    "2026-01-22",
+    "2026-01-23",
+    "2026-01-27",
+    "2026-01-29"
+  ],
+  "initial_capital": 100000,
+  "total_trades": 258,
+  "winning_trades": 103,
+  "losing_trades": 155,
+  "win_rate": 39.922480620155035,
+  "total_pnl": 20019.556100000067,
+  "final_capital": 120019.55610000007,
+  "return_pct": 20.019556100000067,
+  "avg_pnl_per_trade": 77.5951786821708,
+  "max_win": 2515.3,
+  "max_loss": -1221.67,
+  "profit_factor": 1.3362964610451578,
+  "avg_duration": 43.77131782945737,
+  "trades_hit_breakeven": 6,
+  "trades_with_trailing": 15,
+  "exit_breakdown": {
+    "time_exit": 101,
+    "stoploss": 94,
+    "trailing_sl": 10,
+    "sideways_exit": 48,
+    "target_4x": 5
+  },
+  "daily_pnl": [
+    -1024.3594049999992,
+    -2081.043513437498,
+    -2546.4619034374987,
+    21618.979807500014,
+    4114.535438750018,
+    -292.5688478124888,
+    -421.00849000000017,
+    651.4830134375204
+  ],
+  "profitable_days": 3
+}

@@ -1,0 +1,620 @@
+{
+  "date": "2026-01-21",
+  "for_date": "Tomorrow",
+  "generated_at": "2026-01-21 17:02:55",
+  "sector_trends": {
+    "FMCG": "NEUTRAL",
+    "PHARMA": "BEARISH",
+    "BANKING": "NEUTRAL",
+    "AUTO": "BULLISH",
+    "ENERGY": "BULLISH",
+    "INFRA": "NEUTRAL",
+    "IT": "NEUTRAL",
+    "INDEX": "NEUTRAL",
+    "NBFC": "BULLISH",
+    "METALS": "BULLISH",
+    "TELECOM": "BULLISH"
+  },
+  "top_bullish": [
+    {
+      "symbol": "RELIANCE",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.26%",
+        "Strong momentum (close near day high)",
+        "Last hour buying pressure",
+        "Sector trending bullish"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.9%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (933.28)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "MEDIUM",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "HINDALCO",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.22%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (934.98)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "POWERGRID",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +2.22%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (256.07)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "MEDIUM",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "ONGC",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.39%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (242.13)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy ATM Call (aggressive)"
+    }
+  ],
+  "top_bearish": [
+    {
+      "symbol": "HDFCBANK",
+      "direction": "BEARISH",
+      "confidence": 45,
+      "probability": "45%",
+      "reasons": [
+        "Trading below VWAP (926.53)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "ITC",
+      "direction": "BEARISH",
+      "confidence": 45,
+      "probability": "45%",
+      "reasons": [
+        "Trading below VWAP (326.44)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "BANKNIFTY",
+      "direction": "BEARISH",
+      "confidence": 45,
+      "probability": "45%",
+      "reasons": [
+        "Trading below VWAP (58977.15)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "MARUTI",
+      "direction": "BEARISH",
+      "confidence": 40,
+      "probability": "40%",
+      "reasons": [
+        "Weak momentum (close near day low)",
+        "Sector trending bullish",
+        "Trading below VWAP (15797.04)"
+      ],
+      "target_pct": 1.2,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "COALINDIA",
+      "direction": "BEARISH",
+      "confidence": 40,
+      "probability": "40%",
+      "reasons": [
+        "Weak momentum (close near day low)",
+        "Sector trending bullish",
+        "Trading below VWAP (415.89)"
+      ],
+      "target_pct": 1.2,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    }
+  ],
+  "all_predictions": [
+    {
+      "symbol": "RELIANCE",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.26%",
+        "Strong momentum (close near day high)",
+        "Last hour buying pressure",
+        "Sector trending bullish"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.9%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (933.28)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "MEDIUM",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "HINDALCO",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.22%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (934.98)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "POWERGRID",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +2.22%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (256.07)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "MEDIUM",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "ONGC",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.39%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (242.13)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "direction": "BULLISH",
+      "confidence": 85,
+      "probability": "85%",
+      "reasons": [
+        "Today's gain: +1.38%",
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (1989.16)"
+      ],
+      "target_pct": 1.7,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "direction": "BULLISH",
+      "confidence": 80,
+      "probability": "80%",
+      "reasons": [
+        "Today's gain: +1.38%",
+        "Strong momentum (close near day high)",
+        "Trading above VWAP (12138.57)"
+      ],
+      "target_pct": 1.6,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy ATM Call (aggressive)"
+    },
+    {
+      "symbol": "NTPC",
+      "direction": "BULLISH",
+      "confidence": 70,
+      "probability": "70%",
+      "reasons": [
+        "Strong momentum (close near day high)",
+        "Sector trending bullish",
+        "Trading above VWAP (338.97)"
+      ],
+      "target_pct": 1.4,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "INFY",
+      "direction": "BULLISH",
+      "confidence": 65,
+      "probability": "65%",
+      "reasons": [
+        "Strong momentum (close near day high)",
+        "Trading above VWAP (1645.37)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "ADANIENT",
+      "direction": "BULLISH",
+      "confidence": 65,
+      "probability": "65%",
+      "reasons": [
+        "Strong momentum (close near day high)",
+        "Trading above VWAP (2041.94)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "TCS",
+      "direction": "BULLISH",
+      "confidence": 65,
+      "probability": "65%",
+      "reasons": [
+        "Strong momentum (close near day high)",
+        "Trading above VWAP (3108.17)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "direction": "BULLISH",
+      "confidence": 63,
+      "probability": "63%",
+      "reasons": [
+        "Last hour buying pressure",
+        "Trading above VWAP (421.71)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "AXISBANK",
+      "direction": "BULLISH",
+      "confidence": 63,
+      "probability": "63%",
+      "reasons": [
+        "Last hour buying pressure",
+        "Trading above VWAP (1282.67)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "LT",
+      "direction": "BULLISH",
+      "confidence": 63,
+      "probability": "63%",
+      "reasons": [
+        "Last hour buying pressure",
+        "Trading above VWAP (3759.68)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "TATASTEEL",
+      "direction": "BULLISH",
+      "confidence": 60,
+      "probability": "60%",
+      "reasons": [
+        "Sector trending bullish",
+        "Trading above VWAP (183.29)"
+      ],
+      "target_pct": 1.2,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "M&M",
+      "direction": "BULLISH",
+      "confidence": 60,
+      "probability": "60%",
+      "reasons": [
+        "Sector trending bullish",
+        "Trading above VWAP (3553.09)"
+      ],
+      "target_pct": 1.2,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "TITAN",
+      "direction": "BULLISH",
+      "confidence": 55,
+      "probability": "55%",
+      "reasons": [
+        "Trading above VWAP (4080.72)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "direction": "BULLISH",
+      "confidence": 55,
+      "probability": "55%",
+      "reasons": [
+        "Trading above VWAP (2666.22)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "NIFTY",
+      "direction": "BULLISH",
+      "confidence": 55,
+      "probability": "55%",
+      "reasons": [
+        "Strong momentum (close near day high)",
+        "Trading below VWAP (25216.7)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "HCLTECH",
+      "direction": "BULLISH",
+      "confidence": 55,
+      "probability": "55%",
+      "reasons": [
+        "Trading above VWAP (1676.87)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Call (conservative)"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "direction": "BEARISH",
+      "confidence": 45,
+      "probability": "45%",
+      "reasons": [
+        "Trading below VWAP (926.53)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "ITC",
+      "direction": "BEARISH",
+      "confidence": 45,
+      "probability": "45%",
+      "reasons": [
+        "Trading below VWAP (326.44)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "BANKNIFTY",
+      "direction": "BEARISH",
+      "confidence": 45,
+      "probability": "45%",
+      "reasons": [
+        "Trading below VWAP (58977.15)"
+      ],
+      "target_pct": 1.1,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "MARUTI",
+      "direction": "BEARISH",
+      "confidence": 40,
+      "probability": "40%",
+      "reasons": [
+        "Weak momentum (close near day low)",
+        "Sector trending bullish",
+        "Trading below VWAP (15797.04)"
+      ],
+      "target_pct": 1.2,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "COALINDIA",
+      "direction": "BEARISH",
+      "confidence": 40,
+      "probability": "40%",
+      "reasons": [
+        "Weak momentum (close near day low)",
+        "Sector trending bullish",
+        "Trading below VWAP (415.89)"
+      ],
+      "target_pct": 1.2,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "WIPRO",
+      "direction": "BEARISH",
+      "confidence": 35,
+      "probability": "35%",
+      "reasons": [
+        "Weak momentum (close near day low)",
+        "Trading below VWAP (239.73)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "direction": "BEARISH",
+      "confidence": 35,
+      "probability": "35%",
+      "reasons": [
+        "Weak momentum (close near day low)",
+        "Trading below VWAP (2387.56)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "SBIN",
+      "direction": "BEARISH",
+      "confidence": 35,
+      "probability": "35%",
+      "reasons": [
+        "Weak momentum (close near day low)",
+        "Trading below VWAP (1030.97)"
+      ],
+      "target_pct": 1.3,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "CIPLA",
+      "direction": "BEARISH",
+      "confidence": 30,
+      "probability": "30%",
+      "reasons": [
+        "Weak momentum (close near day low)",
+        "Sector trending bearish",
+        "Trading below VWAP (1376.28)"
+      ],
+      "target_pct": 1.4,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "direction": "BEARISH",
+      "confidence": 30,
+      "probability": "30%",
+      "reasons": [
+        "Today's loss: -1.1%",
+        "Trading below VWAP (1353.52)"
+      ],
+      "target_pct": 1.4,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "direction": "BEARISH",
+      "confidence": 20,
+      "probability": "20%",
+      "reasons": [
+        "Today's loss: -1.45%",
+        "Weak momentum (close near day low)",
+        "Sector trending bearish",
+        "Trading below VWAP (1623.32)"
+      ],
+      "target_pct": 1.6,
+      "stop_loss_pct": 0.8,
+      "risk_level": "LOW",
+      "strategy": "Buy slight OTM Put (conservative)"
+    }
+  ]
+}

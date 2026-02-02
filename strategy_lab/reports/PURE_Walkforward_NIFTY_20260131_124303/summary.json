@@ -1,0 +1,45 @@
+{
+  "test_type": "WALK_FORWARD_OUT_OF_SAMPLE",
+  "symbol": "NIFTY",
+  "training_days": 4,
+  "test_days": 4,
+  "selected_config": {
+    "stop_loss_pct": 25,
+    "target_pct": 100
+  },
+  "results": {
+    "total_trades": 191,
+    "winners": 65,
+    "losers": 126,
+    "win_rate": 34.031413612565444,
+    "total_pnl": 1450.8499999999995,
+    "avg_pnl": 7.5960732984293164,
+    "profit_factor": 1.0215342745768803
+  },
+  "daily_results": [
+    {
+      "date": "2026-01-22",
+      "trades": 63,
+      "winners": 19,
+      "pnl": 2580.9000000000015
+    },
+    {
+      "date": "2026-01-23",
+      "trades": 61,
+      "winners": 21,
+      "pnl": -4021.809999999999
+    },
+    {
+      "date": "2026-01-27",
+      "trades": 26,
+      "winners": 6,
+      "pnl": 118.99000000000017
+    },
+    {
+      "date": "2026-01-29",
+      "trades": 41,
+      "winners": 19,
+      "pnl": 2772.770000000002
+    }
+  ]
+}

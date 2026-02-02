@@ -1,0 +1,39 @@
+{
+  "test_type": "WALK_FORWARD_OUT_OF_SAMPLE",
+  "symbol": "BANKNIFTY",
+  "training_days": 4,
+  "test_days": 4,
+  "selected_config": {
+    "stop_loss_pct": 25,
+    "target_pct": 100
+  },
+  "results": {
+    "total_trades": 163,
+    "winners": 69,
+    "losers": 94,
+    "win_rate": 42.331288343558285,
+    "total_pnl": 7416.920000000004,
+    "avg_pnl": 45.50257668711659,
+    "profit_factor": 1.085908890420911
+  },
+  "daily_results": [
+    {
+      "date": "2026-01-22",
+      "trades": 71,
+      "winners": 32,
+      "pnl": -5270.089999999998
+    },
+    {
+      "date": "2026-01-23",
+      "trades": 62,
+      "winners": 30,
+      "pnl": 13357.710000000001
+    },
+    {
+      "date": "2026-01-27",
+      "trades": 30,
+      "winners": 7,
+      "pnl": -670.7000000000004
+    }
+  ]
+}
