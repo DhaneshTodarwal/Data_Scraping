@@ -47,7 +47,7 @@ if [ $? -eq 0 ]; then
     
     # Push to remote (if configured)
     if git remote | grep -q origin; then
-        git push origin master 2>&1
+        git push origin main 2>&1
         if [ $? -eq 0 ]; then
             log "✅ Pushed to GitHub successfully!"
             

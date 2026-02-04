@@ -22,15 +22,18 @@ log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" >> "$LOG_FILE"
 }
 
-# Check network connectivity
+# Check network connectivity (using wget instead of ping - ping is often blocked)
 check_network() {
-    # Quick check: can we ping Google DNS?
-    if ping -c 1 -W 2 8.8.8.8 > /dev/null 2>&1; then
-        # Check AngelOne API DNS resolution
-        if host apiconnect.angelone.in > /dev/null 2>&1; then
-            return 0  # Network OK
-        fi
+    # Try wget to Google (more reliable than ping which can be blocked)
+    if wget -q --spider --timeout=5 http://www.google.com 2>/dev/null; then
+        return 0  # Network OK
     fi
+    
+    # Retry once with different host
+    if wget -q --spider --timeout=5 http://www.bing.com 2>/dev/null; then
+        return 0  # Network OK
+    fi
+    
     return 1  # Network DOWN
 }
 
