@@ -203,10 +203,15 @@ class NSEOptionChainScraper:
                 if 'ce' in strike_data and 'pe' in strike_data:
                     strikes.append(strike_data)
             
+            # Get true timestamp from NSE API if available
+            api_timestamp = records.get('timestamp')
+            if not api_timestamp:
+                api_timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
             return {
                 'symbol': symbol,
                 'spot_price': underlying_value,
-                'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                'timestamp': api_timestamp,
                 'strikes': strikes
             }
             
@@ -222,10 +227,21 @@ class NSEOptionChainScraper:
     def save_option_chain(self, data: Dict):
         """Save parsed option chain data to JSON file."""
         symbol = data['symbol']
-        today = datetime.now()
         
-        # Create directory structure
-        save_dir = BASE_DIR / 'data' / 'option_analytics' / symbol / today.strftime('%Y') / today.strftime('%m_%B') / today.strftime('%d')
+        # Determine correct date from the API's timestamp ("dd-MMM-yyyy HH:MM:SS" e.g., "20-Feb-2026 15:30:00")
+        try:
+            ts_str = data.get('timestamp', '')
+            if len(ts_str) >= 11 and ts_str[2] == '-' and ts_str[6] == '-':
+                # Format: 20-Feb-2026
+                record_date = datetime.strptime(ts_str[:11], '%d-%b-%Y')
+            else:
+                record_date = datetime.now()
+        except Exception as e:
+            logger.warning(f"Could not parse timestamp '{ts_str}', defaulting to today: {e}")
+            record_date = datetime.now()
+        
+        # Create directory structure based on the actual data date
+        save_dir = BASE_DIR / 'data' / 'option_analytics' / symbol / record_date.strftime('%Y') / record_date.strftime('%m_%B') / record_date.strftime('%d')
         save_dir.mkdir(parents=True, exist_ok=True)
         
         # Save IV/OI snapshot
