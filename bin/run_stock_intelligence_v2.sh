@@ -27,7 +27,7 @@ log "=============================================="
 log "🚀 STOCK INTELLIGENCE COLLECTOR"
 log "=============================================="
 
-cd "$SCRIPT_DIR"
+cd "$SCRIPT_DIR/../analysis"
 
 # Run the unified collector
 python3 stock_intelligence_collector.py 2>&1 | tee -a "$LOG_FILE"

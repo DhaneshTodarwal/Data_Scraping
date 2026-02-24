@@ -41,7 +41,7 @@ log "=============================================="
 
 # Step 1: Collect Stock Options Data
 log "📊 Step 1: Collecting stock options data..."
-cd "$SCRIPT_DIR"
+cd "$SCRIPT_DIR/.."
 python scripts/stock_options_scraper.py 2>&1 | tee -a "$LOG_FILE"
 log "✅ Stock options data collected"
 

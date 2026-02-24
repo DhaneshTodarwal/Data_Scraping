@@ -32,17 +32,29 @@ from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
 # Import metadata generator
-from metadata_generator import MetadataGenerator
+try:
+    from metadata_generator import MetadataGenerator
+except ImportError:
+    from scripts.metadata_generator import MetadataGenerator
 
 # Import notification system
 try:
-    from notifications import (
-        send_desktop_notification,
-        send_telegram_message,
-        notify_collection_started,
-        notify_collection_success,
-        notify_collection_failed
-    )
+    try:
+        from notifications import (
+            send_desktop_notification,
+            send_telegram_message,
+            notify_collection_started,
+            notify_collection_success,
+            notify_collection_failed
+        )
+    except ImportError:
+        from scripts.notifications import (
+            send_desktop_notification,
+            send_telegram_message,
+            notify_collection_started,
+            notify_collection_success,
+            notify_collection_failed
+        )
     NOTIFICATIONS_AVAILABLE = True
 except ImportError:
     NOTIFICATIONS_AVAILABLE = False
