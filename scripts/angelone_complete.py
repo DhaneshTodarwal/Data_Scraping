@@ -105,6 +105,20 @@ STEP_NIFTY = 50
 STEP_BANKNIFTY = 100
 STEP_SENSEX = 100  # SENSEX uses 100 step like BANKNIFTY
 
+# Top 50 F&O Liquid Stocks for ML Predictions
+TOP_50_STOCKS = [
+    'RELIANCE', 'HDFCBANK', 'ICICIBANK', 'INFY', 'TCS', 
+    'ITC', 'LT', 'SBIN', 'BHARTIARTL', 'BAJFINANCE',
+    'AXISBANK', 'KOTAKBANK', 'ASIANPAINT', 'M&M', 'MARUTI',
+    'SUNPHARMA', 'TITAN', 'HUL', 'TATASTEEL', 'ULTRACEMCO',
+    'TATAMOTORS', 'NTPC', 'POWERGRID', 'HCLTECH', 'BAJAJFINSV',
+    'WIPRO', 'NESTLEIND', 'ONGC', 'TECHM', 'INDUSINDBK',
+    'JSWSTEEL', 'HDFCLIFE', 'GRASIM', 'COALINDIA', 'DRREDDY',
+    'TATACONSUM', 'ADANIPORTS', 'CIPLA', 'APOLLOHOSP', 'EICHERMOT',
+    'DIVISLAB', 'SBILIFE', 'BRITANNIA', 'BAJAJ-AUTO', 'HEROMOTOCO',
+    'LTIM', 'BPCL', 'ADANIENT', 'HINDALCO', 'SHREECEM'
+]
+
 # Ensure directories exist
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 CACHE_DIR.mkdir(parents=True, exist_ok=True)
@@ -298,7 +312,12 @@ class AngelOneComplete:
         
         now = datetime.now()
         from_date = (now - timedelta(days=days)).replace(hour=9, minute=15, second=0).strftime('%Y-%m-%d %H:%M')
-        to_date = now.strftime('%Y-%m-%d %H:%M')
+        
+        # Angel One API crashes (AB1012) if todate is strictly > 15:30 during post-market
+        if now.hour > 15 or (now.hour == 15 and now.minute > 30):
+            to_date = now.replace(hour=15, minute=30, second=0).strftime('%Y-%m-%d %H:%M')
+        else:
+            to_date = now.strftime('%Y-%m-%d %H:%M')
         
         params = {
             'exchange': exchange,
@@ -393,6 +412,61 @@ class AngelOneComplete:
             
             logger.info(f"  ✅ {symbol}: Saved data for {count}/{len(options)} options")
 
+    def collect_top_stocks_eod_data(self):
+        """Collect and save 1-min data for Top 50 F&O stocks for the current day."""
+        logger.info("\n=== Collecting Top 50 Stocks Data ===")
+        
+        today_date = datetime.now().strftime('%Y-%m-%d')
+        stocks_dir = BASE_DIR / "stock_intelligence" / "1min_data" / today_date / "stocks"
+        stocks_dir.mkdir(parents=True, exist_ok=True)
+        
+        success_count = 0
+        total_stocks = len(TOP_50_STOCKS)
+        
+        for idx, symbol in enumerate(TOP_50_STOCKS, 1):
+            try:
+                # Find token for stock (NSE EQ)
+                token = None
+                for t in self.instruments:
+                    # Angel uses '-EQ' suffix for NSE cash market
+                    if t['symbol'] == f"{symbol}-EQ" and t['exch_seg'] == 'NSE':
+                        token = t['token']
+                        break
+                
+                if not token:
+                    logger.warning(f"  ⚠️ {symbol} [{idx}/{total_stocks}]: Could not find NSE token")
+                    continue
+                
+                # Fetch 1-min historical data for today
+                candles = self.get_historical_candles('NSE', token, days=1)
+                
+                if candles:
+                    filepath = stocks_dir / f"{symbol}.csv.gz"
+                    
+                    # Custom save for gzip CSV
+                    import gzip
+                    import csv
+                    
+                    with gzip.open(filepath, 'wt', newline='') as f:
+                        writer = csv.writer(f)
+                        writer.writerow(['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+                        for c in candles:
+                            writer.writerow([c[0], c[1], c[2], c[3], c[4], c[5]])
+                            
+                    logger.info(f"  ✅ {symbol} [{idx}/{total_stocks}]: Saved {len(candles)} candles")
+                    success_count += 1
+                else:
+                    logger.warning(f"  ⚠️ {symbol} [{idx}/{total_stocks}]: No data returned")
+                    
+                # Rate limit (3 req/sec)
+                time.sleep(0.5)
+                
+            except Exception as e:
+                logger.error(f"  ❌ Error processing {symbol}: {str(e)}")
+                
+        logger.info(f"=== Completed Top Stocks Collection: {success_count}/{total_stocks} ===")
+        return success_count
+
     def run(self):
         """Main execution flow with metadata generation."""
         logger.info("="*60)
@@ -417,8 +491,9 @@ class AngelOneComplete:
         metadata = {
             "date": start_time.strftime('%Y-%m-%d'),
             "collection_time": start_time.strftime('%H:%M:%S'),
-            "nifty": {},
-            "banknifty": {},
+            "nifty": {"ltp": 0.0, "atm": 0, "strikes_collected": 0, "candles": 0},
+            "banknifty": {"ltp": 0.0, "atm": 0, "strikes_collected": 0, "candles": 0},
+            "top_stocks_collected": 0,
             "total_files": 0,
             "errors": 0,
             "status": "failed"
@@ -462,7 +537,11 @@ class AngelOneComplete:
         if banknifty_ltp:
             metadata['banknifty']['strikes_collected'] = banknifty_count
         
-        metadata['total_files'] = nifty_count + banknifty_count + sensex_count + 3  # +3 for index files
+        # Collect top 50 stock data
+        top_stocks_count = self.collect_top_stocks_eod_data()
+        metadata['top_stocks_collected'] = top_stocks_count
+        
+        metadata['total_files'] = nifty_count + banknifty_count + sensex_count + 3 + top_stocks_count # +3 for index files
         metadata['status'] = 'success'
         
         # Save metadata
@@ -477,7 +556,7 @@ class AngelOneComplete:
         if NOTIFICATIONS_AVAILABLE:
             send_desktop_notification(
                 "✅ Data Collection Complete!",
-                f"NIFTY: {nifty_count} | BANKNIFTY: {banknifty_count} | SENSEX: {sensex_count}",
+                f"NIFTY: {nifty_count} | BANK: {banknifty_count} | SENSEX: {sensex_count} | STOCKS: {top_stocks_count}",
                 "normal"
             )
             telegram_msg = (
@@ -492,8 +571,9 @@ class AngelOneComplete:
                 f"• LTP: ₹{metadata['banknifty'].get('ltp', 'N/A')}\n"
                 f"• ATM: {metadata['banknifty'].get('atm', 'N/A')}\n"
                 f"• Strikes: {banknifty_count}\n\n"
-                f"📊 <b>SENSEX</b>\n"
-                f"• Strikes: {sensex_count}\n\n"
+                f"📊 <b>SENSEX & STOCKS</b>\n"
+                f"• Sensex Strikes: {sensex_count}\n"
+                f"• Top Stocks (EOD): {top_stocks_count}/50\n\n"
                 f"💾 Total Files: {metadata['total_files']}"
             )
             send_telegram_message(telegram_msg)
