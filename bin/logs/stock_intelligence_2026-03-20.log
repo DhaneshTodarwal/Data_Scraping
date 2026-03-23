@@ -1,0 +1,81 @@
+[2026-03-20 15:25:01] ==============================================
+[2026-03-20 15:25:01] 🚀 STOCK INTELLIGENCE COLLECTOR
+[2026-03-20 15:25:01] ==============================================
+2026-03-20 15:25:02,228 - INFO - ============================================================
+2026-03-20 15:25:02,228 - INFO - 🚀 STOCK INTELLIGENCE COLLECTOR
+2026-03-20 15:25:02,228 - INFO - 📅 Date: 2026-03-20
+2026-03-20 15:25:02,228 - INFO - ============================================================
+2026-03-20 15:25:02,228 - INFO - ============================================================
+2026-03-20 15:25:02,228 - INFO - STEP 1: Collecting Option Chains
+2026-03-20 15:25:02,228 - INFO - ============================================================
+2026-03-20 15:25:02,228 - INFO - [1/10] Fetching RELIANCE...
+2026-03-20 15:25:02,228 - INFO - Initializing NSE session...
+2026-03-20 15:25:02,466 - WARNING -   ❌ RELIANCE: Failed
+2026-03-20 15:25:04,466 - INFO - [2/10] Fetching HDFCBANK...
+2026-03-20 15:25:04,466 - INFO - Initializing NSE session...
+2026-03-20 15:25:04,689 - WARNING -   ❌ HDFCBANK: Failed
+2026-03-20 15:25:06,690 - INFO - [3/10] Fetching ICICIBANK...
+2026-03-20 15:25:06,690 - INFO - Initializing NSE session...
+2026-03-20 15:25:07,125 - WARNING -   ❌ ICICIBANK: Failed
+2026-03-20 15:25:09,125 - INFO - [4/10] Fetching INFY...
+2026-03-20 15:25:09,125 - INFO - Initializing NSE session...
+2026-03-20 15:25:09,376 - WARNING -   ❌ INFY: Failed
+2026-03-20 15:25:11,377 - INFO - [5/10] Fetching TCS...
+2026-03-20 15:25:11,377 - INFO - Initializing NSE session...
+2026-03-20 15:25:11,773 - WARNING -   ❌ TCS: Failed
+2026-03-20 15:25:13,773 - INFO - [6/10] Fetching SBIN...
+2026-03-20 15:25:13,774 - INFO - Initializing NSE session...
+2026-03-20 15:25:14,283 - WARNING -   ❌ SBIN: Failed
+2026-03-20 15:25:16,284 - INFO - [7/10] Fetching AXISBANK...
+2026-03-20 15:25:16,284 - INFO - Initializing NSE session...
+2026-03-20 15:25:17,168 - WARNING -   ❌ AXISBANK: Failed
+2026-03-20 15:25:19,168 - INFO - [8/10] Fetching KOTAKBANK...
+2026-03-20 15:25:19,168 - INFO - Initializing NSE session...
+2026-03-20 15:25:19,827 - WARNING -   ❌ KOTAKBANK: Failed
+2026-03-20 15:25:21,828 - INFO - [9/10] Fetching BAJFINANCE...
+2026-03-20 15:25:21,828 - INFO - Initializing NSE session...
+2026-03-20 15:25:22,900 - WARNING -   ❌ BAJFINANCE: Failed
+2026-03-20 15:25:24,900 - INFO - [10/10] Fetching TATAMOTORS...
+2026-03-20 15:25:24,900 - INFO - Initializing NSE session...
+2026-03-20 15:25:25,766 - WARNING -   ❌ TATAMOTORS: Failed
+2026-03-20 15:25:27,767 - INFO - Collected: 0, Failed: 10
+2026-03-20 15:25:27,767 - INFO - ============================================================
+2026-03-20 15:25:27,767 - INFO - STEP 2: Collecting Gainers/Losers
+2026-03-20 15:25:27,767 - INFO - ============================================================
+2026-03-20 15:25:27,767 - INFO - Initializing NSE session...
+2026-03-20 15:25:29,422 - INFO - Initializing NSE session...
+2026-03-20 15:25:30,321 - INFO -   Gainers: 0
+2026-03-20 15:25:30,321 - INFO -   Losers: 0
+2026-03-20 15:25:30,322 - INFO - ============================================================
+2026-03-20 15:25:30,322 - INFO - STEP 3: Detecting OI Spurts
+2026-03-20 15:25:30,322 - INFO - ============================================================
+2026-03-20 15:25:30,322 - INFO -   Total Spurts: 0
+2026-03-20 15:25:30,322 - INFO -   Long Buildups: 0
+2026-03-20 15:25:30,323 - INFO -   Short Buildups: 0
+2026-03-20 15:25:30,323 - INFO -   Market Sentiment: NEUTRAL
+2026-03-20 15:25:30,323 - INFO - ============================================================
+2026-03-20 15:25:30,323 - INFO - STEP 4: Generating Predictions
+2026-03-20 15:25:30,323 - INFO - ============================================================
+2026-03-20 15:25:30,324 - INFO -   Total Predictions: 0
+2026-03-20 15:25:30,324 - INFO -   Top Bullish: []
+2026-03-20 15:25:30,324 - INFO -   Top Bearish: []
+2026-03-20 15:25:30,324 - INFO - ============================================================
+2026-03-20 15:25:30,325 - INFO - STEP 5: Generating Daily Report
+2026-03-20 15:25:30,325 - INFO - ============================================================
+2026-03-20 15:25:30,326 - INFO -   Report generated successfully
+2026-03-20 15:25:30,326 - INFO - ============================================================
+2026-03-20 15:25:30,326 - INFO - ✅ ALL STEPS COMPLETED SUCCESSFULLY
+2026-03-20 15:25:30,327 - INFO - 📁 Data saved to: stock_intelligence/2026-03-20/
+2026-03-20 15:25:30,327 - INFO - ============================================================
+
+📊 Collection Summary:
+  • Option chains: 0 stocks
+  • Gainers: 0
+  • Losers: 0
+  • OI Spurts: 0
+  • Predictions: 0
+
+📁 Data saved to: stock_intelligence/2026-03-20/
+[2026-03-20 15:25:30] ==============================================
+[2026-03-20 15:25:30] ✅ COLLECTION COMPLETED
+[2026-03-20 15:25:30] ==============================================
