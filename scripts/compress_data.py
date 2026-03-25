@@ -122,9 +122,8 @@ def compress_folder(folder_info):
         logger.info(f"     Compressed: {compressed_size / 1024 / 1024:.1f} MB")
         logger.info(f"     Savings: {savings:.1f}%")
         
-        # Remove original folder
-        shutil.rmtree(folder_path)
-        logger.info(f"     Removed original folder")
+        # NOTE: Original folder is preserved - archives are backup copies only
+        logger.info(f"     Original folder preserved (archive is backup)")
         
         return True
         
