@@ -198,6 +198,10 @@ class RealTimeScanner:
         
         if not setup:
             return None
+            
+        # Skip Iron Condor alerts per user request
+        if setup.strategy == StrategyRecommendation.IRON_CONDOR or setup.strategy == "Iron Condor":
+            return None
         
         # Check probability threshold
         if setup.win_probability < self.min_probability:
