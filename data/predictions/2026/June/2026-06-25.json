@@ -1,0 +1,36 @@
+{
+    "date": "2026-06-25",
+    "score": -1.0,
+    "bias": "\ud83d\udfe1 RANGEBOUND / NEUTRAL BIAS",
+    "recommended_strategy": "\u2696\ufe0f Short Straddle / Short Strangle. Ideal for 9:20 AM Straddle Strategy to collect premium decay.",
+    "score_details": [
+        [
+            "USD/INR Rupee Apprec",
+            0.5,
+            "-0.81%"
+        ],
+        [
+            "FII Cash Heavy Selling",
+            -1.0,
+            "-1,843.4 Cr"
+        ],
+        [
+            "DII Cash Strong Buying",
+            0.5,
+            "+3,637.3 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-229,053"
+        ],
+        [
+            "PCR & VIX Trend (No data)",
+            0.0,
+            "N/A"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-06-24"
+}

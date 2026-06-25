@@ -306,7 +306,7 @@ class AngelOneComplete:
             writer.writerows(data)
 
     def get_historical_candles(self, exchange: str, token: str, days: int = 1) -> List:
-        """Fetch historical candle data."""
+        """Fetch historical candle data with robust retries."""
         if not self.logged_in:
             return []
         
@@ -327,12 +327,20 @@ class AngelOneComplete:
             'todate': to_date
         }
         
-        try:
-            request_data = self.smart_api.getCandleData(params)
-            if request_data and request_data.get('status'):
-                 return request_data.get('data', [])
-        except Exception as e:
-            logger.error(f"Error fetching candles for {token}: {e}")
+        max_retries = 3
+        backoff_sec = 2
+        for attempt in range(1, max_retries + 1):
+            try:
+                request_data = self.smart_api.getCandleData(params)
+                if request_data and request_data.get('status'):
+                     return request_data.get('data', [])
+                else:
+                     logger.warning(f"Attempt {attempt}/{max_retries}: Failed response status from API for {token}: {request_data}")
+            except Exception as e:
+                logger.error(f"Attempt {attempt}/{max_retries}: Error fetching candles for {token}: {e}")
+            if attempt < max_retries:
+                time.sleep(backoff_sec)
+                backoff_sec *= 2
         
         return []
 
@@ -499,89 +507,133 @@ class AngelOneComplete:
             "status": "failed"
         }
         
-        if not self.login():
-            return
-            
-        if not self.load_instruments():
-            return
+        nifty_count = 0
+        banknifty_count = 0
+        sensex_count = 0
+        top_stocks_count = 0
         
-        # Get LTPs and ATMs
-        nifty_ltp = self.get_ltp('NIFTY')
-        banknifty_ltp = self.get_ltp('BANKNIFTY')
-        
-        if nifty_ltp:
-            nifty_atm = self.get_atm_strike(nifty_ltp, STEP_NIFTY)
-            metadata['nifty'] = {
-                'ltp': nifty_ltp,
-                'atm': nifty_atm,
-                'strikes_collected': 0,
-                'candles': 0
-            }
-        
-        if banknifty_ltp:
-            banknifty_atm = self.get_atm_strike(banknifty_ltp, STEP_BANKNIFTY)
-            metadata['banknifty'] = {
-                'ltp': banknifty_ltp,
-                'atm': banknifty_atm,
-                'strikes_collected': 0,
-                'candles': 0
-            }
-            
-        self.collect_index_data()
-        
-        # Collect options and track metrics
-        nifty_count, banknifty_count, sensex_count = self.collect_options_data_with_tracking()
-        
-        if nifty_ltp:
-            metadata['nifty']['strikes_collected'] = nifty_count
-        if banknifty_ltp:
-            metadata['banknifty']['strikes_collected'] = banknifty_count
-        
-        # Collect top 50 stock data
-        top_stocks_count = self.collect_top_stocks_eod_data()
-        metadata['top_stocks_collected'] = top_stocks_count
-        
-        metadata['total_files'] = nifty_count + banknifty_count + sensex_count + 3 + top_stocks_count # +3 for index files
-        metadata['status'] = 'success'
-        
-        # Save metadata
         try:
-            meta_gen = MetadataGenerator(BASE_DIR)
-            meta_gen.save_metadata(metadata)
-            logger.info("✅ Metadata saved")
+            if not self.login():
+                logger.error("❌ Login failed")
+                if NOTIFICATIONS_AVAILABLE:
+                    send_telegram_message("❌ <b>Data Collection Failed</b>\n\nReason: Angel One Login Failed.")
+                return
+                
+            if not self.load_instruments():
+                logger.error("❌ Failed to load instruments")
+                if NOTIFICATIONS_AVAILABLE:
+                    send_telegram_message("❌ <b>Data Collection Failed</b>\n\nReason: Failed to load instruments.")
+                return
+            
+            # Get LTPs and ATMs
+            nifty_ltp = self.get_ltp('NIFTY')
+            banknifty_ltp = self.get_ltp('BANKNIFTY')
+            
+            if nifty_ltp:
+                nifty_atm = self.get_atm_strike(nifty_ltp, STEP_NIFTY)
+                metadata['nifty'] = {
+                    'ltp': nifty_ltp,
+                    'atm': nifty_atm,
+                    'strikes_collected': 0,
+                    'candles': 0
+                }
+            
+            if banknifty_ltp:
+                banknifty_atm = self.get_atm_strike(banknifty_ltp, STEP_BANKNIFTY)
+                metadata['banknifty'] = {
+                    'ltp': banknifty_ltp,
+                    'atm': banknifty_atm,
+                    'strikes_collected': 0,
+                    'candles': 0
+                }
+                
+            # Collect index data
+            try:
+                self.collect_index_data()
+            except Exception as e:
+                logger.error(f"Error in collect_index_data: {e}")
+                metadata['errors'] += 1
+            
+            # Collect options and track metrics
+            try:
+                nifty_count, banknifty_count, sensex_count = self.collect_options_data_with_tracking()
+            except Exception as e:
+                logger.error(f"Error in collect_options_data_with_tracking: {e}")
+                metadata['errors'] += 1
+            
+            if nifty_ltp:
+                metadata['nifty']['strikes_collected'] = nifty_count
+            if banknifty_ltp:
+                metadata['banknifty']['strikes_collected'] = banknifty_count
+            
+            # Collect top 50 stock data
+            try:
+                top_stocks_count = self.collect_top_stocks_eod_data()
+                metadata['top_stocks_collected'] = top_stocks_count
+            except Exception as e:
+                logger.error(f"Error in collect_top_stocks_eod_data: {e}")
+                metadata['errors'] += 1
+            
+            metadata['total_files'] = nifty_count + banknifty_count + sensex_count + 3 + top_stocks_count # +3 for index files
+            metadata['status'] = 'success'
+            
         except Exception as e:
-            logger.error(f"Failed to save metadata: {e}")
-        
-        # Send success notification
-        if NOTIFICATIONS_AVAILABLE:
-            send_desktop_notification(
-                "✅ Data Collection Complete!",
-                f"NIFTY: {nifty_count} | BANK: {banknifty_count} | SENSEX: {sensex_count} | STOCKS: {top_stocks_count}",
-                "normal"
-            )
-            telegram_msg = (
-                "✅ <b>Data Collection Complete!</b>\n\n"
-                f"📅 Date: {metadata['date']}\n"
-                f"⏰ Time: {metadata['collection_time']}\n\n"
-                f"📈 <b>NIFTY</b>\n"
-                f"• LTP: ₹{metadata['nifty'].get('ltp', 'N/A')}\n"
-                f"• ATM: {metadata['nifty'].get('atm', 'N/A')}\n"
-                f"• Strikes: {nifty_count}\n\n"
-                f"📈 <b>BANKNIFTY</b>\n"
-                f"• LTP: ₹{metadata['banknifty'].get('ltp', 'N/A')}\n"
-                f"• ATM: {metadata['banknifty'].get('atm', 'N/A')}\n"
-                f"• Strikes: {banknifty_count}\n\n"
-                f"📊 <b>SENSEX & STOCKS</b>\n"
-                f"• Sensex Strikes: {sensex_count}\n"
-                f"• Top Stocks (EOD): {top_stocks_count}/50\n\n"
-                f"💾 Total Files: {metadata['total_files']}"
-            )
-            send_telegram_message(telegram_msg)
-        
-        self.logout()
-        logger.info("="*60)
-        logger.info("COLLECTION COMPLETED")
-        logger.info("="*60)
+            logger.exception(f"Unhandled exception during collection run: {e}")
+            metadata['errors'] += 1
+            if NOTIFICATIONS_AVAILABLE:
+                send_telegram_message(f"❌ <b>Data Collection Error</b>\n\nException: {str(e)}")
+        finally:
+            # Save metadata
+            try:
+                meta_gen = MetadataGenerator(BASE_DIR)
+                meta_gen.save_metadata(metadata)
+                logger.info("✅ Metadata saved")
+            except Exception as e:
+                logger.error(f"Failed to save metadata: {e}")
+                
+            # Send final notification
+            if NOTIFICATIONS_AVAILABLE:
+                if metadata['status'] == 'success':
+                    send_desktop_notification(
+                        "✅ Data Collection Complete!",
+                        f"NIFTY: {nifty_count} | BANK: {banknifty_count} | SENSEX: {sensex_count} | STOCKS: {top_stocks_count}",
+                        "normal"
+                    )
+                    telegram_msg = (
+                        "✅ <b>Data Collection Complete!</b>\n\n"
+                        f"📅 Date: {metadata['date']}\n"
+                        f"⏰ Time: {metadata['collection_time']}\n\n"
+                        f"📈 <b>NIFTY</b>\n"
+                        f"• LTP: ₹{metadata['nifty'].get('ltp', 'N/A')}\n"
+                        f"• ATM: {metadata['nifty'].get('atm', 'N/A')}\n"
+                        f"• Strikes: {nifty_count}\n\n"
+                        f"📈 <b>BANKNIFTY</b>\n"
+                        f"• LTP: ₹{metadata['banknifty'].get('ltp', 'N/A')}\n"
+                        f"• ATM: {metadata['banknifty'].get('atm', 'N/A')}\n"
+                        f"• Strikes: {banknifty_count}\n\n"
+                        f"📊 <b>SENSEX & STOCKS</b>\n"
+                        f"• Sensex Strikes: {sensex_count}\n"
+                        f"• Top Stocks (EOD): {top_stocks_count}/50\n\n"
+                        f"💾 Total Files: {metadata['total_files']}\n"
+                        f"⚠️ Errors: {metadata['errors']}"
+                    )
+                    send_telegram_message(telegram_msg)
+                else:
+                    telegram_msg = (
+                        "❌ <b>Data Collection Failed or Incomplete</b>\n\n"
+                        f"📅 Date: {metadata['date']}\n"
+                        f"⚠️ Status: Failed / Halted\n"
+                        f"💾 Files collected so far: {nifty_count + banknifty_count + sensex_count}\n"
+                        f"• NIFTY: {nifty_count}\n"
+                        f"• BANKNIFTY: {banknifty_count}\n"
+                        f"• SENSEX: {sensex_count}"
+                    )
+                    send_telegram_message(telegram_msg)
+            
+            self.logout()
+            logger.info("="*60)
+            logger.info("COLLECTION COMPLETED")
+            logger.info("="*60)
     
     def collect_options_data_with_tracking(self):
         """Collect options with strike count tracking."""
@@ -603,46 +655,49 @@ class AngelOneComplete:
         sensex_count = 0
         
         for symbol, step in indices:
-            ltp = self.get_ltp(symbol)
-            if not ltp:
-                continue
-                
-            atm = self.get_atm_strike(ltp, step)
-            logger.info(f"  🔹 {symbol} LTP: {ltp} | ATM: {atm}")
-            
-            options = self.get_option_instruments(symbol, atm, step)
-            if not options:
-                logger.warning(f"  ⚠️ No options found for {symbol}")
-                continue
-                
-            logger.info(f"  Found {len(options)} strikes (ATM ±{STRIKE_RANGE})")
-            
-            # Use BFO exchange for SENSEX, NFO for others
-            exchange = 'BFO' if symbol == 'SENSEX' else 'NFO'
-            
-            count = 0
-            for opt in options:
-                candles = self.get_historical_candles(exchange, opt['token'], days=1)
-                
-                if candles:
-                    opt_type = opt['option_type']
-                    strike_price = str(opt['strike'])
+            try:
+                ltp = self.get_ltp(symbol)
+                if not ltp:
+                    continue
                     
-                    save_dir = DATA_DIR / 'strikes_ohlcv' / symbol / year_str / month_str / day_str / opt_type
-                    save_path = save_dir / f"{strike_price}.csv"
+                atm = self.get_atm_strike(ltp, step)
+                logger.info(f"  🔹 {symbol} LTP: {ltp} | ATM: {atm}")
+                
+                options = self.get_option_instruments(symbol, atm, step)
+                if not options:
+                    logger.warning(f"  ⚠️ No options found for {symbol}")
+                    continue
                     
-                    self.save_csv(candles, save_path)
-                    count += 1
-                    time.sleep(0.4)
-            
-            if symbol == 'NIFTY':
-                nifty_count = count
-            elif symbol == 'BANKNIFTY':
-                banknifty_count = count
-            else:
-                sensex_count = count
-            
-            logger.info(f"  ✅ {symbol}: Saved data for {count}/{len(options)} options")
+                logger.info(f"  Found {len(options)} strikes (ATM ±{STRIKE_RANGE})")
+                
+                # Use BFO exchange for SENSEX, NFO for others
+                exchange = 'BFO' if symbol == 'SENSEX' else 'NFO'
+                
+                count = 0
+                for opt in options:
+                    candles = self.get_historical_candles(exchange, opt['token'], days=1)
+                    
+                    if candles:
+                        opt_type = opt['option_type']
+                        strike_price = str(opt['strike'])
+                        
+                        save_dir = DATA_DIR / 'strikes_ohlcv' / symbol / year_str / month_str / day_str / opt_type
+                        save_path = save_dir / f"{strike_price}.csv"
+                        
+                        self.save_csv(candles, save_path)
+                        count += 1
+                        time.sleep(0.4)
+                
+                if symbol == 'NIFTY':
+                    nifty_count = count
+                elif symbol == 'BANKNIFTY':
+                    banknifty_count = count
+                else:
+                    sensex_count = count
+                
+                logger.info(f"  ✅ {symbol}: Saved data for {count}/{len(options)} options")
+            except Exception as e:
+                logger.error(f"Error collecting options data for {symbol}: {e}")
         
         return nifty_count, banknifty_count, sensex_count
 
