@@ -26,7 +26,11 @@ TICKERS = {
     "Brent_Crude": "BZ=F",
     "USD_INR": "INR=X",
     "Nifty_50": "^NSEI",
-    "Bank_Nifty": "^NSEBANK"
+    "Bank_Nifty": "^NSEBANK",
+    "Nikkei": "^N225",
+    "Hang_Seng": "^HSI",
+    "US_10Y_Yield": "^TNX",
+    "DXY": "DX-Y.NYB"
 }
 
 def fetch_ticker_data(name, symbol):
@@ -63,6 +67,18 @@ def fetch_ticker_data(name, symbol):
 
 def main():
     now_ist = datetime.now(IST)
+    
+    # Check for market holidays
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    try:
+        import market_holidays
+        is_holiday, reason = market_holidays.get_market_status(now_ist)
+        if is_holiday:
+            print(f"📅 Market Holiday: {reason}. Skipping pre-market collection.")
+            return
+    except Exception as e:
+        print(f"⚠️ Error running holiday check: {e}")
+        
     today_str = now_ist.strftime("%Y-%m-%d")
     year_str = now_ist.strftime("%Y")
     month_str = now_ist.strftime("%B")  # e.g., 'June'

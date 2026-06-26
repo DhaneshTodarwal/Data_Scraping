@@ -101,6 +101,17 @@ def compute_pcr(client, symbol, spot_price):
 def main():
     logger.info("Initializing Intraday Indicators Logger...")
     
+    # Check for market holidays
+    sys.path.insert(0, str(SCRIPT_DIR))
+    try:
+        import market_holidays
+        is_holiday, reason = market_holidays.get_market_status(datetime.now(IST))
+        if is_holiday:
+            logger.info(f"📅 Market Holiday: {reason}. Skipping intraday logging.")
+            sys.exit(0)
+    except Exception as e:
+        logger.error(f"Error checking market holiday: {e}")
+        
     # Initialize Angel Client
     client = AngelClient()
     if not client.login():

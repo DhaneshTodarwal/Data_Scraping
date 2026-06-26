@@ -351,13 +351,21 @@ def main():
     else:
         # Today in IST
         now_ist = datetime.now(IST)
-        # If run before 06:30 PM, and it is a weekday, fetch for today. But FII/DII usually publishes after 06:30 PM.
         target_date_str = now_ist.strftime("%Y-%m-%d")
         
-        # Verify if weekend
-        if now_ist.weekday() >= 5:
-            logger.info("Today is a weekend. Post-market data is not available. Use --date to backfill.")
-            sys.exit(0)
+        # Verify if weekend or holiday
+        sys.path.insert(0, str(SCRIPT_DIR))
+        try:
+            import market_holidays
+            is_holiday, reason = market_holidays.get_market_status(now_ist)
+            if is_holiday:
+                logger.info(f"Today is a market holiday: {reason}. Skipping post-market scraper.")
+                sys.exit(0)
+        except Exception as e:
+            logger.error(f"Error checking market holiday: {e}")
+            if now_ist.weekday() >= 5:
+                logger.info("Today is a weekend. Post-market data is not available. Use --date to backfill.")
+                sys.exit(0)
             
     logger.info(f"Starting post-market scraping cycle for {target_date_str}...")
     

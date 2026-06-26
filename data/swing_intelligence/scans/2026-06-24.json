@@ -1,0 +1,18 @@
+[
+    {
+        "symbol": "EXIDEIND",
+        "date": "2026-06-24",
+        "close": 399.5,
+        "pct_change": 5.395070008075198,
+        "volume": 8753108,
+        "vol_mult": 3.1719823017675037,
+        "delivery_pct": 35.39,
+        "del_mult": 3.158297052078833,
+        "rsi": 62.11476237149523,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "395.5 - 403.5",
+        "target": 439.5,
+        "stop_loss": 375.5
+    }
+]

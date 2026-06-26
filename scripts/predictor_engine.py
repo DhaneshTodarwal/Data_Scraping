@@ -171,7 +171,7 @@ def compute_bias(target_date_str):
     score = 0.0
     details = []
     
-    # --- SECTION A: GLOBAL MARKET SETUP (Max +/- 3.0) ---
+    # --- SECTION A: GLOBAL MARKET SETUP ---
     if pre_market and "clues" in pre_market:
         clues = pre_market["clues"]
         
@@ -235,6 +235,50 @@ def compute_bias(target_date_str):
             elif inr_change < -0.20:
                 score += 0.5
                 details.append(("USD/INR Rupee Apprec", +0.5, f"{inr_change:.2f}%"))
+                
+        # Nikkei 225
+        nik = clues.get("Nikkei", {})
+        if nik:
+            nik_change = nik.get("pct_change", 0.0)
+            if nik_change > 0.75:
+                score += 0.5
+                details.append(("Nikkei Strong Asian Open", +0.5, f"+{nik_change:.2f}%"))
+            elif nik_change < -0.75:
+                score -= 0.5
+                details.append(("Nikkei Weak Asian Open", -0.5, f"{nik_change:.2f}%"))
+                
+        # Hang Seng
+        hsi = clues.get("Hang_Seng", {})
+        if hsi:
+            hsi_change = hsi.get("pct_change", 0.0)
+            if hsi_change > 0.75:
+                score += 0.5
+                details.append(("Hang Seng Positive Open", +0.5, f"+{hsi_change:.2f}%"))
+            elif hsi_change < -0.75:
+                score -= 0.5
+                details.append(("Hang Seng Weak Open", -0.5, f"{hsi_change:.2f}%"))
+                
+        # US 10Y Bond Yield
+        yield10y = clues.get("US_10Y_Yield", {})
+        if yield10y:
+            yield_change = yield10y.get("pct_change", 0.0)
+            if yield_change > 1.0:
+                score -= 0.25
+                details.append(("US 10Y Yield Spike", -0.25, f"+{yield_change:.2f}%"))
+            elif yield_change < -1.0:
+                score += 0.25
+                details.append(("US 10Y Yield Decline", +0.25, f"{yield_change:.2f}%"))
+                
+        # Dollar Index (DXY)
+        dxy = clues.get("DXY", {})
+        if dxy:
+            dxy_change = dxy.get("pct_change", 0.0)
+            if dxy_change > 0.25:
+                score -= 0.25
+                details.append(("Dollar Index Stronger", -0.25, f"+{dxy_change:.2f}%"))
+            elif dxy_change < -0.25:
+                score += 0.25
+                details.append(("Dollar Index Weaker", +0.25, f"{dxy_change:.2f}%"))
     else:
         details.append(("Global Market Setup (No data)", 0.0, "N/A"))
         
@@ -402,10 +446,19 @@ def main():
         now_ist = datetime.now(IST)
         target_date_str = now_ist.strftime("%Y-%m-%d")
         
-        # Verify if weekend
-        if now_ist.weekday() >= 5:
-            logger.info("Today is a weekend. Predictions are not computed on weekends.")
-            sys.exit(0)
+        # Verify if weekend or holiday
+        sys.path.insert(0, str(SCRIPT_DIR))
+        try:
+            import market_holidays
+            is_holiday, reason = market_holidays.get_market_status(now_ist)
+            if is_holiday:
+                logger.info(f"Today is a market holiday: {reason}. Skipping prediction engine.")
+                sys.exit(0)
+        except Exception as e:
+            logger.error(f"Error checking market holiday: {e}")
+            if now_ist.weekday() >= 5:
+                logger.info("Today is a weekend. Predictions are not computed on weekends.")
+                sys.exit(0)
             
     logger.info(f"Running prediction calculations for {target_date_str}...")
     

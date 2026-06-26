@@ -11,9 +11,25 @@ echo "======================================" >> "$LOG_FILE"
 echo "Collection started: $(date)" >> "$LOG_FILE"
 echo "======================================" >> "$LOG_FILE"
 
-python3 scripts/angelone_complete.py >> "$LOG_FILE" 2>&1
+MAX_RETRIES=3
+RETRY_COUNT=0
+SUCCESS=false
 
-echo "Collection completed: $(date)" >> "$LOG_FILE"
+while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+    python3 scripts/angelone_complete.py >> "$LOG_FILE" 2>&1
+    if [ $? -eq 0 ]; then
+        SUCCESS=true
+        break
+    fi
+    RETRY_COUNT=$((RETRY_COUNT+1))
+    if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+        echo "⚠️ Collection attempt $RETRY_COUNT failed. Retrying in 60 seconds..." >> "$LOG_FILE"
+        sleep 60
+    fi
+done
 
-# Send notification (optional)
-# python3 scripts/notifications.py "Data collection complete" >> "$LOG_FILE" 2>&1
+if [ "$SUCCESS" = false ]; then
+    echo "❌ Collection failed after $MAX_RETRIES attempts: $(date)" >> "$LOG_FILE"
+else
+    echo "Collection completed: $(date)" >> "$LOG_FILE"
+fi

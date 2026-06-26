@@ -172,18 +172,10 @@ class AngelOneComplete:
             return False
 
     def load_instruments(self) -> bool:
-        """Load instrument list with caching."""
-        date_str = datetime.now().strftime('%Y%m%d')
-        cache_file = CACHE_DIR / f"instruments_{date_str}.json"
+        """Load instrument list with caching and fallback."""
+        today_date_str = datetime.now().strftime('%Y%m%d')
+        cache_file = CACHE_DIR / f"instruments_{today_date_str}.json"
         
-        # Cleanup old cache files
-        for f in CACHE_DIR.glob("instruments_*.json"):
-            if f.name != cache_file.name:
-                try:
-                    f.unlink()
-                except:
-                    pass
-
         if cache_file.exists():
             logger.info("Loading instruments from cache...")
             try:
@@ -195,17 +187,38 @@ class AngelOneComplete:
 
         logger.info("Downloading fresh instrument list...")
         try:
-            response = self.session.get(INSTRUMENT_URL, timeout=60)
+            response = self.session.get(INSTRUMENT_URL, timeout=120)
             response.raise_for_status()
             self.instruments = response.json()
             
             with open(cache_file, 'w') as f:
                 json.dump(self.instruments, f)
             logger.info(f"✅ Downloaded {len(self.instruments)} instruments")
+            
+            # Cleanup old cache files only after successful download
+            for f in CACHE_DIR.glob("instruments_*.json"):
+                if f.name != cache_file.name:
+                    try:
+                        f.unlink()
+                    except:
+                        pass
             return True
         except Exception as e:
             logger.error(f"❌ Error downloading instruments: {e}")
-            return False
+
+        # Fallback to any existing cache file
+        logger.info("⚠️ Attempting fallback to any existing cached instrument list...")
+        existing_caches = sorted(list(CACHE_DIR.glob("instruments_*.json")), reverse=True)
+        for fallback_file in existing_caches:
+            try:
+                with open(fallback_file, 'r') as f:
+                    self.instruments = json.load(f)
+                logger.info(f"✅ Fallback successful! Loaded instrument list from cache: {fallback_file.name}")
+                return True
+            except Exception as fe:
+                logger.error(f"Failed to load fallback cache {fallback_file.name}: {fe}")
+                
+        return False
 
     def get_ltp(self, symbol: str) -> Optional[float]:
         """Get current LTP with safe token mapping."""
@@ -511,19 +524,20 @@ class AngelOneComplete:
         banknifty_count = 0
         sensex_count = 0
         top_stocks_count = 0
+        success = False
         
         try:
             if not self.login():
                 logger.error("❌ Login failed")
                 if NOTIFICATIONS_AVAILABLE:
                     send_telegram_message("❌ <b>Data Collection Failed</b>\n\nReason: Angel One Login Failed.")
-                return
+                return False
                 
             if not self.load_instruments():
                 logger.error("❌ Failed to load instruments")
                 if NOTIFICATIONS_AVAILABLE:
                     send_telegram_message("❌ <b>Data Collection Failed</b>\n\nReason: Failed to load instruments.")
-                return
+                return False
             
             # Get LTPs and ATMs
             nifty_ltp = self.get_ltp('NIFTY')
@@ -576,12 +590,14 @@ class AngelOneComplete:
             
             metadata['total_files'] = nifty_count + banknifty_count + sensex_count + 3 + top_stocks_count # +3 for index files
             metadata['status'] = 'success'
+            success = True
             
         except Exception as e:
             logger.exception(f"Unhandled exception during collection run: {e}")
             metadata['errors'] += 1
             if NOTIFICATIONS_AVAILABLE:
                 send_telegram_message(f"❌ <b>Data Collection Error</b>\n\nException: {str(e)}")
+            success = False
         finally:
             # Save metadata
             try:
@@ -634,6 +650,7 @@ class AngelOneComplete:
             logger.info("="*60)
             logger.info("COLLECTION COMPLETED")
             logger.info("="*60)
+            return success
     
     def collect_options_data_with_tracking(self):
         """Collect options with strike count tracking."""
@@ -710,5 +727,10 @@ class AngelOneComplete:
 
 
 if __name__ == "__main__":
+    import sys
     collector = AngelOneComplete()
-    collector.run()
+    success = collector.run()
+    if not success:
+        sys.exit(1)
+    else:
+        sys.exit(0)

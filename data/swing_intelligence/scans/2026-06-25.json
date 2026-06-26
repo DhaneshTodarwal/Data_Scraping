@@ -1,0 +1,50 @@
+[
+    {
+        "symbol": "MOTHERSON",
+        "date": "2026-06-25",
+        "close": 151.7100067138672,
+        "pct_change": 4.931529113648847,
+        "volume": 74509480,
+        "vol_mult": 3.0772777083084106,
+        "delivery_pct": 33.23,
+        "del_mult": 2.448355108996645,
+        "rsi": 66.45801517567837,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "150.2 - 153.2",
+        "target": 166.9,
+        "stop_loss": 142.6
+    },
+    {
+        "symbol": "TATACHEM",
+        "date": "2026-06-25",
+        "close": 746.2000122070312,
+        "pct_change": 2.4507499443154224,
+        "volume": 7572677,
+        "vol_mult": 7.285203945106682,
+        "delivery_pct": 15.01,
+        "del_mult": 3.408242092156512,
+        "rsi": 56.94093925045435,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "738.7 - 753.7",
+        "target": 820.8,
+        "stop_loss": 701.4
+    },
+    {
+        "symbol": "INDIGO",
+        "date": "2026-06-25",
+        "close": 5450.0,
+        "pct_change": 4.662770694049123,
+        "volume": 5145167,
+        "vol_mult": 3.8398976597870798,
+        "delivery_pct": 54.69,
+        "del_mult": 2.963118270205561,
+        "rsi": 79.19456998170584,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "5395.5 - 5504.5",
+        "target": 5995.0,
+        "stop_loss": 4831.2
+    }
+]
