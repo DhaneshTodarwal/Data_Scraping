@@ -401,7 +401,8 @@ class RealTimeScanner:
                         self.scan_count = 0
                     
                     if now.time() < self.market_open:
-                        wait_mins = (datetime.combine(now.date(), self.market_open) - now).seconds // 60
+                        market_open_dt = now.replace(hour=self.market_open.hour, minute=self.market_open.minute, second=0, microsecond=0)
+                        wait_mins = (market_open_dt - now).seconds // 60
                         print(f"\r⏳ Market opens in {wait_mins} minutes...", end="")
                     else:
                         print(f"\r⏸️  Market closed. Waiting...", end="")
