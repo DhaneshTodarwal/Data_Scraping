@@ -1,0 +1,21 @@
+{
+  "symbol": "FEDERALBNK",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 324.05,
+  "entry_range": "320.8 - 327.3",
+  "target": 356.5,
+  "stop_loss": 304.6,
+  "rsi_at_scan": 68.57,
+  "vol_mult": 1.69,
+  "delivery_pct": 64.95,
+  "del_mult": 2.2,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

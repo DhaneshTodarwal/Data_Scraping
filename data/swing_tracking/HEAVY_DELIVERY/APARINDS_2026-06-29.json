@@ -1,0 +1,21 @@
+{
+  "symbol": "APARINDS",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 15986.0,
+  "entry_range": "15826.1 - 16145.9",
+  "target": 17584.6,
+  "stop_loss": 15026.8,
+  "rsi_at_scan": 64.49,
+  "vol_mult": 1.73,
+  "delivery_pct": 53.75,
+  "del_mult": 2.69,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

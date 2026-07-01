@@ -1,0 +1,21 @@
+{
+  "symbol": "THERMAX",
+  "scan_date": "2026-06-29",
+  "category": "SUPER_BREAKOUT",
+  "signal": "\ud83d\udd25 SUPER BREAKOUT",
+  "scan_close": 5125.1,
+  "entry_range": "5073.8 - 5176.4",
+  "target": 5637.6,
+  "stop_loss": 4769.1,
+  "rsi_at_scan": 67.95,
+  "vol_mult": 3.67,
+  "delivery_pct": 54.98,
+  "del_mult": 4.49,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

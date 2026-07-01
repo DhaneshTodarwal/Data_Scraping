@@ -1,0 +1,21 @@
+{
+  "symbol": "BAJFINANCE",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 982.05,
+  "entry_range": "972.2 - 991.9",
+  "target": 1080.3,
+  "stop_loss": 923.1,
+  "rsi_at_scan": 65.02,
+  "vol_mult": 1.91,
+  "delivery_pct": 72.96,
+  "del_mult": 2.39,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

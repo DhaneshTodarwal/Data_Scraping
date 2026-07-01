@@ -1,0 +1,21 @@
+{
+  "symbol": "IDEA",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 14.43,
+  "entry_range": "14.3 - 14.6",
+  "target": 15.9,
+  "stop_loss": 13.6,
+  "rsi_at_scan": 56.34,
+  "vol_mult": 1.84,
+  "delivery_pct": 50.84,
+  "del_mult": 3.74,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

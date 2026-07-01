@@ -1,0 +1,21 @@
+{
+  "symbol": "BIOCON",
+  "scan_date": "2026-06-30",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 418.3,
+  "entry_range": "414.1 - 422.5",
+  "target": 460.1,
+  "stop_loss": 393.2,
+  "rsi_at_scan": 54.44,
+  "vol_mult": 1.93,
+  "delivery_pct": 58.91,
+  "del_mult": 2.08,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

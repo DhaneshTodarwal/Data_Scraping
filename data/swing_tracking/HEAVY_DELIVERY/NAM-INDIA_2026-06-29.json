@@ -1,0 +1,21 @@
+{
+  "symbol": "NAM-INDIA",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 1167.3,
+  "entry_range": "1155.6 - 1179.0",
+  "target": 1284.0,
+  "stop_loss": 1097.3,
+  "rsi_at_scan": 62.59,
+  "vol_mult": 1.36,
+  "delivery_pct": 52.62,
+  "del_mult": 2.1,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

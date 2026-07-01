@@ -1,0 +1,21 @@
+{
+  "symbol": "MARICO",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 839.95,
+  "entry_range": "831.6 - 848.3",
+  "target": 923.9,
+  "stop_loss": 789.6,
+  "rsi_at_scan": 63.76,
+  "vol_mult": 3.45,
+  "delivery_pct": 76.8,
+  "del_mult": 3.7,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

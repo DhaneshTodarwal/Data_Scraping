@@ -1,0 +1,21 @@
+{
+  "symbol": "IDFCFIRSTB",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 78.2,
+  "entry_range": "77.4 - 79.0",
+  "target": 86.0,
+  "stop_loss": 73.5,
+  "rsi_at_scan": 63.09,
+  "vol_mult": 2.01,
+  "delivery_pct": 70.31,
+  "del_mult": 2.8,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

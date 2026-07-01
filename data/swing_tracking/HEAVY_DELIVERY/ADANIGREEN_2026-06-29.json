@@ -1,0 +1,21 @@
+{
+  "symbol": "ADANIGREEN",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 1502.5,
+  "entry_range": "1487.5 - 1517.5",
+  "target": 1652.8,
+  "stop_loss": 1412.3,
+  "rsi_at_scan": 56.29,
+  "vol_mult": 1.65,
+  "delivery_pct": 52.1,
+  "del_mult": 3.33,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

@@ -1,0 +1,21 @@
+{
+  "symbol": "LICHSGFIN",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 560.75,
+  "entry_range": "555.1 - 566.4",
+  "target": 616.8,
+  "stop_loss": 527.1,
+  "rsi_at_scan": 57.46,
+  "vol_mult": 3.38,
+  "delivery_pct": 71.31,
+  "del_mult": 4.47,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

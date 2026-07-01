@@ -1,0 +1,21 @@
+{
+  "symbol": "HEXT",
+  "scan_date": "2026-06-29",
+  "category": "MOMENTUM_BREAKOUT",
+  "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+  "scan_close": 519.4,
+  "entry_range": "514.2 - 524.6",
+  "target": 571.3,
+  "stop_loss": 488.2,
+  "rsi_at_scan": 59.78,
+  "vol_mult": 7.82,
+  "delivery_pct": 8.66,
+  "del_mult": 1.69,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

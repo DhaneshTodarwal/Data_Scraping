@@ -1,0 +1,21 @@
+{
+  "symbol": "SHREECEM",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 25145.0,
+  "entry_range": "24893.5 - 25396.5",
+  "target": 27659.5,
+  "stop_loss": 23636.3,
+  "rsi_at_scan": 52.38,
+  "vol_mult": 2.78,
+  "delivery_pct": 60.27,
+  "del_mult": 3.19,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

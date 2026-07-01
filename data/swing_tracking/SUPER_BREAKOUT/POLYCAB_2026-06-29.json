@@ -1,0 +1,21 @@
+{
+  "symbol": "POLYCAB",
+  "scan_date": "2026-06-29",
+  "category": "SUPER_BREAKOUT",
+  "signal": "\ud83d\udd25 SUPER BREAKOUT",
+  "scan_close": 9779.0,
+  "entry_range": "9681.2 - 9876.8",
+  "target": 10756.9,
+  "stop_loss": 9192.3,
+  "rsi_at_scan": 58.56,
+  "vol_mult": 3.71,
+  "delivery_pct": 63.14,
+  "del_mult": 3.57,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

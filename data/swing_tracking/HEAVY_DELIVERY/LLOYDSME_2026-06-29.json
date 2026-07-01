@@ -1,0 +1,21 @@
+{
+  "symbol": "LLOYDSME",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 1805.7,
+  "entry_range": "1787.6 - 1823.8",
+  "target": 1986.3,
+  "stop_loss": 1697.4,
+  "rsi_at_scan": 58.56,
+  "vol_mult": 2.38,
+  "delivery_pct": 66.66,
+  "del_mult": 3.03,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

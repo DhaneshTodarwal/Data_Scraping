@@ -1,0 +1,21 @@
+{
+  "symbol": "MARUTI",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 13412.0,
+  "entry_range": "13277.9 - 13546.1",
+  "target": 14753.2,
+  "stop_loss": 12607.3,
+  "rsi_at_scan": 51.34,
+  "vol_mult": 2.62,
+  "delivery_pct": 73.86,
+  "del_mult": 3.32,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

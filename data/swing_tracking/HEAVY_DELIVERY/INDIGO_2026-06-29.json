@@ -1,0 +1,21 @@
+{
+  "symbol": "INDIGO",
+  "scan_date": "2026-06-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 5315.2,
+  "entry_range": "5262.0 - 5368.4",
+  "target": 5846.7,
+  "stop_loss": 4931.7,
+  "rsi_at_scan": 70.2,
+  "vol_mult": 1.8,
+  "delivery_pct": 74.13,
+  "del_mult": 2.33,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

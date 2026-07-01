@@ -1,0 +1,21 @@
+{
+  "symbol": "HEXT",
+  "scan_date": "2026-06-30",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 514.85,
+  "entry_range": "509.7 - 520.0",
+  "target": 566.3,
+  "stop_loss": 484.0,
+  "rsi_at_scan": 57.01,
+  "vol_mult": 1.25,
+  "delivery_pct": 60.22,
+  "del_mult": 2.73,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
