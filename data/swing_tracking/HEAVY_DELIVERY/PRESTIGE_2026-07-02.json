@@ -1,0 +1,21 @@
+{
+  "symbol": "PRESTIGE",
+  "scan_date": "2026-07-02",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 1674.1,
+  "entry_range": "1657.4 - 1690.8",
+  "target": 1841.5,
+  "stop_loss": 1514.0,
+  "rsi_at_scan": 76.74,
+  "vol_mult": 2.06,
+  "delivery_pct": 54.64,
+  "del_mult": 2.51,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

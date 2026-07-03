@@ -1,0 +1,21 @@
+{
+  "symbol": "ANTHEM",
+  "scan_date": "2026-07-02",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 772.35,
+  "entry_range": "764.6 - 780.1",
+  "target": 849.6,
+  "stop_loss": 726.0,
+  "rsi_at_scan": 51.67,
+  "vol_mult": 1.8,
+  "delivery_pct": 62.42,
+  "del_mult": 2.04,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
