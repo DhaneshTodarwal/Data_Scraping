@@ -1,0 +1,41 @@
+{
+    "date": "2026-07-06",
+    "score": -1.5,
+    "bias": "\ud83d\udfe1 RANGEBOUND / NEUTRAL BIAS",
+    "recommended_strategy": "\u2696\ufe0f Short Straddle / Short Strangle. Ideal for 9:20 AM Straddle Strategy to collect premium decay.",
+    "score_details": [
+        [
+            "Nasdaq Weak Close",
+            -0.5,
+            "-0.80%"
+        ],
+        [
+            "USD/INR Rupee Apprec",
+            0.5,
+            "-0.26%"
+        ],
+        [
+            "Nikkei Weak Asian Open",
+            -0.5,
+            "-1.18%"
+        ],
+        [
+            "FII Cash Net Buying",
+            0.5,
+            "+1,355.3 Cr"
+        ],
+        [
+            "DII Cash Net Selling",
+            -0.5,
+            "-1,953.9 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-250,767"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-07-03"
+}
