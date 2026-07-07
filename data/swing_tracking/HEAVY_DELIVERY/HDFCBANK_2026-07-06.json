@@ -1,0 +1,32 @@
+{
+  "symbol": "HDFCBANK",
+  "scan_date": "2026-07-06",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 829.85,
+  "entry_range": "821.6 - 838.1",
+  "target": 912.8,
+  "stop_loss": 780.1,
+  "rsi_at_scan": 75.14,
+  "vol_mult": 1.68,
+  "delivery_pct": 68.53,
+  "del_mult": 2.09,
+  "status": "ACTIVE",
+  "daily_updates": [
+    {
+      "date": "2026-07-06",
+      "open": 805.0,
+      "high": 831.5,
+      "low": 805.0,
+      "close": 829.8499755859375,
+      "pct_vs_scan": -0.0,
+      "status": "ACTIVE",
+      "delivery_pct": 68.53
+    }
+  ],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

@@ -12,10 +12,51 @@
   "delivery_pct": 60.22,
   "del_mult": 2.73,
   "status": "ACTIVE",
-  "daily_updates": [],
+  "daily_updates": [
+    {
+      "date": "2026-07-01",
+      "open": 519.9000244140625,
+      "high": 556.7000122070312,
+      "low": 516.2000122070312,
+      "close": 551.6500244140625,
+      "pct_vs_scan": 7.15,
+      "status": "ACTIVE",
+      "delivery_pct": 0.0
+    },
+    {
+      "date": "2026-07-02",
+      "open": 555.7999877929688,
+      "high": 562.5,
+      "low": 546.5499877929688,
+      "close": 555.1500244140625,
+      "pct_vs_scan": 7.83,
+      "status": "ACTIVE",
+      "delivery_pct": 45.42
+    },
+    {
+      "date": "2026-07-03",
+      "open": 556.0,
+      "high": 563.75,
+      "low": 543.1500244140625,
+      "close": 546.5999755859375,
+      "pct_vs_scan": 6.17,
+      "status": "ACTIVE",
+      "delivery_pct": 64.77
+    },
+    {
+      "date": "2026-07-06",
+      "open": 548.0,
+      "high": 549.2000122070312,
+      "low": 533.4500122070312,
+      "close": 535.75,
+      "pct_vs_scan": 4.06,
+      "status": "ACTIVE",
+      "delivery_pct": 89.0
+    }
+  ],
   "result": null,
   "exit_date": null,
   "exit_price": null,
-  "pnl_pct": null,
+  "pnl_pct": 3.05,
   "reason": null
 }

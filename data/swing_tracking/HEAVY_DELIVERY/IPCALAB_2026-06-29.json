@@ -11,11 +11,62 @@
   "vol_mult": 1.5,
   "delivery_pct": 50.3,
   "del_mult": 2.5,
-  "status": "ACTIVE",
-  "daily_updates": [],
-  "result": null,
-  "exit_date": null,
-  "exit_price": null,
-  "pnl_pct": null,
-  "reason": null
+  "status": "TARGET_HIT",
+  "daily_updates": [
+    {
+      "date": "2026-06-30",
+      "open": 1649.0,
+      "high": 1736.0,
+      "low": 1635.800048828125,
+      "close": 1701.0,
+      "pct_vs_scan": 3.27,
+      "status": "ACTIVE",
+      "delivery_pct": 48.05
+    },
+    {
+      "date": "2026-07-01",
+      "open": 1719.800048828125,
+      "high": 1766.699951171875,
+      "low": 1681.699951171875,
+      "close": 1696.4000244140625,
+      "pct_vs_scan": 2.99,
+      "status": "ACTIVE",
+      "delivery_pct": 0.0
+    },
+    {
+      "date": "2026-07-02",
+      "open": 1714.9000244140625,
+      "high": 1724.699951171875,
+      "low": 1691.0999755859375,
+      "close": 1719.4000244140625,
+      "pct_vs_scan": 4.38,
+      "status": "ACTIVE",
+      "delivery_pct": 60.06
+    },
+    {
+      "date": "2026-07-03",
+      "open": 1729.0,
+      "high": 1788.300048828125,
+      "low": 1719.4000244140625,
+      "close": 1778.9000244140625,
+      "pct_vs_scan": 8.0,
+      "status": "ACTIVE",
+      "delivery_pct": 50.04
+    },
+    {
+      "date": "2026-07-06",
+      "open": 1798.5,
+      "high": 1812.5,
+      "low": 1760.4000244140625,
+      "close": 1782.4000244140625,
+      "pct_vs_scan": 8.21,
+      "status": "TARGET_HIT",
+      "delivery_pct": 64.46
+    }
+  ],
+  "result": "WIN",
+  "exit_date": "2026-07-06",
+  "exit_price": 1811.9,
+  "pnl_pct": 9.88,
+  "reason": "Target \u20b91811.9 hit"
 }

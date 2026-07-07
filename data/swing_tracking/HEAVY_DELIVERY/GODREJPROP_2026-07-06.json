@@ -1,0 +1,32 @@
+{
+  "symbol": "GODREJPROP",
+  "scan_date": "2026-07-06",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 2046.4,
+  "entry_range": "2025.9 - 2066.9",
+  "target": 2251.0,
+  "stop_loss": 1856.6,
+  "rsi_at_scan": 77.57,
+  "vol_mult": 1.95,
+  "delivery_pct": 52.13,
+  "del_mult": 2.23,
+  "status": "ACTIVE",
+  "daily_updates": [
+    {
+      "date": "2026-07-06",
+      "open": 2016.0,
+      "high": 2051.5,
+      "low": 2001.4000244140625,
+      "close": 2046.4000244140625,
+      "pct_vs_scan": 0.0,
+      "status": "ACTIVE",
+      "delivery_pct": 52.13
+    }
+  ],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

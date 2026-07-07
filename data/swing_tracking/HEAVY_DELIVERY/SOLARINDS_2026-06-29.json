@@ -12,10 +12,61 @@
   "delivery_pct": 61.49,
   "del_mult": 3.68,
   "status": "ACTIVE",
-  "daily_updates": [],
+  "daily_updates": [
+    {
+      "date": "2026-06-30",
+      "open": 17870.0,
+      "high": 18780.0,
+      "low": 17825.0,
+      "close": 18696.0,
+      "pct_vs_scan": 5.05,
+      "status": "ACTIVE",
+      "delivery_pct": 33.58
+    },
+    {
+      "date": "2026-07-01",
+      "open": 18700.0,
+      "high": 18972.0,
+      "low": 18490.0,
+      "close": 18610.0,
+      "pct_vs_scan": 4.56,
+      "status": "ACTIVE",
+      "delivery_pct": 0.0
+    },
+    {
+      "date": "2026-07-02",
+      "open": 18650.0,
+      "high": 18818.0,
+      "low": 18369.0,
+      "close": 18659.0,
+      "pct_vs_scan": 4.84,
+      "status": "ACTIVE",
+      "delivery_pct": 36.86
+    },
+    {
+      "date": "2026-07-03",
+      "open": 18734.0,
+      "high": 18853.0,
+      "low": 18270.0,
+      "close": 18514.0,
+      "pct_vs_scan": 4.02,
+      "status": "ACTIVE",
+      "delivery_pct": 28.61
+    },
+    {
+      "date": "2026-07-06",
+      "open": 18510.0,
+      "high": 18866.0,
+      "low": 18418.0,
+      "close": 18539.0,
+      "pct_vs_scan": 4.16,
+      "status": "ACTIVE",
+      "delivery_pct": 33.51
+    }
+  ],
   "result": null,
   "exit_date": null,
   "exit_price": null,
-  "pnl_pct": null,
+  "pnl_pct": 3.74,
   "reason": null
 }

@@ -11,11 +11,52 @@
   "vol_mult": 1.87,
   "delivery_pct": 58.04,
   "del_mult": 2.2,
-  "status": "ACTIVE",
-  "daily_updates": [],
-  "result": null,
-  "exit_date": null,
-  "exit_price": null,
-  "pnl_pct": null,
-  "reason": null
+  "status": "SL_HIT",
+  "daily_updates": [
+    {
+      "date": "2026-06-30",
+      "open": 588.0,
+      "high": 588.2999877929688,
+      "low": 573.75,
+      "close": 583.1500244140625,
+      "pct_vs_scan": -0.53,
+      "status": "ACTIVE",
+      "delivery_pct": 50.04
+    },
+    {
+      "date": "2026-07-01",
+      "open": 583.5,
+      "high": 585.25,
+      "low": 567.9000244140625,
+      "close": 569.4500122070312,
+      "pct_vs_scan": -2.87,
+      "status": "ACTIVE",
+      "delivery_pct": 0.0
+    },
+    {
+      "date": "2026-07-02",
+      "open": 572.0,
+      "high": 572.0,
+      "low": 562.5,
+      "close": 565.3499755859375,
+      "pct_vs_scan": -3.57,
+      "status": "ACTIVE",
+      "delivery_pct": 46.96
+    },
+    {
+      "date": "2026-07-03",
+      "open": 567.7999877929688,
+      "high": 569.5,
+      "low": 549.2000122070312,
+      "close": 550.2000122070312,
+      "pct_vs_scan": -6.15,
+      "status": "SL_HIT",
+      "delivery_pct": 57.98
+    }
+  ],
+  "result": "LOSS",
+  "exit_date": "2026-07-03",
+  "exit_price": 551.1,
+  "pnl_pct": -6.28,
+  "reason": "Stop-loss \u20b9551.1 hit"
 }

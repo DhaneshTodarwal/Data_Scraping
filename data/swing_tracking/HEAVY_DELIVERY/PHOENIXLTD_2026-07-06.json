@@ -1,0 +1,32 @@
+{
+  "symbol": "PHOENIXLTD",
+  "scan_date": "2026-07-06",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 2105.8,
+  "entry_range": "2084.7 - 2126.9",
+  "target": 2316.4,
+  "stop_loss": 1916.9,
+  "rsi_at_scan": 81.27,
+  "vol_mult": 2.57,
+  "delivery_pct": 61.31,
+  "del_mult": 2.52,
+  "status": "ACTIVE",
+  "daily_updates": [
+    {
+      "date": "2026-07-06",
+      "open": 2070.0,
+      "high": 2118.0,
+      "low": 2030.0,
+      "close": 2105.800048828125,
+      "pct_vs_scan": 0.0,
+      "status": "ACTIVE",
+      "delivery_pct": 61.31
+    }
+  ],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
