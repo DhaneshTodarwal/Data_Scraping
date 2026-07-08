@@ -1,0 +1,21 @@
+{
+  "symbol": "ETERNAL",
+  "scan_date": "2026-07-07",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 289.4,
+  "entry_range": "286.5 - 292.3",
+  "target": 318.3,
+  "stop_loss": 266.2,
+  "rsi_at_scan": 75.42,
+  "vol_mult": 1.5,
+  "delivery_pct": 65.45,
+  "del_mult": 2.0,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
