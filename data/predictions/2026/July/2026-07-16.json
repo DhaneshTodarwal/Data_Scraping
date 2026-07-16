@@ -1,0 +1,46 @@
+{
+    "date": "2026-07-16",
+    "score": -0.25,
+    "bias": "\ud83d\udfe1 RANGEBOUND / NEUTRAL BIAS",
+    "recommended_strategy": "\u2696\ufe0f Short Straddle / Short Strangle. Ideal for 9:20 AM Straddle Strategy to collect premium decay.",
+    "score_details": [
+        [
+            "S&P 500 Positive Close",
+            0.5,
+            "+0.38%"
+        ],
+        [
+            "US VIX Decline",
+            0.5,
+            "-5.03%"
+        ],
+        [
+            "Nikkei Weak Asian Open",
+            -0.5,
+            "-2.84%"
+        ],
+        [
+            "Hang Seng Positive Open",
+            0.5,
+            "+2.00%"
+        ],
+        [
+            "Dollar Index Weaker",
+            0.25,
+            "-0.44%"
+        ],
+        [
+            "FII Cash Net Selling",
+            -0.5,
+            "-735.8 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-262,712"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-07-15"
+}

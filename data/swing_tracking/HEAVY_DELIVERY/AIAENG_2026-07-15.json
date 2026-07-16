@@ -1,0 +1,21 @@
+{
+  "symbol": "AIAENG",
+  "scan_date": "2026-07-15",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 4828.5,
+  "entry_range": "4780.2 - 4876.8",
+  "target": 5311.4,
+  "stop_loss": 4538.8,
+  "rsi_at_scan": 58.65,
+  "vol_mult": 1.46,
+  "delivery_pct": 70.58,
+  "del_mult": 2.06,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

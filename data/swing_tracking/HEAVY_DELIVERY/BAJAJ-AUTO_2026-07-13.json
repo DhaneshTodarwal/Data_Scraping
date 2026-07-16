@@ -12,7 +12,18 @@
   "delivery_pct": 64.2,
   "del_mult": 3.59,
   "status": "ACTIVE",
-  "daily_updates": [],
+  "daily_updates": [
+    {
+      "date": "2026-07-15",
+      "open": 10200.0,
+      "high": 10369.0,
+      "low": 10200.0,
+      "close": 10323.0,
+      "pct_vs_scan": -0.56,
+      "status": "ACTIVE",
+      "delivery_pct": 51.8
+    }
+  ],
   "result": null,
   "exit_date": null,
   "exit_price": null,
