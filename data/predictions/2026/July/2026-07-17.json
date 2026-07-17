@@ -1,0 +1,61 @@
+{
+    "date": "2026-07-17",
+    "score": -3.75,
+    "bias": "\ud83d\udd34 BEARISH BIAS",
+    "recommended_strategy": "\ud83d\udc3b Bear Call Spreads (Selling Calls) / Buy Put Spreads. Avoid naked short calls unless protected.",
+    "score_details": [
+        [
+            "S&P 500 Negative Close",
+            -0.5,
+            "-0.51%"
+        ],
+        [
+            "Nasdaq Weak Close",
+            -0.5,
+            "-1.47%"
+        ],
+        [
+            "US VIX Spike",
+            -0.5,
+            "+6.76%"
+        ],
+        [
+            "USD/INR Rupee Apprec",
+            0.5,
+            "-0.22%"
+        ],
+        [
+            "Nikkei Weak Asian Open",
+            -0.5,
+            "-4.40%"
+        ],
+        [
+            "Hang Seng Weak Open",
+            -0.5,
+            "-1.72%"
+        ],
+        [
+            "Dollar Index Stronger",
+            -0.25,
+            "+0.26%"
+        ],
+        [
+            "FII Cash Heavy Selling",
+            -1.0,
+            "-4,205.6 Cr"
+        ],
+        [
+            "DII Cash Strong Buying",
+            0.5,
+            "+2,986.4 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-249,886"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-07-16"
+}

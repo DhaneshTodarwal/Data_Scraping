@@ -1,0 +1,13 @@
+{
+    "date": "2026-07-16",
+    "DII": {
+        "buy_value_crores": 19236.8,
+        "sell_value_crores": 16250.39,
+        "net_value_crores": 2986.41
+    },
+    "FII": {
+        "buy_value_crores": 13576.08,
+        "sell_value_crores": 17781.64,
+        "net_value_crores": -4205.56
+    }
+}
