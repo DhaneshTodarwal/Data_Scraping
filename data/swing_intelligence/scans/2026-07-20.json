@@ -1,0 +1,50 @@
+[
+    {
+        "symbol": "BPCL",
+        "date": "2026-07-20",
+        "close": 317.6000061035156,
+        "pct_change": 0.6496651528606234,
+        "volume": 11701570,
+        "vol_mult": 1.5280883059078285,
+        "delivery_pct": 50.52,
+        "del_mult": 2.11007257810305,
+        "rsi": 59.68435249743546,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "314.4 - 320.8",
+        "target": 349.4,
+        "stop_loss": 298.5
+    },
+    {
+        "symbol": "PNB",
+        "date": "2026-07-20",
+        "close": 111.76000213623048,
+        "pct_change": 5.663236913373537,
+        "volume": 118981267,
+        "vol_mult": 5.745589405879521,
+        "delivery_pct": 26.75,
+        "del_mult": 3.9492782288597117,
+        "rsi": 65.4184757462106,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "110.6 - 112.9",
+        "target": 122.9,
+        "stop_loss": 105.1
+    },
+    {
+        "symbol": "INDIGO",
+        "date": "2026-07-20",
+        "close": 5229.0,
+        "pct_change": -0.37153472420691225,
+        "volume": 1230552,
+        "vol_mult": 0.8813743214402845,
+        "delivery_pct": 62.47,
+        "del_mult": 2.0887373812712564,
+        "rsi": 57.67019346043101,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "5176.7 - 5281.3",
+        "target": 5751.9,
+        "stop_loss": 4915.3
+    }
+]

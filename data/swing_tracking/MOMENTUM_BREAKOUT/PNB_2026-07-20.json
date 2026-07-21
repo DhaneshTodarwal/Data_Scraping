@@ -1,0 +1,21 @@
+{
+  "symbol": "PNB",
+  "scan_date": "2026-07-20",
+  "category": "MOMENTUM_BREAKOUT",
+  "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+  "scan_close": 111.76,
+  "entry_range": "110.6 - 112.9",
+  "target": 122.9,
+  "stop_loss": 105.1,
+  "rsi_at_scan": 65.42,
+  "vol_mult": 5.75,
+  "delivery_pct": 26.75,
+  "del_mult": 3.95,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

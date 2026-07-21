@@ -1,0 +1,14 @@
+[2026-07-21 17:07:43] ==============================================
+[2026-07-21 17:07:43] 🚀 STOCK INTELLIGENCE COLLECTOR
+[2026-07-21 17:07:43] ==============================================
+2026-07-21 17:07:43,294 - INFO - ============================================================
+2026-07-21 17:07:43,295 - INFO - 🚀 STOCK INTELLIGENCE COLLECTOR
+2026-07-21 17:07:43,295 - INFO - 📅 Date: 2026-07-21
+2026-07-21 17:07:43,295 - INFO - ============================================================
+2026-07-21 17:07:43,295 - INFO - ============================================================
+2026-07-21 17:07:43,295 - INFO - STEP 1: Collecting Option Chains
+2026-07-21 17:07:43,295 - INFO - ============================================================
+2026-07-21 17:07:43,295 - INFO - [1/10] Fetching RELIANCE...
+2026-07-21 17:07:43,295 - INFO - Initializing NSE session...
+2026-07-21 17:07:43,302 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x796e4f631160>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-07-21 17:07:43,302 - WARNING -   ❌ RELIANCE: Failed
