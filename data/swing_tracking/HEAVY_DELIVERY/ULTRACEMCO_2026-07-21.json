@@ -1,0 +1,21 @@
+{
+  "symbol": "ULTRACEMCO",
+  "scan_date": "2026-07-21",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 12094.0,
+  "entry_range": "11973.1 - 12214.9",
+  "target": 13303.4,
+  "stop_loss": 11368.4,
+  "rsi_at_scan": 67.62,
+  "vol_mult": 2.86,
+  "delivery_pct": 53.62,
+  "del_mult": 3.18,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
