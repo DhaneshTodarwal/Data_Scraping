@@ -1,0 +1,21 @@
+{
+  "symbol": "CONCOR",
+  "scan_date": "2026-07-27",
+  "category": "MOMENTUM_BREAKOUT",
+  "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+  "scan_close": 510.5,
+  "entry_range": "505.4 - 515.6",
+  "target": 561.6,
+  "stop_loss": 479.9,
+  "rsi_at_scan": 62.21,
+  "vol_mult": 5.62,
+  "delivery_pct": 32.2,
+  "del_mult": 2.96,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

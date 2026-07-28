@@ -1,0 +1,32 @@
+{
+  "symbol": "SHREECEM",
+  "scan_date": "2026-07-23",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 26825.0,
+  "entry_range": "26556.8 - 27093.2",
+  "target": 29507.5,
+  "stop_loss": 25215.5,
+  "rsi_at_scan": 60.19,
+  "vol_mult": 1.21,
+  "delivery_pct": 50.95,
+  "del_mult": 2.39,
+  "status": "ACTIVE",
+  "daily_updates": [
+    {
+      "date": "2026-07-27",
+      "open": 26960.0,
+      "high": 27040.0,
+      "low": 26620.0,
+      "close": 26860.0,
+      "pct_vs_scan": 0.13,
+      "status": "ACTIVE",
+      "delivery_pct": 38.04
+    }
+  ],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

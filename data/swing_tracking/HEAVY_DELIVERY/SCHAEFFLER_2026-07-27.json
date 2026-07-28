@@ -1,0 +1,21 @@
+{
+  "symbol": "SCHAEFFLER",
+  "scan_date": "2026-07-27",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 4185.5,
+  "entry_range": "4143.6 - 4227.4",
+  "target": 4604.1,
+  "stop_loss": 3934.4,
+  "rsi_at_scan": 53.58,
+  "vol_mult": 1.22,
+  "delivery_pct": 66.46,
+  "del_mult": 2.18,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

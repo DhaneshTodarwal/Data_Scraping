@@ -1,0 +1,26 @@
+{
+    "date": "2026-07-23",
+    "score": -2.5,
+    "bias": "\ud83d\udfe1 RANGEBOUND / NEUTRAL BIAS",
+    "recommended_strategy": "\u2696\ufe0f Short Straddle / Short Strangle. Ideal for 9:20 AM Straddle Strategy to collect premium decay.",
+    "score_details": [
+        [
+            "FII Cash Net Selling",
+            -0.5,
+            "-819.2 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-251,704"
+        ],
+        [
+            "FII Index Fut Short Addition",
+            -1.0,
+            "-22,857"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-07-22"
+}

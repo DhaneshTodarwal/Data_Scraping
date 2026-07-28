@@ -11,7 +11,7 @@
   "vol_mult": 1.82,
   "delivery_pct": 68.08,
   "del_mult": 2.48,
-  "status": "ACTIVE",
+  "status": "SL_HIT",
   "daily_updates": [
     {
       "date": "2026-07-13",
@@ -62,11 +62,21 @@
       "pct_vs_scan": -2.64,
       "status": "ACTIVE",
       "delivery_pct": 59.39
+    },
+    {
+      "date": "2026-07-23",
+      "open": 1080.0,
+      "high": 1098.9000244140625,
+      "low": 1072.300048828125,
+      "close": 1083.199951171875,
+      "pct_vs_scan": -5.82,
+      "status": "SL_HIT",
+      "delivery_pct": 37.55
     }
   ],
-  "result": null,
-  "exit_date": null,
-  "exit_price": null,
-  "pnl_pct": null,
-  "reason": null
+  "result": "LOSS",
+  "exit_date": "2026-07-23",
+  "exit_price": 1081.1,
+  "pnl_pct": -4.07,
+  "reason": "Stop-loss \u20b91081.1 hit"
 }
