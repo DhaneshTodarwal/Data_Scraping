@@ -1,0 +1,21 @@
+{
+  "symbol": "TATACAP",
+  "scan_date": "2026-07-28",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 354.95,
+  "entry_range": "351.4 - 358.5",
+  "target": 390.4,
+  "stop_loss": 333.7,
+  "rsi_at_scan": 55.51,
+  "vol_mult": 0.8,
+  "delivery_pct": 56.36,
+  "del_mult": 2.34,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

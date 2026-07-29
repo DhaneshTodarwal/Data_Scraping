@@ -1,0 +1,21 @@
+{
+  "symbol": "SUNPHARMA",
+  "scan_date": "2026-07-28",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 1976.7,
+  "entry_range": "1956.9 - 1996.5",
+  "target": 2174.4,
+  "stop_loss": 1858.1,
+  "rsi_at_scan": 73.22,
+  "vol_mult": 2.13,
+  "delivery_pct": 75.4,
+  "del_mult": 2.03,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
