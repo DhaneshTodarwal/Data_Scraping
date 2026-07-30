@@ -1,0 +1,21 @@
+{
+  "symbol": "TATAINVEST",
+  "scan_date": "2026-07-29",
+  "category": "MOMENTUM_BREAKOUT",
+  "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+  "scan_close": 675.75,
+  "entry_range": "669.0 - 682.5",
+  "target": 743.3,
+  "stop_loss": 635.2,
+  "rsi_at_scan": 53.7,
+  "vol_mult": 3.09,
+  "delivery_pct": 28.67,
+  "del_mult": 2.48,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

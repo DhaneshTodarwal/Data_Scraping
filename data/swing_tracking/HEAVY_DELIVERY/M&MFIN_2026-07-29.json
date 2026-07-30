@@ -1,0 +1,21 @@
+{
+  "symbol": "M&MFIN",
+  "scan_date": "2026-07-29",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 393.75,
+  "entry_range": "389.8 - 397.7",
+  "target": 433.1,
+  "stop_loss": 338.6,
+  "rsi_at_scan": 77.48,
+  "vol_mult": 1.34,
+  "delivery_pct": 60.0,
+  "del_mult": 2.07,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
