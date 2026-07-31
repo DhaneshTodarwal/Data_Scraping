@@ -1,0 +1,21 @@
+{
+  "symbol": "HONAUT",
+  "scan_date": "2026-07-30",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 39505.0,
+  "entry_range": "39109.9 - 39900.1",
+  "target": 43455.5,
+  "stop_loss": 37134.7,
+  "rsi_at_scan": 59.4,
+  "vol_mult": 1.92,
+  "delivery_pct": 51.57,
+  "del_mult": 2.06,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

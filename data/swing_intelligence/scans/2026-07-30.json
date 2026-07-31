@@ -1,0 +1,34 @@
+[
+    {
+        "symbol": "TVSMOTOR",
+        "date": "2026-07-30",
+        "close": 4208.39990234375,
+        "pct_change": 3.258411068442868,
+        "volume": 2913169,
+        "vol_mult": 1.9936291742525514,
+        "delivery_pct": 62.29,
+        "del_mult": 2.3543354127193035,
+        "rsi": 78.52550216098359,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "4166.3 - 4250.5",
+        "target": 4629.2,
+        "stop_loss": 3757.2
+    },
+    {
+        "symbol": "HONAUT",
+        "date": "2026-07-30",
+        "close": 39505.0,
+        "pct_change": -1.4960728088767028,
+        "volume": 14731,
+        "vol_mult": 1.9172751291762653,
+        "delivery_pct": 51.57,
+        "del_mult": 2.0605386639181966,
+        "rsi": 59.40283902469344,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "39109.9 - 39900.1",
+        "target": 43455.5,
+        "stop_loss": 37134.7
+    }
+]
