@@ -1,0 +1,21 @@
+{
+  "symbol": "SUNDARMFIN",
+  "scan_date": "2026-07-31",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 4665.6,
+  "entry_range": "4618.9 - 4712.3",
+  "target": 5132.2,
+  "stop_loss": 4385.7,
+  "rsi_at_scan": 60.02,
+  "vol_mult": 2.1,
+  "delivery_pct": 68.56,
+  "del_mult": 3.04,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

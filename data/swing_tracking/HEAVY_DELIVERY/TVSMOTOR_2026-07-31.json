@@ -1,0 +1,21 @@
+{
+  "symbol": "TVSMOTOR",
+  "scan_date": "2026-07-31",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 4313.1,
+  "entry_range": "4270.0 - 4356.2",
+  "target": 4744.4,
+  "stop_loss": 3810.1,
+  "rsi_at_scan": 80.79,
+  "vol_mult": 1.91,
+  "delivery_pct": 67.07,
+  "del_mult": 2.12,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
