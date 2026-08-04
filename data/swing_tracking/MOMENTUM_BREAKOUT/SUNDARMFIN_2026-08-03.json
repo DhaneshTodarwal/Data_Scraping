@@ -1,0 +1,21 @@
+{
+  "symbol": "SUNDARMFIN",
+  "scan_date": "2026-08-03",
+  "category": "MOMENTUM_BREAKOUT",
+  "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+  "scan_close": 4828.7,
+  "entry_range": "4780.4 - 4877.0",
+  "target": 5311.6,
+  "stop_loss": 4534.6,
+  "rsi_at_scan": 66.49,
+  "vol_mult": 3.68,
+  "delivery_pct": 34.38,
+  "del_mult": 2.57,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

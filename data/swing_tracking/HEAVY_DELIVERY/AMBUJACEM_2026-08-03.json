@@ -1,0 +1,21 @@
+{
+  "symbol": "AMBUJACEM",
+  "scan_date": "2026-08-03",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 444.0,
+  "entry_range": "439.6 - 448.4",
+  "target": 488.4,
+  "stop_loss": 417.4,
+  "rsi_at_scan": 57.83,
+  "vol_mult": 1.25,
+  "delivery_pct": 58.25,
+  "del_mult": 2.0,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
