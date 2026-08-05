@@ -1,0 +1,21 @@
+{
+  "symbol": "ICICIPRULI",
+  "scan_date": "2026-08-04",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 513.55,
+  "entry_range": "508.4 - 518.7",
+  "target": 564.9,
+  "stop_loss": 482.7,
+  "rsi_at_scan": 54.97,
+  "vol_mult": 2.94,
+  "delivery_pct": 65.84,
+  "del_mult": 3.45,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

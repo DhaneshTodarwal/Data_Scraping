@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-05",
+  "collection_time": "15:37:02",
+  "nifty": {
+    "ltp": 0.0,
+    "atm": 0,
+    "strikes_collected": 0,
+    "candles": 0
+  },
+  "banknifty": {
+    "ltp": 0.0,
+    "atm": 0,
+    "strikes_collected": 0,
+    "candles": 0
+  },
+  "top_stocks_collected": 0,
+  "total_files": 0,
+  "errors": 0,
+  "status": "failed"
+}

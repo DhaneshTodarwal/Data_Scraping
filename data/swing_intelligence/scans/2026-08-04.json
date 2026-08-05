@@ -1,0 +1,50 @@
+[
+    {
+        "symbol": "AUROPHARMA",
+        "date": "2026-08-04",
+        "close": 1585.9000244140625,
+        "pct_change": 2.0068228096791207,
+        "volume": 2242896,
+        "vol_mult": 1.8827996472294195,
+        "delivery_pct": 62.69,
+        "del_mult": 2.7692129254026194,
+        "rsi": 57.070397200254604,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "1570.0 - 1601.8",
+        "target": 1744.5,
+        "stop_loss": 1490.7
+    },
+    {
+        "symbol": "ICICIPRULI",
+        "date": "2026-08-04",
+        "close": 513.5499877929688,
+        "pct_change": -1.6846919123711057,
+        "volume": 5351736,
+        "vol_mult": 2.9357002212580525,
+        "delivery_pct": 65.84,
+        "del_mult": 3.453485161632922,
+        "rsi": 54.97284394769065,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "508.4 - 518.7",
+        "target": 564.9,
+        "stop_loss": 482.7
+    },
+    {
+        "symbol": "BLUESTARCO",
+        "date": "2026-08-04",
+        "close": 1685.0,
+        "pct_change": -2.55609255262359,
+        "volume": 866382,
+        "vol_mult": 2.7940086875997,
+        "delivery_pct": 58.17,
+        "del_mult": 3.659652857852378,
+        "rsi": 52.819527607693935,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "1668.2 - 1701.8",
+        "target": 1853.5,
+        "stop_loss": 1583.9
+    }
+]
