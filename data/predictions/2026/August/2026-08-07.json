@@ -1,0 +1,36 @@
+{
+    "date": "2026-08-07",
+    "score": -1.5,
+    "bias": "\ud83d\udfe1 RANGEBOUND / NEUTRAL BIAS",
+    "recommended_strategy": "\u2696\ufe0f Short Straddle / Short Strangle. Ideal for 9:20 AM Straddle Strategy to collect premium decay.",
+    "score_details": [
+        [
+            "Nikkei Weak Asian Open",
+            -0.5,
+            "-0.98%"
+        ],
+        [
+            "US 10Y Yield Spike",
+            -0.25,
+            "+1.15%"
+        ],
+        [
+            "Dollar Index Stronger",
+            -0.25,
+            "+0.27%"
+        ],
+        [
+            "DII Cash Strong Buying",
+            0.5,
+            "+4,013.6 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-145,118"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-08-06"
+}
