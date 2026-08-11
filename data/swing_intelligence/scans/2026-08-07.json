@@ -1,0 +1,34 @@
+[
+    {
+        "symbol": "BEML",
+        "date": "2026-08-07",
+        "close": 1787.800048828125,
+        "pct_change": 3.6345762059901032,
+        "volume": 1253291,
+        "vol_mult": 4.578635886965006,
+        "delivery_pct": 19.56,
+        "del_mult": 2.221354289380489,
+        "rsi": 52.04292239811428,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "1769.9 - 1805.7",
+        "target": 1966.6,
+        "stop_loss": 1680.5
+    },
+    {
+        "symbol": "TATAINVEST",
+        "date": "2026-08-07",
+        "close": 693.6500244140625,
+        "pct_change": 3.9799205216287437,
+        "volume": 3671061,
+        "vol_mult": 9.202434656530036,
+        "delivery_pct": 15.6,
+        "del_mult": 3.706742360191554,
+        "rsi": 59.32948130062937,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "686.7 - 700.6",
+        "target": 763.0,
+        "stop_loss": 652.0
+    }
+]
