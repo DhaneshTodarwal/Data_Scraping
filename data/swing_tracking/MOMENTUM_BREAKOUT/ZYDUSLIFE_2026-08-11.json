@@ -12,7 +12,28 @@
   "delivery_pct": 26.34,
   "del_mult": 1.0,
   "status": "ACTIVE",
-  "daily_updates": [],
+  "daily_updates": [
+    {
+      "date": "2026-08-12",
+      "open": 1190.0,
+      "high": 1205.0,
+      "low": 1151.0,
+      "close": 1205.0,
+      "pct_vs_scan": 1.18,
+      "status": "ACTIVE",
+      "delivery_pct": 48.37
+    },
+    {
+      "date": "2026-08-13",
+      "open": 1201.0,
+      "high": 1202.9000244140625,
+      "low": 1163.5,
+      "close": 1167.300048828125,
+      "pct_vs_scan": -1.99,
+      "status": "ACTIVE",
+      "delivery_pct": 50.62
+    }
+  ],
   "result": null,
   "exit_date": null,
   "exit_price": null,

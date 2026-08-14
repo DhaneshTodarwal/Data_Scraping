@@ -1,0 +1,34 @@
+[
+    {
+        "symbol": "BHARTIHEXA",
+        "date": "2026-08-13",
+        "close": 1565.5,
+        "pct_change": 5.349932705248994,
+        "volume": 758628,
+        "vol_mult": 4.380285516403956,
+        "delivery_pct": 16.96,
+        "del_mult": 1.0,
+        "rsi": 50.92433204139498,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "1549.8 - 1581.2",
+        "target": 1722.1,
+        "stop_loss": 1471.6
+    },
+    {
+        "symbol": "FLUOROCHEM",
+        "date": "2026-08-13",
+        "close": 4714.7001953125,
+        "pct_change": 3.261211550978005,
+        "volume": 1215025,
+        "vol_mult": 4.615249038841934,
+        "delivery_pct": 19.89,
+        "del_mult": 1.0,
+        "rsi": 65.88621318780105,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "4667.6 - 4761.8",
+        "target": 5186.2,
+        "stop_loss": 4431.8
+    }
+]

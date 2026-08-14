@@ -1,0 +1,18 @@
+[
+    {
+        "symbol": "FLUOROCHEM",
+        "date": "2026-08-12",
+        "close": 4565.7998046875,
+        "pct_change": 3.3875187436880783,
+        "volume": 978995,
+        "vol_mult": 4.264189445968328,
+        "delivery_pct": 19.19,
+        "del_mult": 1.0,
+        "rsi": 60.967132718220846,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "4520.1 - 4611.5",
+        "target": 5022.4,
+        "stop_loss": 4291.9
+    }
+]
