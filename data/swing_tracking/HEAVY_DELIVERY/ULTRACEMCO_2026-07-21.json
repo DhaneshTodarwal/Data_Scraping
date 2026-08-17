@@ -142,6 +142,16 @@
       "pct_vs_scan": -3.21,
       "status": "ACTIVE",
       "delivery_pct": 39.09
+    },
+    {
+      "date": "2026-08-14",
+      "open": 11657.0,
+      "high": 11698.0,
+      "low": 11587.0,
+      "close": 11619.0,
+      "pct_vs_scan": -3.93,
+      "status": "ACTIVE",
+      "delivery_pct": 58.87
     }
   ],
   "result": null,

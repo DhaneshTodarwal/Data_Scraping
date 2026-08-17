@@ -1,0 +1,31 @@
+{
+    "date": "2026-08-17",
+    "score": -0.25,
+    "bias": "\ud83d\udfe1 RANGEBOUND / NEUTRAL BIAS",
+    "recommended_strategy": "\u2696\ufe0f Short Straddle / Short Strangle. Ideal for 9:20 AM Straddle Strategy to collect premium decay.",
+    "score_details": [
+        [
+            "Hang Seng Positive Open",
+            0.5,
+            "+1.57%"
+        ],
+        [
+            "US 10Y Yield Spike",
+            -0.25,
+            "+1.19%"
+        ],
+        [
+            "FII Cash Net Buying",
+            0.5,
+            "+508.1 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-176,698"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-08-14"
+}
