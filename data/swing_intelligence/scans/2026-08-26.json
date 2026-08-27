@@ -1,0 +1,18 @@
+[
+    {
+        "symbol": "CDSL",
+        "date": "2026-08-26",
+        "close": 1434.0,
+        "pct_change": 7.900677200902928,
+        "volume": 3815850,
+        "vol_mult": 3.1887706070701904,
+        "delivery_pct": 43.12,
+        "del_mult": 1.0,
+        "rsi": 66.82103111779043,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "1419.7 - 1448.3",
+        "target": 1577.4,
+        "stop_loss": 1348.0
+    }
+]
