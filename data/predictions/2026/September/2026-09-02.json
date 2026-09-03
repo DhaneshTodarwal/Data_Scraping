@@ -1,0 +1,61 @@
+{
+    "date": "2026-09-02",
+    "score": -4.75,
+    "bias": "\ud83d\udd34 BEARISH BIAS",
+    "recommended_strategy": "\ud83d\udc3b Bear Call Spreads (Selling Calls) / Buy Put Spreads. Avoid naked short calls unless protected.",
+    "score_details": [
+        [
+            "S&P 500 Negative Close",
+            -0.5,
+            "-0.71%"
+        ],
+        [
+            "Nasdaq Weak Close",
+            -0.5,
+            "-1.03%"
+        ],
+        [
+            "US VIX Spike",
+            -0.5,
+            "+9.52%"
+        ],
+        [
+            "Brent Crude Spike",
+            -0.5,
+            "+5.47%"
+        ],
+        [
+            "Nikkei Weak Asian Open",
+            -0.5,
+            "-2.63%"
+        ],
+        [
+            "Hang Seng Weak Open",
+            -0.5,
+            "-1.04%"
+        ],
+        [
+            "Dollar Index Stronger",
+            -0.25,
+            "+0.34%"
+        ],
+        [
+            "FII Cash Heavy Selling",
+            -1.0,
+            "-7,985.9 Cr"
+        ],
+        [
+            "DII Cash Strong Buying",
+            0.5,
+            "+4,588.9 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-209,315"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-08-31"
+}

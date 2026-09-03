@@ -1,0 +1,93 @@
+[2026-09-01 15:35:01] ==============================================
+[2026-09-01 15:35:01] 🚀 STOCK INTELLIGENCE COLLECTOR
+[2026-09-01 15:35:01] ==============================================
+2026-09-01 15:35:01,814 - INFO - ============================================================
+2026-09-01 15:35:01,815 - INFO - 🚀 STOCK INTELLIGENCE COLLECTOR
+2026-09-01 15:35:01,815 - INFO - 📅 Date: 2026-09-01
+2026-09-01 15:35:01,815 - INFO - ============================================================
+2026-09-01 15:35:01,815 - INFO - ============================================================
+2026-09-01 15:35:01,815 - INFO - STEP 1: Collecting Option Chains
+2026-09-01 15:35:01,815 - INFO - ============================================================
+2026-09-01 15:35:01,815 - INFO - [1/10] Fetching RELIANCE...
+2026-09-01 15:35:01,815 - INFO - Initializing NSE session...
+2026-09-01 15:35:01,819 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b1160>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:01,819 - WARNING -   ❌ RELIANCE: Failed
+2026-09-01 15:35:03,819 - INFO - [2/10] Fetching HDFCBANK...
+2026-09-01 15:35:03,819 - INFO - Initializing NSE session...
+2026-09-01 15:35:03,822 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b8f50>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:03,822 - WARNING -   ❌ HDFCBANK: Failed
+2026-09-01 15:35:05,823 - INFO - [3/10] Fetching ICICIBANK...
+2026-09-01 15:35:05,823 - INFO - Initializing NSE session...
+2026-09-01 15:35:05,825 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b9590>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:05,825 - WARNING -   ❌ ICICIBANK: Failed
+2026-09-01 15:35:07,826 - INFO - [4/10] Fetching INFY...
+2026-09-01 15:35:07,826 - INFO - Initializing NSE session...
+2026-09-01 15:35:07,829 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b9810>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:07,829 - WARNING -   ❌ INFY: Failed
+2026-09-01 15:35:09,829 - INFO - [5/10] Fetching TCS...
+2026-09-01 15:35:09,830 - INFO - Initializing NSE session...
+2026-09-01 15:35:09,833 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b9d10>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:09,833 - WARNING -   ❌ TCS: Failed
+2026-09-01 15:35:11,833 - INFO - [6/10] Fetching SBIN...
+2026-09-01 15:35:11,834 - INFO - Initializing NSE session...
+2026-09-01 15:35:11,837 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b9a90>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:11,837 - WARNING -   ❌ SBIN: Failed
+2026-09-01 15:35:13,837 - INFO - [7/10] Fetching AXISBANK...
+2026-09-01 15:35:13,837 - INFO - Initializing NSE session...
+2026-09-01 15:35:13,840 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b91d0>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:13,841 - WARNING -   ❌ AXISBANK: Failed
+2026-09-01 15:35:15,841 - INFO - [8/10] Fetching KOTAKBANK...
+2026-09-01 15:35:15,841 - INFO - Initializing NSE session...
+2026-09-01 15:35:15,844 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b9310>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:15,844 - WARNING -   ❌ KOTAKBANK: Failed
+2026-09-01 15:35:17,844 - INFO - [9/10] Fetching BAJFINANCE...
+2026-09-01 15:35:17,844 - INFO - Initializing NSE session...
+2026-09-01 15:35:17,847 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b8f50>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:17,847 - WARNING -   ❌ BAJFINANCE: Failed
+2026-09-01 15:35:19,847 - INFO - [10/10] Fetching TATAMOTORS...
+2026-09-01 15:35:19,848 - INFO - Initializing NSE session...
+2026-09-01 15:35:19,850 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b8550>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:19,850 - WARNING -   ❌ TATAMOTORS: Failed
+2026-09-01 15:35:21,851 - INFO - Collected: 0, Failed: 10
+2026-09-01 15:35:21,851 - INFO - ============================================================
+2026-09-01 15:35:21,851 - INFO - STEP 2: Collecting Gainers/Losers
+2026-09-01 15:35:21,851 - INFO - ============================================================
+2026-09-01 15:35:21,851 - INFO - Initializing NSE session...
+2026-09-01 15:35:21,854 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b8190>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:22,855 - INFO - Initializing NSE session...
+2026-09-01 15:35:22,858 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7fd60a6b9e50>: Failed to resolve 'www.nseindia.com' ([Errno -3] Temporary failure in name resolution)"))
+2026-09-01 15:35:22,863 - INFO -   Gainers: 0
+2026-09-01 15:35:22,863 - INFO -   Losers: 0
+2026-09-01 15:35:22,863 - INFO - ============================================================
+2026-09-01 15:35:22,863 - INFO - STEP 3: Detecting OI Spurts
+2026-09-01 15:35:22,863 - INFO - ============================================================
+2026-09-01 15:35:22,864 - INFO -   Total Spurts: 0
+2026-09-01 15:35:22,865 - INFO -   Long Buildups: 0
+2026-09-01 15:35:22,865 - INFO -   Short Buildups: 0
+2026-09-01 15:35:22,865 - INFO -   Market Sentiment: NEUTRAL
+2026-09-01 15:35:22,865 - INFO - ============================================================
+2026-09-01 15:35:22,865 - INFO - STEP 4: Generating Predictions
+2026-09-01 15:35:22,865 - INFO - ============================================================
+2026-09-01 15:35:22,866 - INFO -   Total Predictions: 0
+2026-09-01 15:35:22,866 - INFO -   Top Bullish: []
+2026-09-01 15:35:22,866 - INFO -   Top Bearish: []
+2026-09-01 15:35:22,866 - INFO - ============================================================
+2026-09-01 15:35:22,866 - INFO - STEP 5: Generating Daily Report
+2026-09-01 15:35:22,866 - INFO - ============================================================
+2026-09-01 15:35:22,867 - INFO -   Report generated successfully
+2026-09-01 15:35:22,867 - INFO - ============================================================
+2026-09-01 15:35:22,867 - INFO - ✅ ALL STEPS COMPLETED SUCCESSFULLY
+2026-09-01 15:35:22,867 - INFO - 📁 Data saved to: stock_intelligence/2026-09-01/
+2026-09-01 15:35:22,868 - INFO - ============================================================
+
+📊 Collection Summary:
+  • Option chains: 0 stocks
+  • Gainers: 0
+  • Losers: 0
+  • OI Spurts: 0
+  • Predictions: 0
+
+📁 Data saved to: stock_intelligence/2026-09-01/
+[2026-09-01 15:35:22] ==============================================
+[2026-09-01 15:35:22] ✅ COLLECTION COMPLETED
+[2026-09-01 15:35:22] ==============================================
