@@ -1,0 +1,21 @@
+{
+  "symbol": "GRASIM",
+  "scan_date": "2026-09-03",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 3310.0,
+  "entry_range": "3276.9 - 3343.1",
+  "target": 3641.0,
+  "stop_loss": 3111.4,
+  "rsi_at_scan": 60.31,
+  "vol_mult": 2.89,
+  "delivery_pct": 61.48,
+  "del_mult": 2.36,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
