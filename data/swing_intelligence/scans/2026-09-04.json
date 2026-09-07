@@ -1,0 +1,18 @@
+[
+    {
+        "symbol": "CRISIL",
+        "date": "2026-09-04",
+        "close": 4802.0,
+        "pct_change": 0.8887073334820084,
+        "volume": 184813,
+        "vol_mult": 3.178216987475473,
+        "delivery_pct": 80.86,
+        "del_mult": 4.080211407371412,
+        "rsi": 71.79056471807534,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "4754.0 - 4850.0",
+        "target": 5282.2,
+        "stop_loss": 4513.9
+    }
+]
