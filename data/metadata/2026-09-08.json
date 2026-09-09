@@ -1,20 +1,20 @@
 {
   "date": "2026-09-08",
-  "collection_time": "15:37:02",
+  "collection_time": "21:01:03",
   "nifty": {
-    "ltp": 0.0,
-    "atm": 0,
-    "strikes_collected": 0,
+    "ltp": 23635.1,
+    "atm": 23650,
+    "strikes_collected": 79,
     "candles": 0
   },
   "banknifty": {
-    "ltp": 0.0,
-    "atm": 0,
-    "strikes_collected": 0,
+    "ltp": 56777.55,
+    "atm": 56800,
+    "strikes_collected": 78,
     "candles": 0
   },
-  "top_stocks_collected": 0,
-  "total_files": 0,
+  "top_stocks_collected": 47,
+  "total_files": 282,
   "errors": 0,
-  "status": "failed"
+  "status": "success"
 }
