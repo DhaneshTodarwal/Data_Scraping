@@ -232,6 +232,16 @@
       "pct_vs_scan": -2.37,
       "status": "ACTIVE",
       "delivery_pct": 50.0
+    },
+    {
+      "date": "2026-09-15",
+      "open": 978.2000122070312,
+      "high": 984.5,
+      "low": 955.0,
+      "close": 956.5,
+      "pct_vs_scan": -6.43,
+      "status": "ACTIVE",
+      "delivery_pct": 58.88
     }
   ],
   "result": null,
