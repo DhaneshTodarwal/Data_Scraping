@@ -1,0 +1,82 @@
+[2026-09-30 15:35:01] ==============================================
+[2026-09-30 15:35:01] 🚀 STOCK INTELLIGENCE COLLECTOR
+[2026-09-30 15:35:01] ==============================================
+2026-09-30 15:35:01,607 - INFO - ============================================================
+2026-09-30 15:35:01,607 - INFO - 🚀 STOCK INTELLIGENCE COLLECTOR
+2026-09-30 15:35:01,607 - INFO - 📅 Date: 2026-09-30
+2026-09-30 15:35:01,607 - INFO - ============================================================
+2026-09-30 15:35:01,607 - INFO - ============================================================
+2026-09-30 15:35:01,607 - INFO - STEP 1: Collecting Option Chains
+2026-09-30 15:35:01,607 - INFO - ============================================================
+2026-09-30 15:35:01,607 - INFO - [1/10] Fetching RELIANCE...
+2026-09-30 15:35:01,607 - INFO - Initializing NSE session...
+2026-09-30 15:35:03,407 - WARNING -   ❌ RELIANCE: Failed
+2026-09-30 15:35:05,407 - INFO - [2/10] Fetching HDFCBANK...
+2026-09-30 15:35:05,408 - INFO - Initializing NSE session...
+2026-09-30 15:35:09,025 - WARNING -   ❌ HDFCBANK: Failed
+2026-09-30 15:35:11,025 - INFO - [3/10] Fetching ICICIBANK...
+2026-09-30 15:35:11,026 - INFO - Initializing NSE session...
+2026-09-30 15:35:11,957 - WARNING -   ❌ ICICIBANK: Failed
+2026-09-30 15:35:13,958 - INFO - [4/10] Fetching INFY...
+2026-09-30 15:35:13,958 - INFO - Initializing NSE session...
+2026-09-30 15:35:29,146 - ERROR - Session init error: HTTPSConnectionPool(host='www.nseindia.com', port=443): Read timed out. (read timeout=15)
+2026-09-30 15:35:29,146 - WARNING -   ❌ INFY: Failed
+2026-09-30 15:35:31,147 - INFO - [5/10] Fetching TCS...
+2026-09-30 15:35:31,147 - INFO - Initializing NSE session...
+2026-09-30 15:35:33,188 - WARNING -   ❌ TCS: Failed
+2026-09-30 15:35:35,189 - INFO - [6/10] Fetching SBIN...
+2026-09-30 15:35:35,189 - INFO - Initializing NSE session...
+2026-09-30 15:35:37,079 - WARNING -   ❌ SBIN: Failed
+2026-09-30 15:35:39,080 - INFO - [7/10] Fetching AXISBANK...
+2026-09-30 15:35:39,080 - INFO - Initializing NSE session...
+2026-09-30 15:35:40,452 - WARNING -   ❌ AXISBANK: Failed
+2026-09-30 15:35:42,453 - INFO - [8/10] Fetching KOTAKBANK...
+2026-09-30 15:35:42,453 - INFO - Initializing NSE session...
+2026-09-30 15:35:52,028 - WARNING -   ❌ KOTAKBANK: Failed
+2026-09-30 15:35:54,028 - INFO - [9/10] Fetching BAJFINANCE...
+2026-09-30 15:35:54,028 - INFO - Initializing NSE session...
+2026-09-30 15:35:55,095 - WARNING -   ❌ BAJFINANCE: Failed
+2026-09-30 15:35:57,095 - INFO - [10/10] Fetching TATAMOTORS...
+2026-09-30 15:35:57,096 - INFO - Initializing NSE session...
+2026-09-30 15:35:57,961 - WARNING -   ❌ TATAMOTORS: Failed
+2026-09-30 15:35:59,962 - INFO - Collected: 0, Failed: 10
+2026-09-30 15:35:59,962 - INFO - ============================================================
+2026-09-30 15:35:59,962 - INFO - STEP 2: Collecting Gainers/Losers
+2026-09-30 15:35:59,963 - INFO - ============================================================
+2026-09-30 15:35:59,963 - INFO - Initializing NSE session...
+2026-09-30 15:36:01,624 - INFO - Initializing NSE session...
+2026-09-30 15:36:04,515 - INFO -   Gainers: 0
+2026-09-30 15:36:04,515 - INFO -   Losers: 0
+2026-09-30 15:36:04,515 - INFO - ============================================================
+2026-09-30 15:36:04,515 - INFO - STEP 3: Detecting OI Spurts
+2026-09-30 15:36:04,515 - INFO - ============================================================
+2026-09-30 15:36:04,517 - INFO -   Total Spurts: 0
+2026-09-30 15:36:04,517 - INFO -   Long Buildups: 0
+2026-09-30 15:36:04,517 - INFO -   Short Buildups: 0
+2026-09-30 15:36:04,517 - INFO -   Market Sentiment: NEUTRAL
+2026-09-30 15:36:04,517 - INFO - ============================================================
+2026-09-30 15:36:04,517 - INFO - STEP 4: Generating Predictions
+2026-09-30 15:36:04,517 - INFO - ============================================================
+2026-09-30 15:36:04,518 - INFO -   Total Predictions: 0
+2026-09-30 15:36:04,518 - INFO -   Top Bullish: []
+2026-09-30 15:36:04,518 - INFO -   Top Bearish: []
+2026-09-30 15:36:04,518 - INFO - ============================================================
+2026-09-30 15:36:04,519 - INFO - STEP 5: Generating Daily Report
+2026-09-30 15:36:04,519 - INFO - ============================================================
+2026-09-30 15:36:04,520 - INFO -   Report generated successfully
+2026-09-30 15:36:04,521 - INFO - ============================================================
+2026-09-30 15:36:04,521 - INFO - ✅ ALL STEPS COMPLETED SUCCESSFULLY
+2026-09-30 15:36:04,521 - INFO - 📁 Data saved to: stock_intelligence/2026-09-30/
+2026-09-30 15:36:04,521 - INFO - ============================================================
+
+📊 Collection Summary:
+  • Option chains: 0 stocks
+  • Gainers: 0
+  • Losers: 0
+  • OI Spurts: 0
+  • Predictions: 0
+
+📁 Data saved to: stock_intelligence/2026-09-30/
+[2026-09-30 15:36:04] ==============================================
+[2026-09-30 15:36:04] ✅ COLLECTION COMPLETED
+[2026-09-30 15:36:04] ==============================================

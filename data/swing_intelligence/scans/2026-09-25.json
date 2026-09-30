@@ -1,0 +1,18 @@
+[
+    {
+        "symbol": "JSL",
+        "date": "2026-09-25",
+        "close": 748.25,
+        "pct_change": 1.2585408538247966,
+        "volume": 1774351,
+        "vol_mult": 2.7350030404319647,
+        "delivery_pct": 65.46,
+        "del_mult": 2.2845265358173155,
+        "rsi": 56.019425496356895,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "740.8 - 755.7",
+        "target": 823.1,
+        "stop_loss": 703.4
+    }
+]
