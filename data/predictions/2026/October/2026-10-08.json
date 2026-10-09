@@ -1,0 +1,46 @@
+{
+    "date": "2026-10-08",
+    "score": -3.25,
+    "bias": "\ud83d\udd34 BEARISH BIAS",
+    "recommended_strategy": "\ud83d\udc3b Bear Call Spreads (Selling Calls) / Buy Put Spreads. Avoid naked short calls unless protected.",
+    "score_details": [
+        [
+            "Brent Crude Spike",
+            -0.5,
+            "+1.71%"
+        ],
+        [
+            "USD/INR Rupee Deprec",
+            -0.5,
+            "+0.35%"
+        ],
+        [
+            "Nikkei Weak Asian Open",
+            -0.5,
+            "-0.95%"
+        ],
+        [
+            "Dollar Index Stronger",
+            -0.25,
+            "+0.43%"
+        ],
+        [
+            "FII Cash Heavy Selling",
+            -1.0,
+            "-5,353.2 Cr"
+        ],
+        [
+            "DII Cash Strong Buying",
+            0.5,
+            "+5,189.0 Cr"
+        ],
+        [
+            "FII Net Index Fut Heavy Short",
+            -1.0,
+            "-319,669"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-09-28"
+}
