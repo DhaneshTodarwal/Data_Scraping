@@ -1,0 +1,34 @@
+[
+    {
+        "symbol": "NYKAA",
+        "date": "2026-10-13",
+        "close": 338.0,
+        "pct_change": -0.588235294117645,
+        "volume": 7062993,
+        "vol_mult": 1.7173346958556635,
+        "delivery_pct": 66.38,
+        "del_mult": 2.4031185969747266,
+        "rsi": 54.68580148060028,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "334.6 - 341.4",
+        "target": 371.8,
+        "stop_loss": 317.7
+    },
+    {
+        "symbol": "HCLTECH",
+        "date": "2026-10-13",
+        "close": 1326.0,
+        "pct_change": 8.421913327882248,
+        "volume": 21742593,
+        "vol_mult": 7.263058935800813,
+        "delivery_pct": 30.74,
+        "del_mult": 4.55798136782539,
+        "rsi": 57.29415371598313,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "1312.7 - 1339.3",
+        "target": 1458.6,
+        "stop_loss": 1246.4
+    }
+]
