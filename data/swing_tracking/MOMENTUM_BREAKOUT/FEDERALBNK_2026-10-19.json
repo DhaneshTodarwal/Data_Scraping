@@ -1,0 +1,21 @@
+{
+  "symbol": "FEDERALBNK",
+  "scan_date": "2026-10-19",
+  "category": "MOMENTUM_BREAKOUT",
+  "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+  "scan_close": 348.85,
+  "entry_range": "345.4 - 352.3",
+  "target": 383.7,
+  "stop_loss": 327.9,
+  "rsi_at_scan": 56.81,
+  "vol_mult": 5.27,
+  "delivery_pct": 33.33,
+  "del_mult": 3.35,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
