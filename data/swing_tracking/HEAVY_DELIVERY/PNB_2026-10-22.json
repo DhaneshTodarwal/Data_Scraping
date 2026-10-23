@@ -1,0 +1,21 @@
+{
+  "symbol": "PNB",
+  "scan_date": "2026-10-22",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 122.5,
+  "entry_range": "121.3 - 123.7",
+  "target": 134.8,
+  "stop_loss": 115.1,
+  "rsi_at_scan": 65.91,
+  "vol_mult": 1.88,
+  "delivery_pct": 59.04,
+  "del_mult": 2.3,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

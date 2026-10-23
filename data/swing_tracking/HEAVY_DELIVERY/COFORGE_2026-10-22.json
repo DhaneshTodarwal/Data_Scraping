@@ -1,0 +1,21 @@
+{
+  "symbol": "COFORGE",
+  "scan_date": "2026-10-22",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 1908.8,
+  "entry_range": "1889.7 - 1927.9",
+  "target": 2099.7,
+  "stop_loss": 1794.3,
+  "rsi_at_scan": 61.83,
+  "vol_mult": 1.77,
+  "delivery_pct": 53.7,
+  "del_mult": 2.19,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

@@ -1,0 +1,21 @@
+{
+  "symbol": "TECHM",
+  "scan_date": "2026-10-22",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 1829.1,
+  "entry_range": "1810.8 - 1847.4",
+  "target": 2012.0,
+  "stop_loss": 1606.6,
+  "rsi_at_scan": 73.29,
+  "vol_mult": 1.85,
+  "delivery_pct": 52.56,
+  "del_mult": 2.06,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
