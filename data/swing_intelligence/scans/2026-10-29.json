@@ -1,0 +1,34 @@
+[
+    {
+        "symbol": "KOTAKBANK",
+        "date": "2026-10-29",
+        "close": 459.0,
+        "pct_change": 4.318181818181821,
+        "volume": 46297204,
+        "vol_mult": 2.8168734325422857,
+        "delivery_pct": 72.12,
+        "del_mult": 2.342549056989046,
+        "rsi": 69.64241105263137,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "454.4 - 463.6",
+        "target": 504.9,
+        "stop_loss": 426.4
+    },
+    {
+        "symbol": "ADANIPORTS",
+        "date": "2026-10-29",
+        "close": 1872.0,
+        "pct_change": 6.285127354963094,
+        "volume": 7792103,
+        "vol_mult": 3.0082271725067113,
+        "delivery_pct": 45.09,
+        "del_mult": 1.591499931605938,
+        "rsi": 66.43736581426893,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "1853.3 - 1890.7",
+        "target": 2059.2,
+        "stop_loss": 1756.2
+    }
+]

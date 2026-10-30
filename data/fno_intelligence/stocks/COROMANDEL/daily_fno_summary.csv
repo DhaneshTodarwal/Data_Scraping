@@ -1,0 +1,2 @@
+Date,Spot_Price,Fut_Close,Fut_OI,Fut_OI_Chg,Fut_Volume,Near_Expiry,Max_Call_OI_Strike,Max_Call_OI,Max_Put_OI_Strike,Max_Put_OI,PCR_OI,ATM_IV
+2026-10-29,1719.78,1717.0,73800,58800,286,2026-11-23,1820.0,3900,1440.0,5100,1.3095,0.3175
