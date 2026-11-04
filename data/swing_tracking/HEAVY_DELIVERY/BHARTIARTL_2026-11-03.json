@@ -1,0 +1,21 @@
+{
+  "symbol": "BHARTIARTL",
+  "scan_date": "2026-11-03",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 2065.0,
+  "entry_range": "2044.3 - 2085.7",
+  "target": 2271.5,
+  "stop_loss": 1909.0,
+  "rsi_at_scan": 71.98,
+  "vol_mult": 2.49,
+  "delivery_pct": 73.72,
+  "del_mult": 2.0,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

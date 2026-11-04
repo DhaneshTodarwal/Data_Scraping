@@ -1,0 +1,50 @@
+[
+    {
+        "symbol": "BHARTIHEXA",
+        "date": "2026-11-03",
+        "close": 1704.699951171875,
+        "pct_change": 4.186529889023594,
+        "volume": 315857,
+        "vol_mult": 3.1076985289306696,
+        "delivery_pct": 57.05,
+        "del_mult": 2.3110139277194963,
+        "rsi": 65.101336534745,
+        "signal": "\ud83d\udd25 SUPER BREAKOUT",
+        "score": 3,
+        "entry_range": "1687.7 - 1721.7",
+        "target": 1875.2,
+        "stop_loss": 1597.0
+    },
+    {
+        "symbol": "PETRONET",
+        "date": "2026-11-03",
+        "close": 303.0,
+        "pct_change": 4.663212435233155,
+        "volume": 6054657,
+        "vol_mult": 3.2933380862348103,
+        "delivery_pct": 40.62,
+        "del_mult": 1.9784450728268625,
+        "rsi": 63.593139569626395,
+        "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+        "score": 1,
+        "entry_range": "300.0 - 306.0",
+        "target": 333.3,
+        "stop_loss": 284.8
+    },
+    {
+        "symbol": "BHARTIARTL",
+        "date": "2026-11-03",
+        "close": 2065.0,
+        "pct_change": 4.625832248408179,
+        "volume": 18602031,
+        "vol_mult": 2.4865955386390466,
+        "delivery_pct": 73.72,
+        "del_mult": 2.0011836477766796,
+        "rsi": 71.97500784359525,
+        "signal": "\ud83d\udce6 HEAVY DELIVERY",
+        "score": 2,
+        "entry_range": "2044.3 - 2085.7",
+        "target": 2271.5,
+        "stop_loss": 1909.0
+    }
+]
