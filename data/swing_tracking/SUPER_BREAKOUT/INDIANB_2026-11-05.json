@@ -1,0 +1,21 @@
+{
+  "symbol": "INDIANB",
+  "scan_date": "2026-11-05",
+  "category": "SUPER_BREAKOUT",
+  "signal": "\ud83d\udd25 SUPER BREAKOUT",
+  "scan_close": 892.15,
+  "entry_range": "883.2 - 901.1",
+  "target": 981.4,
+  "stop_loss": 838.6,
+  "rsi_at_scan": 61.36,
+  "vol_mult": 3.43,
+  "delivery_pct": 55.97,
+  "del_mult": 2.72,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}
