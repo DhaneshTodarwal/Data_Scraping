@@ -1,0 +1,21 @@
+{
+  "symbol": "LENSKART",
+  "scan_date": "2026-11-11",
+  "category": "HEAVY_DELIVERY",
+  "signal": "\ud83d\udce6 HEAVY DELIVERY",
+  "scan_close": 723.1,
+  "entry_range": "715.9 - 730.3",
+  "target": 795.4,
+  "stop_loss": 678.7,
+  "rsi_at_scan": 67.75,
+  "vol_mult": 1.31,
+  "delivery_pct": 69.47,
+  "del_mult": 2.03,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

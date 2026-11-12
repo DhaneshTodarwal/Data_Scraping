@@ -1,0 +1,21 @@
+{
+  "symbol": "BEML",
+  "scan_date": "2026-11-11",
+  "category": "MOMENTUM_BREAKOUT",
+  "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+  "scan_close": 2112.0,
+  "entry_range": "2090.9 - 2133.1",
+  "target": 2323.2,
+  "stop_loss": 1983.9,
+  "rsi_at_scan": 60.74,
+  "vol_mult": 9.99,
+  "delivery_pct": 10.95,
+  "del_mult": 4.13,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

@@ -1,0 +1,352 @@
+{
+  "date": "2026-11-11",
+  "total_active": 25,
+  "targets_hit_today": 8,
+  "sl_hit_today": 0,
+  "new_today": 4,
+  "target_stocks": [
+    {
+      "symbol": "TVSMOTOR",
+      "pnl_pct": "10.0",
+      "days_held": "104"
+    },
+    {
+      "symbol": "PNB",
+      "pnl_pct": "9.47",
+      "days_held": "21"
+    },
+    {
+      "symbol": "UNIONBANK",
+      "pnl_pct": "8.93",
+      "days_held": "21"
+    },
+    {
+      "symbol": "PNB",
+      "pnl_pct": "10.49",
+      "days_held": "20"
+    },
+    {
+      "symbol": "UNIONBANK",
+      "pnl_pct": "9.89",
+      "days_held": "20"
+    },
+    {
+      "symbol": "PETRONET",
+      "pnl_pct": "14.87",
+      "days_held": "14"
+    },
+    {
+      "symbol": "INDHOTEL",
+      "pnl_pct": "10.42",
+      "days_held": "15"
+    },
+    {
+      "symbol": "KALYANKJIL",
+      "pnl_pct": "10.0",
+      "days_held": "1"
+    }
+  ],
+  "sl_stocks": [],
+  "active_watchlist": [
+    {
+      "symbol": "TVSMOTOR",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-07-31",
+      "scan_close": 4313.1,
+      "today_close": 4560.0,
+      "pct_vs_scan": 5.72,
+      "dist_to_target": 4.0,
+      "dist_to_sl": 16.4,
+      "target": 4744.4,
+      "stop_loss": 3810.1
+    },
+    {
+      "symbol": "PERSISTENT",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-19",
+      "scan_close": 5690.0,
+      "today_close": 5973.5,
+      "pct_vs_scan": 4.98,
+      "dist_to_target": 4.8,
+      "dist_to_sl": 10.5,
+      "target": 6259.0,
+      "stop_loss": 5348.6
+    },
+    {
+      "symbol": "MPHASIS",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-19",
+      "scan_close": 2500.0,
+      "today_close": 2390.0,
+      "pct_vs_scan": -4.4,
+      "dist_to_target": 15.1,
+      "dist_to_sl": 1.7,
+      "target": 2750.0,
+      "stop_loss": 2350.0
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-10-19",
+      "scan_close": 348.85,
+      "today_close": 361.6000061035156,
+      "pct_vs_scan": 3.65,
+      "dist_to_target": 6.1,
+      "dist_to_sl": 9.3,
+      "target": 383.7,
+      "stop_loss": 327.9
+    },
+    {
+      "symbol": "TECHM",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-22",
+      "scan_close": 1829.1,
+      "today_close": 1788.5,
+      "pct_vs_scan": -2.22,
+      "dist_to_target": 12.5,
+      "dist_to_sl": 10.2,
+      "target": 2012.0,
+      "stop_loss": 1606.6
+    },
+    {
+      "symbol": "COFORGE",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-27",
+      "scan_close": 1997.0,
+      "today_close": 2017.5,
+      "pct_vs_scan": 1.03,
+      "dist_to_target": 8.9,
+      "dist_to_sl": 8.1,
+      "target": 2196.7,
+      "stop_loss": 1854.8
+    },
+    {
+      "symbol": "APLAPOLLO",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-10-27",
+      "scan_close": 2213.9,
+      "today_close": 2198.0,
+      "pct_vs_scan": -0.72,
+      "dist_to_target": 10.8,
+      "dist_to_sl": 5.3,
+      "target": 2435.3,
+      "stop_loss": 2081.1
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-29",
+      "scan_close": 459.0,
+      "today_close": 487.7000122070313,
+      "pct_vs_scan": 6.25,
+      "dist_to_target": 3.5,
+      "dist_to_sl": 12.6,
+      "target": 504.9,
+      "stop_loss": 426.4
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-10-29",
+      "scan_close": 1872.0,
+      "today_close": 1907.0,
+      "pct_vs_scan": 1.87,
+      "dist_to_target": 8.0,
+      "dist_to_sl": 7.9,
+      "target": 2059.2,
+      "stop_loss": 1756.2
+    },
+    {
+      "symbol": "BHARTIHEXA",
+      "category": "SUPER BREAKOUT",
+      "scan_date": "2026-11-03",
+      "scan_close": 1704.7,
+      "today_close": 1619.5,
+      "pct_vs_scan": -5.0,
+      "dist_to_target": 15.8,
+      "dist_to_sl": 1.4,
+      "target": 1875.2,
+      "stop_loss": 1597.0
+    },
+    {
+      "symbol": "PETRONET",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-11-03",
+      "scan_close": 303.0,
+      "today_close": 329.79998779296875,
+      "pct_vs_scan": 8.84,
+      "dist_to_target": 1.1,
+      "dist_to_sl": 13.6,
+      "target": 333.3,
+      "stop_loss": 284.8
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-03",
+      "scan_close": 2065.0,
+      "today_close": 2109.0,
+      "pct_vs_scan": 2.13,
+      "dist_to_target": 7.7,
+      "dist_to_sl": 9.5,
+      "target": 2271.5,
+      "stop_loss": 1909.0
+    },
+    {
+      "symbol": "INDIANB",
+      "category": "SUPER BREAKOUT",
+      "scan_date": "2026-11-05",
+      "scan_close": 892.15,
+      "today_close": 935.4000244140624,
+      "pct_vs_scan": 4.85,
+      "dist_to_target": 4.9,
+      "dist_to_sl": 10.3,
+      "target": 981.4,
+      "stop_loss": 838.6
+    },
+    {
+      "symbol": "LGEINDIA",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-11-05",
+      "scan_close": 1778.5,
+      "today_close": 1740.5999755859375,
+      "pct_vs_scan": -2.13,
+      "dist_to_target": 12.4,
+      "dist_to_sl": 4.0,
+      "target": 1956.4,
+      "stop_loss": 1671.8
+    },
+    {
+      "symbol": "DLF",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-05",
+      "scan_close": 745.2,
+      "today_close": 742.6500244140625,
+      "pct_vs_scan": -0.34,
+      "dist_to_target": 10.4,
+      "dist_to_sl": 8.5,
+      "target": 819.7,
+      "stop_loss": 679.4
+    },
+    {
+      "symbol": "ICICIBANK",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-05",
+      "scan_close": 1500.0,
+      "today_close": 1571.5999755859375,
+      "pct_vs_scan": 4.77,
+      "dist_to_target": 5.0,
+      "dist_to_sl": 11.1,
+      "target": 1650.0,
+      "stop_loss": 1396.5
+    },
+    {
+      "symbol": "ANTHEM",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-05",
+      "scan_close": 913.55,
+      "today_close": 957.5,
+      "pct_vs_scan": 4.81,
+      "dist_to_target": 5.0,
+      "dist_to_sl": 10.3,
+      "target": 1004.9,
+      "stop_loss": 858.6
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-05",
+      "scan_close": 1355.6,
+      "today_close": 1353.300048828125,
+      "pct_vs_scan": -0.17,
+      "dist_to_target": 10.2,
+      "dist_to_sl": 6.5,
+      "target": 1491.2,
+      "stop_loss": 1265.3
+    },
+    {
+      "symbol": "LGEINDIA",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-06",
+      "scan_close": 1754.1,
+      "today_close": 1740.5999755859375,
+      "pct_vs_scan": -0.77,
+      "dist_to_target": 10.9,
+      "dist_to_sl": 5.3,
+      "target": 1929.5,
+      "stop_loss": 1648.9
+    },
+    {
+      "symbol": "ICICIBANK",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-06",
+      "scan_close": 1571.2,
+      "today_close": 1571.5999755859375,
+      "pct_vs_scan": 0.03,
+      "dist_to_target": 10.0,
+      "dist_to_sl": 10.1,
+      "target": 1728.3,
+      "stop_loss": 1413.2
+    },
+    {
+      "symbol": "GROWW",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-06",
+      "scan_close": 215.08,
+      "today_close": 221.22000122070312,
+      "pct_vs_scan": 2.85,
+      "dist_to_target": 7.0,
+      "dist_to_sl": 10.9,
+      "target": 236.6,
+      "stop_loss": 197.1
+    },
+    {
+      "symbol": "BEML",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-11-11",
+      "scan_close": 2112.0,
+      "today_close": 2112.0,
+      "pct_vs_scan": 0.0,
+      "dist_to_target": 10.0,
+      "dist_to_sl": 6.1,
+      "target": 2323.2,
+      "stop_loss": 1983.9
+    },
+    {
+      "symbol": "PETRONET",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-11",
+      "scan_close": 329.8,
+      "today_close": 329.79998779296875,
+      "pct_vs_scan": -0.0,
+      "dist_to_target": 10.0,
+      "dist_to_sl": 9.0,
+      "target": 362.8,
+      "stop_loss": 300.1
+    },
+    {
+      "symbol": "AUROPHARMA",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-11",
+      "scan_close": 1827.5,
+      "today_close": 1827.5,
+      "pct_vs_scan": 0.0,
+      "dist_to_target": 10.0,
+      "dist_to_sl": 6.5,
+      "target": 2010.3,
+      "stop_loss": 1709.4
+    },
+    {
+      "symbol": "LENSKART",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-11",
+      "scan_close": 723.1,
+      "today_close": 723.0999755859375,
+      "pct_vs_scan": -0.0,
+      "dist_to_target": 10.0,
+      "dist_to_sl": 6.1,
+      "target": 795.4,
+      "stop_loss": 678.7
+    }
+  ]
+}

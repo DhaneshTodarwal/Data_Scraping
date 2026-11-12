@@ -1,0 +1,66 @@
+{
+    "date": "2026-11-12",
+    "score": 3.25,
+    "bias": "\ud83d\udfe2 BULLISH BIAS",
+    "recommended_strategy": "\ud83d\udc02 Bull Put Spreads (Selling Puts) / Buy Call Spreads. Avoid naked short puts unless protected.",
+    "score_details": [
+        [
+            "S&P 500 Strong Close",
+            1.0,
+            "+1.31%"
+        ],
+        [
+            "Nasdaq Strong Close",
+            0.5,
+            "+1.60%"
+        ],
+        [
+            "US VIX Decline",
+            0.5,
+            "-10.12%"
+        ],
+        [
+            "USD/INR Rupee Apprec",
+            0.5,
+            "-0.20%"
+        ],
+        [
+            "Nikkei Strong Asian Open",
+            0.5,
+            "+0.76%"
+        ],
+        [
+            "Hang Seng Weak Open",
+            -0.5,
+            "-1.00%"
+        ],
+        [
+            "Dollar Index Stronger",
+            -0.25,
+            "+0.79%"
+        ],
+        [
+            "FII Cash Heavy Buying",
+            1.0,
+            "+12,563.3 Cr"
+        ],
+        [
+            "DII Cash Net Selling",
+            -0.5,
+            "-8,434.5 Cr"
+        ],
+        [
+            "FII Net Index Fut Net Short",
+            -0.5,
+            "-70,413"
+        ],
+        [
+            "FII Index Fut Long Addition",
+            1.0,
+            "+30,003"
+        ]
+    ],
+    "pre_market_avail": true,
+    "post_market_avail": true,
+    "prev_day": "2026-11-11"
+}
