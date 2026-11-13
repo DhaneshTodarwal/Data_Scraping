@@ -1,0 +1,21 @@
+{
+  "symbol": "CDSL",
+  "scan_date": "2026-11-12",
+  "category": "MOMENTUM_BREAKOUT",
+  "signal": "\ud83d\ude80 MOMENTUM BREAKOUT",
+  "scan_close": 1455.0,
+  "entry_range": "1440.5 - 1469.5",
+  "target": 1600.5,
+  "stop_loss": 1326.8,
+  "rsi_at_scan": 66.83,
+  "vol_mult": 3.01,
+  "delivery_pct": 41.32,
+  "del_mult": 2.67,
+  "status": "ACTIVE",
+  "daily_updates": [],
+  "result": null,
+  "exit_date": null,
+  "exit_price": null,
+  "pnl_pct": null,
+  "reason": null
+}

@@ -11,7 +11,7 @@
   "vol_mult": 3.29,
   "delivery_pct": 40.62,
   "del_mult": 1.98,
-  "status": "ACTIVE",
+  "status": "TARGET_HIT",
   "daily_updates": [
     {
       "date": "2026-11-05",
@@ -42,11 +42,21 @@
       "pct_vs_scan": 8.84,
       "status": "ACTIVE",
       "delivery_pct": 68.79
+    },
+    {
+      "date": "2026-11-12",
+      "open": 330.04998779296875,
+      "high": 336.29998779296875,
+      "low": 327.29998779296875,
+      "close": 335.0,
+      "pct_vs_scan": 10.56,
+      "status": "TARGET_HIT",
+      "delivery_pct": 75.4
     }
   ],
-  "result": null,
-  "exit_date": null,
-  "exit_price": null,
-  "pnl_pct": null,
-  "reason": null
+  "result": "WIN",
+  "exit_date": "2026-11-12",
+  "exit_price": 333.3,
+  "pnl_pct": 10.0,
+  "reason": "Target \u20b9333.3 hit"
 }

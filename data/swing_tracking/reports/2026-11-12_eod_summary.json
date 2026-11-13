@@ -1,0 +1,323 @@
+{
+  "date": "2026-11-12",
+  "total_active": 25,
+  "targets_hit_today": 1,
+  "sl_hit_today": 1,
+  "new_today": 2,
+  "target_stocks": [
+    {
+      "symbol": "PETRONET",
+      "pnl_pct": "10.0",
+      "days_held": "1"
+    }
+  ],
+  "sl_stocks": [
+    {
+      "symbol": "BHARTIHEXA",
+      "pnl_pct": "-7.24",
+      "days_held": "8"
+    }
+  ],
+  "active_watchlist": [
+    {
+      "symbol": "TVSMOTOR",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-07-31",
+      "scan_close": 4313.1,
+      "today_close": 4500.0,
+      "pct_vs_scan": 4.33,
+      "dist_to_target": 5.4,
+      "dist_to_sl": 15.3,
+      "target": 4744.4,
+      "stop_loss": 3810.1
+    },
+    {
+      "symbol": "PERSISTENT",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-19",
+      "scan_close": 5690.0,
+      "today_close": 6030.0,
+      "pct_vs_scan": 5.98,
+      "dist_to_target": 3.8,
+      "dist_to_sl": 11.3,
+      "target": 6259.0,
+      "stop_loss": 5348.6
+    },
+    {
+      "symbol": "MPHASIS",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-19",
+      "scan_close": 2500.0,
+      "today_close": 2410.0,
+      "pct_vs_scan": -3.6,
+      "dist_to_target": 14.1,
+      "dist_to_sl": 2.5,
+      "target": 2750.0,
+      "stop_loss": 2350.0
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-10-19",
+      "scan_close": 348.85,
+      "today_close": 362.5,
+      "pct_vs_scan": 3.91,
+      "dist_to_target": 5.8,
+      "dist_to_sl": 9.5,
+      "target": 383.7,
+      "stop_loss": 327.9
+    },
+    {
+      "symbol": "TECHM",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-22",
+      "scan_close": 1829.1,
+      "today_close": 1774.0,
+      "pct_vs_scan": -3.01,
+      "dist_to_target": 13.4,
+      "dist_to_sl": 9.4,
+      "target": 2012.0,
+      "stop_loss": 1606.6
+    },
+    {
+      "symbol": "COFORGE",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-27",
+      "scan_close": 1997.0,
+      "today_close": 2034.0,
+      "pct_vs_scan": 1.85,
+      "dist_to_target": 8.0,
+      "dist_to_sl": 8.8,
+      "target": 2196.7,
+      "stop_loss": 1854.8
+    },
+    {
+      "symbol": "APLAPOLLO",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-10-27",
+      "scan_close": 2213.9,
+      "today_close": 2225.699951171875,
+      "pct_vs_scan": 0.53,
+      "dist_to_target": 9.4,
+      "dist_to_sl": 6.5,
+      "target": 2435.3,
+      "stop_loss": 2081.1
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-10-29",
+      "scan_close": 459.0,
+      "today_close": 490.3999938964844,
+      "pct_vs_scan": 6.84,
+      "dist_to_target": 3.0,
+      "dist_to_sl": 13.1,
+      "target": 504.9,
+      "stop_loss": 426.4
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-10-29",
+      "scan_close": 1872.0,
+      "today_close": 1930.0,
+      "pct_vs_scan": 3.1,
+      "dist_to_target": 6.7,
+      "dist_to_sl": 9.0,
+      "target": 2059.2,
+      "stop_loss": 1756.2
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-03",
+      "scan_close": 2065.0,
+      "today_close": 2096.0,
+      "pct_vs_scan": 1.5,
+      "dist_to_target": 8.4,
+      "dist_to_sl": 8.9,
+      "target": 2271.5,
+      "stop_loss": 1909.0
+    },
+    {
+      "symbol": "INDIANB",
+      "category": "SUPER BREAKOUT",
+      "scan_date": "2026-11-05",
+      "scan_close": 892.15,
+      "today_close": 945.9000244140624,
+      "pct_vs_scan": 6.02,
+      "dist_to_target": 3.8,
+      "dist_to_sl": 11.3,
+      "target": 981.4,
+      "stop_loss": 838.6
+    },
+    {
+      "symbol": "LGEINDIA",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-11-05",
+      "scan_close": 1778.5,
+      "today_close": 1728.800048828125,
+      "pct_vs_scan": -2.79,
+      "dist_to_target": 13.2,
+      "dist_to_sl": 3.3,
+      "target": 1956.4,
+      "stop_loss": 1671.8
+    },
+    {
+      "symbol": "DLF",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-05",
+      "scan_close": 745.2,
+      "today_close": 769.2999877929688,
+      "pct_vs_scan": 3.23,
+      "dist_to_target": 6.6,
+      "dist_to_sl": 11.7,
+      "target": 819.7,
+      "stop_loss": 679.4
+    },
+    {
+      "symbol": "ICICIBANK",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-05",
+      "scan_close": 1500.0,
+      "today_close": 1590.0,
+      "pct_vs_scan": 6.0,
+      "dist_to_target": 3.8,
+      "dist_to_sl": 12.2,
+      "target": 1650.0,
+      "stop_loss": 1396.5
+    },
+    {
+      "symbol": "ANTHEM",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-05",
+      "scan_close": 913.55,
+      "today_close": 938.4500122070312,
+      "pct_vs_scan": 2.73,
+      "dist_to_target": 7.1,
+      "dist_to_sl": 8.5,
+      "target": 1004.9,
+      "stop_loss": 858.6
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-05",
+      "scan_close": 1355.6,
+      "today_close": 1352.0999755859375,
+      "pct_vs_scan": -0.26,
+      "dist_to_target": 10.3,
+      "dist_to_sl": 6.4,
+      "target": 1491.2,
+      "stop_loss": 1265.3
+    },
+    {
+      "symbol": "LGEINDIA",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-06",
+      "scan_close": 1754.1,
+      "today_close": 1728.800048828125,
+      "pct_vs_scan": -1.44,
+      "dist_to_target": 11.6,
+      "dist_to_sl": 4.6,
+      "target": 1929.5,
+      "stop_loss": 1648.9
+    },
+    {
+      "symbol": "ICICIBANK",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-06",
+      "scan_close": 1571.2,
+      "today_close": 1590.0,
+      "pct_vs_scan": 1.2,
+      "dist_to_target": 8.7,
+      "dist_to_sl": 11.1,
+      "target": 1728.3,
+      "stop_loss": 1413.2
+    },
+    {
+      "symbol": "GROWW",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-06",
+      "scan_close": 215.08,
+      "today_close": 221.66000366210935,
+      "pct_vs_scan": 3.06,
+      "dist_to_target": 6.7,
+      "dist_to_sl": 11.1,
+      "target": 236.6,
+      "stop_loss": 197.1
+    },
+    {
+      "symbol": "BEML",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-11-11",
+      "scan_close": 2112.0,
+      "today_close": 2125.5,
+      "pct_vs_scan": 0.64,
+      "dist_to_target": 9.3,
+      "dist_to_sl": 6.7,
+      "target": 2323.2,
+      "stop_loss": 1983.9
+    },
+    {
+      "symbol": "PETRONET",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-11",
+      "scan_close": 329.8,
+      "today_close": 335.0,
+      "pct_vs_scan": 1.58,
+      "dist_to_target": 8.3,
+      "dist_to_sl": 10.4,
+      "target": 362.8,
+      "stop_loss": 300.1
+    },
+    {
+      "symbol": "AUROPHARMA",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-11",
+      "scan_close": 1827.5,
+      "today_close": 1807.199951171875,
+      "pct_vs_scan": -1.11,
+      "dist_to_target": 11.2,
+      "dist_to_sl": 5.4,
+      "target": 2010.3,
+      "stop_loss": 1709.4
+    },
+    {
+      "symbol": "LENSKART",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-11",
+      "scan_close": 723.1,
+      "today_close": 727.4500122070312,
+      "pct_vs_scan": 0.6,
+      "dist_to_target": 9.3,
+      "dist_to_sl": 6.7,
+      "target": 795.4,
+      "stop_loss": 678.7
+    },
+    {
+      "symbol": "CDSL",
+      "category": "MOMENTUM BREAKOUT",
+      "scan_date": "2026-11-12",
+      "scan_close": 1455.0,
+      "today_close": 1455.0,
+      "pct_vs_scan": 0.0,
+      "dist_to_target": 10.0,
+      "dist_to_sl": 8.8,
+      "target": 1600.5,
+      "stop_loss": 1326.8
+    },
+    {
+      "symbol": "PETRONET",
+      "category": "HEAVY DELIVERY",
+      "scan_date": "2026-11-12",
+      "scan_close": 335.0,
+      "today_close": 335.0,
+      "pct_vs_scan": 0.0,
+      "dist_to_target": 10.0,
+      "dist_to_sl": 9.4,
+      "target": 368.5,
+      "stop_loss": 303.4
+    }
+  ]
+}
